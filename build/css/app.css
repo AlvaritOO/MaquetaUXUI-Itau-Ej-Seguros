@@ -11046,7 +11046,6 @@ a:hover {
 section#contenedor-mayor {
   width: auto;
   height: auto;
-  padding: 0 30px;
 }
 
 .body-buttom {
@@ -11197,6 +11196,15 @@ p.uf-rango {
   height: 114px;
 }
 
+section#navBar {
+  background-color: #FFFFFF;
+}
+
+.header-bg {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
 .log-ejecutivo {
   border-radius: 22px;
   border: 1px solid #EFE9E5;
@@ -11215,16 +11223,14 @@ p.uf-rango {
 
 .nav-itau {
   background-color: #FFFFFF;
-  padding-bottom: 0px;
-  margin-bottom: 40px;
 }
 
 .nav-itau div ul li.nav-item .nav-link {
-  padding: 8px 40px;
+  padding: 18px 50px;
 }
 
 .nav-itau li a {
-  color: #56504C;
+  color: #EC7000;
 }
 
 .nav-itau a.nav-link.active {
