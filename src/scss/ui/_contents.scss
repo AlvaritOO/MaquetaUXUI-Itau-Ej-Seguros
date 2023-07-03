@@ -336,3 +336,19 @@ p.uf-rango {
 .coberturas-adicionales-content {
     height: 114px;
 }
+
+.custom-table thead th {
+    --bs-table-bg: #EFE9E5 !important;
+}
+
+.contratado {
+    background-color: #008859;
+}
+
+.pendiente {
+    background-color: #F1AE2F;
+}
+
+.caducado {
+    background-color: #56504C;
+}

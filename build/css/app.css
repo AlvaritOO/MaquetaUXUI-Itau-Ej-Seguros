@@ -11197,6 +11197,22 @@ p.uf-rango {
   height: 114px;
 }
 
+.custom-table thead th {
+  --bs-table-bg: #EFE9E5 !important;
+}
+
+.contratado {
+  background-color: #008859;
+}
+
+.pendiente {
+  background-color: #F1AE2F;
+}
+
+.caducado {
+  background-color: #56504C;
+}
+
 .log-ejecutivo {
   border-radius: 22px;
   border: 1px solid #EFE9E5;
