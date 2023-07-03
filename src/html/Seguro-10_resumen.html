@@ -1,151 +1,177 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itau</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="../../build/css/app.css">
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  </head>
-  <body class="d-flex flex-column h-100">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../build/css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <!--NavBar-->
+  <section id="navBar">
     <div class="container">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-          <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
-          <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
-        </a>
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 header-bg">
+
+        <div>
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
+            <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+            <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
+          </a>
+        </div>
 
         <div class="text-end">
 
-          <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             <img src="../../src/img/ic_log-ejecutivo.svg">
             Hola, Leslie
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
 
         </div>
+
+        <nav class="navbar navbar-expand-lg nav-itau">
+          <div class="container-fluid justify-content-around">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ver Seguros Contratados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Denunciar un Siniestro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mi Panel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Posiciónate como experto</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
       </header>
-    </div>
-    <nav class="navbar navbar-expand-lg nav-itau">
-      <div class="container">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contratar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Seguros contratados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Siniestros</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--Nav Bar-->
 
-<!--Body Buttom-->
-      <main id="contenedor-mayor" class="flex-shrink-0">
+    </div>
+  </section>
+  <!--NavBar fin-->
+
+  <!--Contenido-->
+  <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <section class="mb-5 pt-3 container d-none d-lg-block">
           <div class="container">
-            <div class="row justify-content-center">
-              <section class="mb-5 pt-3 container d-none d-lg-block">
-                <div class="container">
-                  <div class="row">
+            <div class="row">
               <div class="col-sm-12 col-md-10 offset-md-1">
                 <div class="position-relative">
-                          <div class="progress" style="height: 1px;">
-                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
-                          <button type="button" class="position-absolute top-0 start-25 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
-                          <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">3</button>
-                          <button type="button" class="position-absolute top-0 start-75 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">4</button>
-                          <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">5</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container d-none d-sm-block">
-                          <div class="row mt-5">
-                            <div class="col-sm-12 col-md-10 offset-md-1">
-                              <div class="position-relative">
-                                <span class="position-absolute top-0 start-0 translate-middle text-center">Declaración de <br/>salud</span>
-                                  <span class="position-absolute top-0 start-25 translate-middle text-center">Datos <br/>personales</span>
-                                  <span class="position-absolute top-0 start-50 translate-middle text-center">Beneficiarios</span>
-                                  <span class="position-absolute top-0 start-75 translate-middle text-center">Formas de <br/>pago</span>
-                                  <span class="position-absolute top-0 start-100 translate-middle text-center">Resumen y <br/>confirmación</span>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-              </section>
-              <!--fin wizard--> 
+                  <div class="progress" style="height: 1px;">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <button type="button"
+                    class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+                    style="width: 2rem; height:2rem;">1</button>
+                  <button type="button"
+                    class="position-absolute top-0 start-25 translate-middle btn btn-sm btn-primary rounded-pill"
+                    style="width: 2rem; height:2rem;">2</button>
+                  <button type="button"
+                    class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
+                    style="width: 2rem; height:2rem;">3</button>
+                  <button type="button"
+                    class="position-absolute top-0 start-75 translate-middle btn btn-sm btn-primary rounded-pill"
+                    style="width: 2rem; height:2rem;">4</button>
+                  <button type="button"
+                    class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill"
+                    style="width: 2rem; height:2rem;">5</button>
+                </div>
+              </div>
+            </div>
+            <div class="container d-none d-sm-block">
+              <div class="row mt-5">
+                <div class="col-sm-12 col-md-10 offset-md-1">
+                  <div class="position-relative">
+                    <span class="position-absolute top-0 start-0 translate-middle text-center">Declaración de
+                      <br />salud</span>
+                    <span class="position-absolute top-0 start-25 translate-middle text-center">Datos
+                      <br />personales</span>
+                    <span class="position-absolute top-0 start-50 translate-middle text-center">Beneficiarios</span>
+                    <span class="position-absolute top-0 start-75 translate-middle text-center">Formas de
+                      <br />pago</span>
+                    <span class="position-absolute top-0 start-100 translate-middle text-center">Resumen y
+                      <br />confirmación</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--fin wizard-->
+      </div>
+
+      <div class="col body-buttom">
+
+        <div class="row ms-2 mt-4 mb-4">
+          <h1>Resumen</h1>
+          <h2 class="mb-40">
+            Revisa el detalle del plan seleccionado y confirma para hacer efectiva tu solicitud.
+          </h2>
+          <div class="divisor"></div>
+          <div class="row">
+            <div class="col-4">
+              <h2>DETALLE PLAN SELECCIONADO</h2>
+              <p>
+                Plan 1 protección <br />$3.646 (UF 0,1234)
+              </p>
+            </div>
+            <div class="col-4">
+              <h2>ASEGURADOS</h2>
+              <p>
+                DATOS TITULAR<br />
+                Nombre: Claudia Alejandra Aranda<br />
+                RUN: 14.XXX.XXX-0
+              </p>
+            </div>
+            <div class="col-4">
+              <h2>MEDIO DE PAGOS</h2>
+              <p>
+                TARJETA DE CREDITO<br />
+                FRECUENCIA DE PAGO
+                MENSUAL
+              </p>
             </div>
 
-                <div class="col body-buttom">
-                  
-                  <div class="row ms-2 mt-4 mb-4">
-                    <h1>Resumen</h1>
-                      <h2 class="mb-40">
-                        Revisa el detalle del plan seleccionado y confirma para hacer efectiva tu solicitud.
-                      </h2>
-                      <div class="divisor"></div>
-                        <div class="row">
-                          <div class="col-4">
-                            <h2>DETALLE PLAN SELECCIONADO</h2>
-                            <p>
-                              Plan 1 protección <br />$3.646 (UF 0,1234)
-                            </p>
-                          </div>
-                          <div class="col-4">
-                            <h2>ASEGURADOS</h2>
-                            <p>
-                              DATOS TITULAR<br />
-                              Nombre: Claudia Alejandra Aranda<br />
-                              RUN: 14.XXX.XXX-0
-                            </p>
-                          </div>
-                          <div class="col-4">
-                            <h2>MEDIO DE PAGOS</h2>
-                            <p>
-                              TARJETA DE CREDITO<br />
-                              FRECUENCIA DE PAGO
-                              MENSUAL
-                            </p>
-                          </div>
+          </div>
+          <div class="divisor"></div>
+          <h2 class="mb-3">Tipo de contratación</h2>
+          <div class="row ms-2">
+            <div class="col-4 form-check mb-40">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                Contratación vía sitio privado
+              </label>
+            </div>
 
-                        </div>
-                      <div class="divisor"></div>
-                      <h2 class="mb-3">Tipo de contratación</h2>
-                      <div class="row ms-2">
-                        <div class="col-4 form-check mb-40">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                          <label class="form-check-label" for="flexRadioDefault2">
-                            Contratación vía sitio privado
-                          </label>
-                        </div>
+            <div class="col-4 form-check mb-40">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Contratación vía sucursal
+              </label>
+            </div>
 
-                        <div class="col-4 form-check mb-40">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                          <label class="form-check-label" for="flexRadioDefault2">
-                            Contratación vía sucursal
-                          </label>
-                        </div>
-
-                        <!--<div class="form-check" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!--<div class="form-check" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" disabled>
                           <label class="form-check-label" for="flexCheckDefault">
                             Autorización de uso de datos para contactabilidad
@@ -158,133 +184,141 @@
                             Autorizo que mensualmente me descuenten el valor de la prima mensual contratada, de acuerdo a lo indicado en el Mandato de Cargo
                           </label>
                         </div>-->
-                      </div>
-                      
-                  </div>
-                  
-                </div>
-
-                <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M38.4492 30.7773L26.5664 10C26.0039 8.99219 25.1484 8.48828 24 8.48828C22.8516 8.48828 21.9961 8.99219 21.4336 10L9.55078 30.7773C8.75391 32.1602 8.75391 33.543 9.55078 34.9258C10.3711 36.3086 11.5781 37 13.1719 37H34.8281C36.4219 37 37.6172 36.3086 38.4141 34.9258C39.2344 33.543 39.2461 32.1602 38.4492 30.7773ZM23.2617 19H24.7383V28H23.2617V19ZM24 31.7617C23.6953 31.7617 23.4258 31.6562 23.1914 31.4453C22.9805 31.2109 22.875 30.9414 22.875 30.6367C22.875 30.3086 22.9805 30.0391 23.1914 29.8281C23.4258 29.6172 23.6953 29.5117 24 29.5117C24.3047 29.5117 24.5625 29.6172 24.7734 29.8281C25.0078 30.0391 25.125 30.3086 25.125 30.6367C25.125 30.9414 25.0078 31.2109 24.7734 31.4453C24.5625 31.6562 24.3047 31.7617 24 31.7617Z" fill="#56504C"/>
-                  </svg>
-
-                  Debes autorizar el uso de datos para contactabilidad para continuar.
-
-                  <button type="button" class="cerrar-modal-alerta" data-bs-dismiss="alert" aria-label="Close">
-                    <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.8281 21.9844C16.9375 22.0938 16.9922 22.2344 16.9922 22.4062C16.9922 22.5781 16.9375 22.7188 16.8281 22.8281C16.7031 22.9375 16.5547 22.9922 16.3828 22.9922C16.2266 22.9922 16.0938 22.9375 15.9844 22.8281L9 15.8438L2.01562 22.8281C1.90625 22.9375 1.76563 22.9922 1.59375 22.9922C1.42187 22.9922 1.28125 22.9375 1.17188 22.8281C1.0625 22.7031 1.00781 22.5625 1.00781 22.4062C1.00781 22.2344 1.0625 22.0938 1.17188 21.9844L8.15625 15L1.17188 8.01562C1.0625 7.90625 1.00781 7.76562 1.00781 7.59375C1.00781 7.42188 1.0625 7.28125 1.17188 7.17188C1.29688 7.0625 1.4375 7.00781 1.59375 7.00781C1.76563 7.00781 1.90625 7.0625 2.01562 7.17188L9 14.1562L15.9844 7.17188C16.0938 7.0625 16.2344 7.00781 16.4062 7.00781C16.5781 7.00781 16.7188 7.0625 16.8281 7.17188C16.9375 7.29688 16.9922 7.44531 16.9922 7.61719C16.9922 7.77344 16.9375 7.90625 16.8281 8.01562L9.84375 15L16.8281 21.9844Z" fill="#56504C"/>
-                      </svg>
-                    
-                  </button>
-                </div>
-                
-                <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M38.4492 30.7773L26.5664 10C26.0039 8.99219 25.1484 8.48828 24 8.48828C22.8516 8.48828 21.9961 8.99219 21.4336 10L9.55078 30.7773C8.75391 32.1602 8.75391 33.543 9.55078 34.9258C10.3711 36.3086 11.5781 37 13.1719 37H34.8281C36.4219 37 37.6172 36.3086 38.4141 34.9258C39.2344 33.543 39.2461 32.1602 38.4492 30.7773ZM23.2617 19H24.7383V28H23.2617V19ZM24 31.7617C23.6953 31.7617 23.4258 31.6562 23.1914 31.4453C22.9805 31.2109 22.875 30.9414 22.875 30.6367C22.875 30.3086 22.9805 30.0391 23.1914 29.8281C23.4258 29.6172 23.6953 29.5117 24 29.5117C24.3047 29.5117 24.5625 29.6172 24.7734 29.8281C25.0078 30.0391 25.125 30.3086 25.125 30.6367C25.125 30.9414 25.0078 31.2109 24.7734 31.4453C24.5625 31.6562 24.3047 31.7617 24 31.7617Z" fill="#56504C"/>
-                  </svg>
-
-                  Debes autorizar el Mandato de Cargo para continuar.
-
-                  <button type="button" class="cerrar-modal-alerta" data-bs-dismiss="alert" aria-label="Close">
-                    <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.8281 21.9844C16.9375 22.0938 16.9922 22.2344 16.9922 22.4062C16.9922 22.5781 16.9375 22.7188 16.8281 22.8281C16.7031 22.9375 16.5547 22.9922 16.3828 22.9922C16.2266 22.9922 16.0938 22.9375 15.9844 22.8281L9 15.8438L2.01562 22.8281C1.90625 22.9375 1.76563 22.9922 1.59375 22.9922C1.42187 22.9922 1.28125 22.9375 1.17188 22.8281C1.0625 22.7031 1.00781 22.5625 1.00781 22.4062C1.00781 22.2344 1.0625 22.0938 1.17188 21.9844L8.15625 15L1.17188 8.01562C1.0625 7.90625 1.00781 7.76562 1.00781 7.59375C1.00781 7.42188 1.0625 7.28125 1.17188 7.17188C1.29688 7.0625 1.4375 7.00781 1.59375 7.00781C1.76563 7.00781 1.90625 7.0625 2.01562 7.17188L9 14.1562L15.9844 7.17188C16.0938 7.0625 16.2344 7.00781 16.4062 7.00781C16.5781 7.00781 16.7188 7.0625 16.8281 7.17188C16.9375 7.29688 16.9922 7.44531 16.9922 7.61719C16.9922 7.77344 16.9375 7.90625 16.8281 8.01562L9.84375 15L16.8281 21.9844Z" fill="#56504C"/>
-                      </svg>
-                    
-                  </button>
-                </div>
-
-                <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
-                  <button type="button" class="btn btn-outline-secondary">Volver</button>
-                  <button type="button" class="btn btn-primary">Continuar</button>
-                </div>
-
           </div>
 
-      </main>
+        </div>
 
-<!--Body Buttom-->
+      </div>
 
+      <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M38.4492 30.7773L26.5664 10C26.0039 8.99219 25.1484 8.48828 24 8.48828C22.8516 8.48828 21.9961 8.99219 21.4336 10L9.55078 30.7773C8.75391 32.1602 8.75391 33.543 9.55078 34.9258C10.3711 36.3086 11.5781 37 13.1719 37H34.8281C36.4219 37 37.6172 36.3086 38.4141 34.9258C39.2344 33.543 39.2461 32.1602 38.4492 30.7773ZM23.2617 19H24.7383V28H23.2617V19ZM24 31.7617C23.6953 31.7617 23.4258 31.6562 23.1914 31.4453C22.9805 31.2109 22.875 30.9414 22.875 30.6367C22.875 30.3086 22.9805 30.0391 23.1914 29.8281C23.4258 29.6172 23.6953 29.5117 24 29.5117C24.3047 29.5117 24.5625 29.6172 24.7734 29.8281C25.0078 30.0391 25.125 30.3086 25.125 30.6367C25.125 30.9414 25.0078 31.2109 24.7734 31.4453C24.5625 31.6562 24.3047 31.7617 24 31.7617Z"
+            fill="#56504C" />
+        </svg>
 
+        Debes autorizar el uso de datos para contactabilidad para continuar.
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Términos y Condiciones de Contactabilidad</h5>
+        <button type="button" class="cerrar-modal-alerta" data-bs-dismiss="alert" aria-label="Close">
+          <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.8281 21.9844C16.9375 22.0938 16.9922 22.2344 16.9922 22.4062C16.9922 22.5781 16.9375 22.7188 16.8281 22.8281C16.7031 22.9375 16.5547 22.9922 16.3828 22.9922C16.2266 22.9922 16.0938 22.9375 15.9844 22.8281L9 15.8438L2.01562 22.8281C1.90625 22.9375 1.76563 22.9922 1.59375 22.9922C1.42187 22.9922 1.28125 22.9375 1.17188 22.8281C1.0625 22.7031 1.00781 22.5625 1.00781 22.4062C1.00781 22.2344 1.0625 22.0938 1.17188 21.9844L8.15625 15L1.17188 8.01562C1.0625 7.90625 1.00781 7.76562 1.00781 7.59375C1.00781 7.42188 1.0625 7.28125 1.17188 7.17188C1.29688 7.0625 1.4375 7.00781 1.59375 7.00781C1.76563 7.00781 1.90625 7.0625 2.01562 7.17188L9 14.1562L15.9844 7.17188C16.0938 7.0625 16.2344 7.00781 16.4062 7.00781C16.5781 7.00781 16.7188 7.0625 16.8281 7.17188C16.9375 7.29688 16.9922 7.44531 16.9922 7.61719C16.9922 7.77344 16.9375 7.90625 16.8281 8.01562L9.84375 15L16.8281 21.9844Z"
+              fill="#56504C" />
+          </svg>
 
-        <button class="cerrar-modal">
-          <img src="../../src/img/ic_close_modal.svg" data-bs-dismiss="modal">
         </button>
       </div>
-      <div class="modal-body">
-        <p class="fw-bold">Autorizo que mi información personal sea recopilada, almacenada, tratada y divulgada
-          por Itaú, según la normativa vigente y conforme al Acuerdo de Privacidad.</p>
 
-        <ol>
-          <li>Autorización de tratamiento: Por medio de la contratación de este seguro autorizo,
-            como responsables de bases de datos, a las sociedades: BNP Paribas Cardif Seguros
-            Generales S.A., BNP Paribas Cardif Seguros de Vida S.A. y BNP Paribas Cardif Servicios y
-            Asistencia Ltda. (conjuntamente “BNP Paribas Cardif”) a tratar mis datos personales, de
-            acuerdo a los fines y condiciones aquí descritos. Los datos que autorizo tratar son los
-            contenidos en esta solicitud, y aquellos que más adelante resulten necesarios para el
-            otorgamiento de los productos y/o servicios contratados de BNP Paribas Cardif.</li>
+      <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M38.4492 30.7773L26.5664 10C26.0039 8.99219 25.1484 8.48828 24 8.48828C22.8516 8.48828 21.9961 8.99219 21.4336 10L9.55078 30.7773C8.75391 32.1602 8.75391 33.543 9.55078 34.9258C10.3711 36.3086 11.5781 37 13.1719 37H34.8281C36.4219 37 37.6172 36.3086 38.4141 34.9258C39.2344 33.543 39.2461 32.1602 38.4492 30.7773ZM23.2617 19H24.7383V28H23.2617V19ZM24 31.7617C23.6953 31.7617 23.4258 31.6562 23.1914 31.4453C22.9805 31.2109 22.875 30.9414 22.875 30.6367C22.875 30.3086 22.9805 30.0391 23.1914 29.8281C23.4258 29.6172 23.6953 29.5117 24 29.5117C24.3047 29.5117 24.5625 29.6172 24.7734 29.8281C25.0078 30.0391 25.125 30.3086 25.125 30.6367C25.125 30.9414 25.0078 31.2109 24.7734 31.4453C24.5625 31.6562 24.3047 31.7617 24 31.7617Z"
+            fill="#56504C" />
+        </svg>
 
-          <li>...</li>
+        Debes autorizar el Mandato de Cargo para continuar.
 
-        </ol>
+        <button type="button" class="cerrar-modal-alerta" data-bs-dismiss="alert" aria-label="Close">
+          <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.8281 21.9844C16.9375 22.0938 16.9922 22.2344 16.9922 22.4062C16.9922 22.5781 16.9375 22.7188 16.8281 22.8281C16.7031 22.9375 16.5547 22.9922 16.3828 22.9922C16.2266 22.9922 16.0938 22.9375 15.9844 22.8281L9 15.8438L2.01562 22.8281C1.90625 22.9375 1.76563 22.9922 1.59375 22.9922C1.42187 22.9922 1.28125 22.9375 1.17188 22.8281C1.0625 22.7031 1.00781 22.5625 1.00781 22.4062C1.00781 22.2344 1.0625 22.0938 1.17188 21.9844L8.15625 15L1.17188 8.01562C1.0625 7.90625 1.00781 7.76562 1.00781 7.59375C1.00781 7.42188 1.0625 7.28125 1.17188 7.17188C1.29688 7.0625 1.4375 7.00781 1.59375 7.00781C1.76563 7.00781 1.90625 7.0625 2.01562 7.17188L9 14.1562L15.9844 7.17188C16.0938 7.0625 16.2344 7.00781 16.4062 7.00781C16.5781 7.00781 16.7188 7.0625 16.8281 7.17188C16.9375 7.29688 16.9922 7.44531 16.9922 7.61719C16.9922 7.77344 16.9375 7.90625 16.8281 8.01562L9.84375 15L16.8281 21.9844Z"
+              fill="#56504C" />
+          </svg>
 
+        </button>
       </div>
-      <div class="modal-footer">
 
-        <button type="button" class="btn btn-primary">Acepto los terminos y condiciones</button>
+      <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+        <button type="button" class="btn btn-outline-secondary">Volver</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+
+    </div>
+
+  </main>
+  <!--Contenido fin-->
+
+  <!--Modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Términos y Condiciones de Contactabilidad</h5>
+
+          <button class="cerrar-modal">
+            <img src="../../src/img/ic_close_modal.svg" data-bs-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold">Autorizo que mi información personal sea recopilada, almacenada, tratada y divulgada
+            por Itaú, según la normativa vigente y conforme al Acuerdo de Privacidad.</p>
+
+          <ol>
+            <li>Autorización de tratamiento: Por medio de la contratación de este seguro autorizo,
+              como responsables de bases de datos, a las sociedades: BNP Paribas Cardif Seguros
+              Generales S.A., BNP Paribas Cardif Seguros de Vida S.A. y BNP Paribas Cardif Servicios y
+              Asistencia Ltda. (conjuntamente “BNP Paribas Cardif”) a tratar mis datos personales, de
+              acuerdo a los fines y condiciones aquí descritos. Los datos que autorizo tratar son los
+              contenidos en esta solicitud, y aquellos que más adelante resulten necesarios para el
+              otorgamiento de los productos y/o servicios contratados de BNP Paribas Cardif.</li>
+
+            <li>...</li>
+
+          </ol>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary">Acepto los terminos y condiciones</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Aceptación de Mandato de Cargo</h5>
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Aceptación de Mandato de Cargo</h5>
 
-        <button class="cerrar-modal">
-          <img src="../../src/img/ic_close_modal.svg" data-bs-dismiss="modal">
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Por este mismo acto, autorizo expresamente a mi institución financiera para que la prima de este seguro se me descuente de mi cuenta corriente Itaú.
-          La presente autorización se mantendrá vigente mientras se mantenga vigente este seguro. El presente mandato será esencialmente revocable. 
-          Todos los mandatos que el afiliado y sus codeudores han otorgado a Itaú en virtud del presente instrumento, han sido extendidos en forma voluntaria. 
-          El asegurado expresa que todos ellos han expresado fielmente sus finalidades y que constan de las cláusulas del presente instrumento. 
-          El asegurado declara haber recibido de parte de Itaú en forma cabal y oportuna, toda la información necesaria acerca de los mandatos entregados, los 
-          que para todos los efectos legales son entregados en interés conjunto del asegurado, de Itaú y de la Compañía.</p>
-      </div>
-      <div class="modal-footer">
+          <button class="cerrar-modal">
+            <img src="../../src/img/ic_close_modal.svg" data-bs-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Por este mismo acto, autorizo expresamente a mi institución financiera para que la prima de este seguro se
+            me descuente de mi cuenta corriente Itaú.
+            La presente autorización se mantendrá vigente mientras se mantenga vigente este seguro. El presente mandato
+            será esencialmente revocable.
+            Todos los mandatos que el afiliado y sus codeudores han otorgado a Itaú en virtud del presente instrumento,
+            han sido extendidos en forma voluntaria.
+            El asegurado expresa que todos ellos han expresado fielmente sus finalidades y que constan de las cláusulas
+            del presente instrumento.
+            El asegurado declara haber recibido de parte de Itaú en forma cabal y oportuna, toda la información
+            necesaria acerca de los mandatos entregados, los
+            que para todos los efectos legales son entregados en interés conjunto del asegurado, de Itaú y de la
+            Compañía.</p>
+        </div>
+        <div class="modal-footer">
 
-        <button type="button" class="btn btn-primary">Acepto los terminos y condiciones</button>
+          <button type="button" class="btn btn-primary">Acepto los terminos y condiciones</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <!--Modal fin-->
 
+  <!--Footer-->
+  <section id="footer" class="footer mt-auto py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap align-items-center py-4">
+        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif" src="../../src/img/cardif-byn.svg"></a>
 
-<!--Footer-->
-<section id="footer" class="footer mt-auto py-3">
-  <div class="container">
-    <footer class="d-flex flex-wrap align-items-center py-4">
-      <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
-        <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-          src="../../src/img/logo_itau_rgb.svg"></a>
-        <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
-            src="../../src/img/cardif-byn.svg"></a>
-
-      </p>
-      <p class="text-footer-1 col-6 justify-content-end">
-        Infórmese sobre la garantía estatal de los depósitos en su banco o
-        en www.cmfchile.cl <br/><span class="text-footer-2 col-8
+        </p>
+        <p class="text-footer-1 col-6 justify-content-end">
+          Infórmese sobre la garantía estatal de los depósitos en su banco o
+          en www.cmfchile.cl <br /><span class="text-footer-2 col-8
             justify-content-end">© 2022 Banco Itaú. Todos los derechos
             reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de
             Chile. </span>
@@ -292,13 +326,11 @@
       </footer>
     </div>
   </section>
-  <!--Fin Footer-->
-
+  <!--Footer fin-->
 </body>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
 
 </html>

@@ -59,14 +59,16 @@ section#navBar {
     background-color: $light;
     padding-bottom: 0px;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .nav-tab1 div ul li.nav-item .nav-link {
-    padding: 8px;
+    padding: 8px 40px;
 }
 
 .nav-tab1 li a{
     color: $textos;
+    border-bottom: 3px solid $g3;
 }
 
 .nav-tab1 a.nav-link.active {

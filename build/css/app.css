@@ -10940,6 +10940,10 @@ button.cerrar-modal-alerta {
   color: #EC7000;
 }
 
+.color-info {
+  color: #4CAC8B;
+}
+
 .alert-verde {
   border-top: 4px solid #008859;
   background-color: #4CAC8B;
@@ -11254,10 +11258,15 @@ section#navBar {
   background-color: #FFFFFF;
   padding-bottom: 0px;
   margin-bottom: 40px;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
 }
 
 .nav-tab1 div ul li.nav-item .nav-link {
-  padding: 8px;
+  padding: 8px 40px;
 }
 
 .nav-tab1 li a {
