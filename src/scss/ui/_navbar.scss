@@ -62,7 +62,7 @@ section#navBar {
 }
 
 .nav-tab1 div ul li.nav-item .nav-link {
-    padding: 8px 40px;
+    padding: 8px;
 }
 
 .nav-tab1 li a{
@@ -72,6 +72,7 @@ section#navBar {
 .nav-tab1 a.nav-link.active {
     border-bottom: 4px solid $naranja;
     color: $naranja;
+
 }
 
 .active1 {
