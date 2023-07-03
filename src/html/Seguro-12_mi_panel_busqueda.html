@@ -62,19 +62,27 @@
 <main id="contenedor-mayor" class="flex-shrink-0">
           <div class="container">
            
-            <h1>Búsqueda de cliente</h1>
-            <h2 class="mb-40">
-              Por favor, ingresa tu RUT o el de la persona a nombre de quién está contratado el seguro.
+            <h1>Mi Panel</h1>
+            <h2 class="mb-40 text-muted">
+              Revisa aquí tus ventas realizadas, su estado y datos de contacto de tu cliente.
             </h2>
                 
                 <div class="col body-buttom">
 
                       <div class="row">
-                        <div class="form-floating mt-3 col-4">
+                        <div class="form-floating mt-3 col">
                           <input type="text" class="form-control" id="floatingInput" placeholder="Buscar RUT del cliente">
-                          <label for="floatingInput">Buscar</label>
+                          <label for="floatingInput">RUT Cliente</label>
                         </div>
-                        <div class="col-2 mt-3">
+                        <div class="form-floating mt-3 col">
+                          <input type="date" class="form-control" id="floatingInput">
+                          <label for="floatingInput">Fecha de inicio</label>
+                        </div>
+                        <div class="form-floating mt-3 col">
+                          <input type="date" class="form-control" id="floatingInput">
+                          <label for="floatingInput">Fecha de termino</label>
+                        </div>
+                        <div class="col mt-3">
                           <select class="form-select form-select-lg" aria-label=".form-select-lg example">
                             <option selected>Estado</option>
                             <option value="1">One</option>
@@ -82,20 +90,15 @@
                             <option value="3">Three</option>
                           </select>
                         </div>
-                        <div class="form-floating mt-3 col-4">
-                          <input type="text" class="form-control" id="floatingInput" placeholder="Buscar RUT del cliente">
-                          <label for="floatingInput">Fecha</label>
-                        </div>
-                        <div class="col-2 mt-3">
-                            <button type="button" class="btn btn-success text-secondary buscar-btn">Buscar coincidencias</button>
-                        </div>
+                        <div class="col mt-3 d-grid">
+                          <button type="button" class="btn btn-primary buscar-btn">Buscar</button>
+                        </div>                      
                       </div>
 
                 </div>
 
               <div class="container-fluid text-end mt-4 g-2 act-buttons ">
-                <button type="button" class="btn btn-outline-secondary">Volver</button>
-                <button type="button" class="btn btn-primary">Continuar</button>
+                <button type="button" class="btn btn-outline-secondary fw-bold">Volver</button>
               </div>
 
 
