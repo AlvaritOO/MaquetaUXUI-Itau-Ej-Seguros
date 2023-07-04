@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../build/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!--toast nuevo beneficiario-->
+    <div
+      class="toast-container position-fixed top-0 end-0 p-3"
+      style="z-index: 99991"
+    >
+      <div
+        id="liveToast"
+        class="toast text-white bg-info border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <b>Beneficiario Inscrito Correctamente</b>
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <div
+        id="liveToast2"
+        class="toast text-white bg-info border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <b>Cambios Guardados Correctamente</b>
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <div
+        id="liveToast3"
+        class="toast text-white bg-info border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <b>Beneficiario Eliminado Correctamente</b>
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none"
+        >
+          <img
+            src="../../src/img/logo-itau.svg"
+            alt="Itaú"
+            class="logo-itau pe-4"
+          />
+          <img src="../../src/img/logo-bnp.svg" alt="BNP" class="" />
+        </a>
+
+        <div class="text-end">
+          <a
+            class="nav-link dropdown-toggle log-ejecutivo"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="../../src/img/ic_log-ejecutivo.svg" />
+            Hola, Leslie
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <nav class="navbar navbar-expand-lg nav-itau">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contratar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Seguros contratados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Siniestros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Nav Bar-->
+
+    <!--Body Buttom-->
+    <main id="contenedor-mayor" class="flex-shrink-0">
+      <section class="mb-5 d-none d-lg-block">
+        <div class="container">
+          <div class="row progreso mt-0">
+            <div class="progress" data-percentage="50">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value">
+                <div>1/3<br /></div>
+              </div>
+            </div>
+            <p class="title-seccion">Beneficiarios</p>
+          </div>
+        </div>
+      </section>
+      <!--fin wizard-->
+      <div class="container px-0">
+        <div class="col body-buttom">
+          <h1 class="mt-2 mb-3 ps-3">Beneficiarios</h1>
+          <p class="ps-3">Selecciona la opción deseada:</p>
+          <div class="row">
+            <div class="col-5 p-4 pb-3">
+              <p>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                  checked
+                />
+                Beneficiario designado
+                <i class="bi bi-info-circle text-secondary ms-2"></i>
+              </p>
+            </div>
+
+            <div class="col p-4 pb-3">
+              <p>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                Herederos legales
+                <i class="bi bi-info-circle text-secondary ms-2"></i>
+              </p>
+            </div>
+          </div>
+          <div id="contenedor-beneficiarios" class="mx-3">
+            <div class="row justify-content-between mb-4">
+              <h2 class="col-11 col-sm-11 col-md-11 col-lg-11">
+                Beneficiario 1:
+              </h2>
+              <div class="col d-none d-lg-block mt-2 text-end">
+                <a
+                  href=""
+                  class="boton-eliminar-beneficiario"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.50781 17.5078C7.36719 17.5078 7.24219 17.4609 7.13281 17.3672C7.03906 17.2578 6.99219 17.1328 6.99219 16.9922V8.50781H8V16.9922C8 17.1328 7.95312 17.2578 7.85938 17.3672C7.76562 17.4609 7.64844 17.5078 7.50781 17.5078ZM11 16.9922V8.50781H9.99219V16.9922C9.99219 17.1328 10.0391 17.2578 10.1328 17.3672C10.2422 17.4609 10.3672 17.5078 10.5078 17.5078C10.6328 17.5078 10.7422 17.4609 10.8359 17.3672C10.9453 17.2578 11 17.1328 11 16.9922ZM14 16.9922V8.50781H12.9922V16.9922C12.9922 17.1328 13.0391 17.2578 13.1328 17.3672C13.2422 17.4609 13.3672 17.5078 13.5078 17.5078C13.6328 17.5078 13.7422 17.4609 13.8359 17.3672C13.9453 17.2578 14 17.1328 14 16.9922ZM20 4.5V6.49219C20 6.77344 19.8984 7.01562 19.6953 7.21875C19.5078 7.40625 19.2734 7.5 18.9922 7.5H2C1.71875 7.5 1.47656 7.40625 1.27344 7.21875C1.08594 7.01562 0.992188 6.77344 0.992188 6.49219V4.5C0.992188 4.21875 1.08594 3.98438 1.27344 3.79688C1.47656 3.59375 1.71875 3.49219 2 3.49219H6.00781V1.5C6.00781 1.21875 6.10156 0.984375 6.28906 0.796875C6.49219 0.59375 6.72656 0.492188 6.99219 0.492188H14C14.2812 0.492188 14.5156 0.59375 14.7031 0.796875C14.9062 0.984375 15.0078 1.21875 15.0078 1.5V3.49219H18.9922C19.2734 3.49219 19.5078 3.59375 19.6953 3.79688C19.8984 3.98438 20 4.21875 20 4.5ZM6.99219 3.49219H14V1.5H6.99219V3.49219ZM18.9922 4.5H2V6.49219H18.9922V4.5ZM17 8.50781V17.5078C17 18.0547 16.8047 18.5234 16.4141 18.9141C16.0234 19.3047 15.5547 19.5 15.0078 19.5H6.00781C5.44531 19.5 4.96875 19.3047 4.57812 18.9141C4.1875 18.5234 3.99219 18.0547 3.99219 17.5078V8.50781H3.00781V17.5078C3.00781 18.3359 3.29688 19.0391 3.875 19.6172C4.46875 20.2109 5.17969 20.5078 6.00781 20.5078H15.0078C15.8359 20.5078 16.5391 20.2109 17.1172 19.6172C17.7109 19.0391 18.0078 18.3359 18.0078 17.5078V8.50781H17Z"
+                      fill="#56504C"
+                    />
+                    <path
+                      d="M-1 20.6953H23V21.8906H-1V20.6953Z"
+                      fill="#56504C"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <form>
+              <div class="row">
+                <div class="form-floating mb-3 col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Leslie"
+                  />
+                  <label for="floatingInput"
+                    >Nombres <span class="text-danger">*</span></label
+                  >
+                </div>
+                <div class="form-floating mb-3 col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Martinez"
+                  />
+                  <label for="floatingInput"
+                    >Apellido paterno <span class="text-danger">*</span></label
+                  >
+                </div>
+                <div class="form-floating mb-3 col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Diaz"
+                  />
+                  <label for="floatingInput"
+                    >Apellido materno <span class="text-danger">*</span></label
+                  >
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-floating mb-3 col-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="RUT"
+                  />
+                  <label for="floatingInput"
+                    >RUT <span class="text-danger">*</span></label
+                  >
+                </div>
+
+                <div class="form-floating mb-3 col-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="987654321"
+                  />
+                  <label for="floatingInput"
+                    >Número de contacto
+                    <span class="text-danger">*</span></label
+                  >
+                </div>
+
+                <div class="mb-3 col-3">
+                  <select
+                    class="form-select form-select-lg"
+                    aria-label="form-select-lg example"
+                  >
+                    <option selected>
+                      Parentesco <span class="text-danger">*</span>
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="form-floating mb-3 col-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput"
+                    >Porcentaje asignado
+                    <span class="text-danger">*</span></label
+                  >
+                </div>
+              </div>
+            </form>
+            <div class="row justify-content-between mt-4 mb-4">
+              <h2 class="col-11 col-sm-11 col-md-11 col-lg-11">
+                Beneficiario 2:
+              </h2>
+              <div class="col d-none d-lg-block mt-2 text-end">
+                <a
+                  href=""
+                  class="boton-eliminar-beneficiario"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.50781 17.5078C7.36719 17.5078 7.24219 17.4609 7.13281 17.3672C7.03906 17.2578 6.99219 17.1328 6.99219 16.9922V8.50781H8V16.9922C8 17.1328 7.95312 17.2578 7.85938 17.3672C7.76562 17.4609 7.64844 17.5078 7.50781 17.5078ZM11 16.9922V8.50781H9.99219V16.9922C9.99219 17.1328 10.0391 17.2578 10.1328 17.3672C10.2422 17.4609 10.3672 17.5078 10.5078 17.5078C10.6328 17.5078 10.7422 17.4609 10.8359 17.3672C10.9453 17.2578 11 17.1328 11 16.9922ZM14 16.9922V8.50781H12.9922V16.9922C12.9922 17.1328 13.0391 17.2578 13.1328 17.3672C13.2422 17.4609 13.3672 17.5078 13.5078 17.5078C13.6328 17.5078 13.7422 17.4609 13.8359 17.3672C13.9453 17.2578 14 17.1328 14 16.9922ZM20 4.5V6.49219C20 6.77344 19.8984 7.01562 19.6953 7.21875C19.5078 7.40625 19.2734 7.5 18.9922 7.5H2C1.71875 7.5 1.47656 7.40625 1.27344 7.21875C1.08594 7.01562 0.992188 6.77344 0.992188 6.49219V4.5C0.992188 4.21875 1.08594 3.98438 1.27344 3.79688C1.47656 3.59375 1.71875 3.49219 2 3.49219H6.00781V1.5C6.00781 1.21875 6.10156 0.984375 6.28906 0.796875C6.49219 0.59375 6.72656 0.492188 6.99219 0.492188H14C14.2812 0.492188 14.5156 0.59375 14.7031 0.796875C14.9062 0.984375 15.0078 1.21875 15.0078 1.5V3.49219H18.9922C19.2734 3.49219 19.5078 3.59375 19.6953 3.79688C19.8984 3.98438 20 4.21875 20 4.5ZM6.99219 3.49219H14V1.5H6.99219V3.49219ZM18.9922 4.5H2V6.49219H18.9922V4.5ZM17 8.50781V17.5078C17 18.0547 16.8047 18.5234 16.4141 18.9141C16.0234 19.3047 15.5547 19.5 15.0078 19.5H6.00781C5.44531 19.5 4.96875 19.3047 4.57812 18.9141C4.1875 18.5234 3.99219 18.0547 3.99219 17.5078V8.50781H3.00781V17.5078C3.00781 18.3359 3.29688 19.0391 3.875 19.6172C4.46875 20.2109 5.17969 20.5078 6.00781 20.5078H15.0078C15.8359 20.5078 16.5391 20.2109 17.1172 19.6172C17.7109 19.0391 18.0078 18.3359 18.0078 17.5078V8.50781H17Z"
+                      fill="#56504C"
+                    />
+                    <path
+                      d="M-1 20.6953H23V21.8906H-1V20.6953Z"
+                      fill="#56504C"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <form>
+              <div class="row">
+                <div class="form-floating mb-3 col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Leslie"
+                  />
+                  <label for="floatingInput"
+                    >Nombres <span class="text-danger">*</span></label
+                  >
+                </div>
+                <div class="form-floating mb-3 col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Martinez"
+                  />
+                  <label for="floatingInput"
+                    >Apellido paterno <span class="text-danger">*</span></label
+                  >
+                </div>
+                <div class="form-floating mb-3 col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Diaz"
+                  />
+                  <label for="floatingInput"
+                    >Apellido materno <span class="text-danger">*</span></label
+                  >
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-floating mb-3 col-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="RUT"
+                  />
+                  <label for="floatingInput"
+                    >RUT <span class="text-danger">*</span></label
+                  >
+                </div>
+
+                <div class="form-floating mb-3 col-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="987654321"
+                  />
+                  <label for="floatingInput"
+                    >Número de contacto
+                    <span class="text-danger">*</span></label
+                  >
+                </div>
+
+                <div class="mb-3 col-3">
+                  <select
+                    class="form-select form-select-lg"
+                    aria-label="form-select-lg example"
+                  >
+                    <option selected>
+                      Parentesco <span class="text-danger">*</span>
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="form-floating mb-3 col-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput"
+                    >Porcentaje asignado
+                    <span class="text-danger">*</span></label
+                  >
+                </div>
+              </div>
+            </form>
+            <div class="text-muted mt-4">*Todos los campos son obligatorios</div>
+
+            <div class="row justify-content-end mt-4">
+              <div class="col-12 text-center">
+                <button
+                  type="button"
+                  class="btn btn-success text-secondary fw-bold"
+                  id="liveToastBtn2"
+                >
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.5 11.5078C21.5 11.6328 21.4453 11.75 21.3359 11.8594C21.2422 11.9531 21.1328 12 21.0078 12H13.5078V19.5C13.5078 19.6406 13.4531 19.7578 13.3438 19.8516C13.25 19.9453 13.1328 19.9922 12.9922 19.9922C12.8672 19.9922 12.75 19.9453 12.6406 19.8516C12.5469 19.7578 12.5 19.6406 12.5 19.5V12H5C4.85938 12 4.74219 11.9531 4.64844 11.8594C4.55469 11.75 4.50781 11.6328 4.50781 11.5078C4.50781 11.3672 4.55469 11.25 4.64844 11.1562C4.74219 11.0469 4.85938 10.9922 5 10.9922H12.5V3.49219C12.5 3.36719 12.5469 3.25781 12.6406 3.16406C12.75 3.05469 12.8672 3 12.9922 3C13.1328 3 13.25 3.05469 13.3438 3.16406C13.4531 3.25781 13.5078 3.36719 13.5078 3.49219V10.9922H21.0078C21.1328 10.9922 21.2422 11.0469 21.3359 11.1562C21.4453 11.25 21.5 11.3672 21.5 11.5078Z"
+                      fill="#003399"
+                    />
+                    </svg>Agregar beneficiario
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+          <button type="button" class="btn btn-outline-secondary">
+            Volver
+          </button>
+          <button type="button" class="btn btn-primary">Continuar</button>
+        </div>
+      </div>
+
+      <!--           <div class="alert alert-danger text-white alert-dismissible fade show mt-5" role="alert">
+            <div class="row">
+              <div class="col-1 justify-content-end ms-3">
+                <svg width="46" height="46" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M44.8574 36.2402L30.9941 12C30.3379 10.8242 29.3398 10.2363 28 10.2363C26.6602 10.2363 25.6621 10.8242 25.0059 12L11.1426 36.2402C10.2129 37.8535 10.2129 39.4668 11.1426 41.0801C12.0996 42.6934 13.5078 43.5 15.3672 43.5H40.6328C42.4922 43.5 43.8867 42.6934 44.8164 41.0801C45.7734 39.4668 45.7871 37.8535 44.8574 36.2402ZM27.1387 22.5H28.8613V33H27.1387V22.5ZM28 37.3887C27.6445 37.3887 27.3301 37.2656 27.0566 37.0195C26.8105 36.7461 26.6875 36.4316 26.6875 36.0762C26.6875 35.6934 26.8105 35.3789 27.0566 35.1328C27.3301 34.8867 27.6445 34.7637 28 34.7637C28.3555 34.7637 28.6562 34.8867 28.9023 35.1328C29.1758 35.3789 29.3125 35.6934 29.3125 36.0762C29.3125 36.4316 29.1758 36.7461 28.9023 37.0195C28.6562 37.2656 28.3555 37.3887 28 37.3887Z" fill="#fff"/>
+                  </svg>
+              </div>
+              <div class="col-6">
+                <strong>Has alcanzado el límite máximo de beneficiarios que puedes incluir.</strong><br/> Recuerda que puedes agregar hasta 7 beneficiarios.
+              </div>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close" width="18" height="32"></button>
+          </div> -->
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog shadow">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title color-primary" id="exampleModalLabel">
+              Quitar Beneficiario
+            </h5>
+
+            <button class="cerrar-modal">
+              <img src="../img/ic_close_modal.svg" data-bs-dismiss="modal" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold">
+              ¿Esta seguro que desea quitar este beneficiario?
+            </p>
+            <p>Esta acción no se puede deshacer</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-primary" id="liveToastBtn3">
+              Confirmar Eliminación
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <section id="footer" class="footer mt-auto py-3">
+      <div class="container">
+        <footer class="d-flex flex-wrap align-items-center py-4">
+          <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+            <a href="#"
+              ><img
+                class="col-2 logo-footer me-4"
+                alt="BNP Paribas Cardif"
+                src="../../src/img/logo_itau_rgb.svg"
+            /></a>
+            <a href="#"
+              ><img
+                class="col-5 logo-footer"
+                alt="BNP Paribas Cardif"
+                src="../../src/img/cardif-byn.svg"
+            /></a>
+          </p>
+          <p class="text-footer-1 col-6 justify-content-end">
+            Infórmese sobre la garantía estatal de los depósitos en su banco o
+            en www.cmfchile.cl <br /><span
+              class="text-footer-2 col-8 justify-content-end"
+              >© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente
+              Riesco 5537, Las Condes. Santiago de Chile.
+            </span>
+          </p>
+        </footer>
+      </div>
+    </section>
+    <!--Fin Footer-->
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+
+  <script>
+    //modal eliminar beneficiario
+    $("#confirmarEliminacion").on("click", function (e) {
+      $("#exampleModal").modal("hide");
+      alert(
+        'mostramos un toast que diga "Beneficiario eliminado correctamente."'
+      );
+    });
+  </script>
+
+  <script>
+    $(function () {
+      // Enables popover
+      $("[data-toggle=popover]").popover();
+    });
+
+    //toast nuevo beneficiario
+    var toastTrigger = document.getElementById("liveToastBtn");
+    var toastLiveExample = document.getElementById("liveToast");
+    if (toastTrigger) {
+      toastTrigger.addEventListener("click", function () {
+        var toast = new bootstrap.Toast(toastLiveExample);
+        toast.show();
+        //alert('limpiamos y colapsamos el formulario');
+      });
+    }
+
+    var toastTrigger2 = document.getElementById("liveToastBtn2");
+    var toastLiveExample2 = document.getElementById("liveToast2");
+    if (toastTrigger2) {
+      toastTrigger2.addEventListener("click", function () {
+        var toast = new bootstrap.Toast(toastLiveExample2);
+        toast.show();
+      });
+    }
+
+    var toastTrigger3 = document.getElementById("liveToastBtn3");
+    var toastLiveExample3 = document.getElementById("liveToast3");
+    if (toastTrigger3) {
+      toastTrigger3.addEventListener("click", function () {
+        var toast = new bootstrap.Toast(toastLiveExample3);
+        toast.show();
+        //alert('limpiamos y colapsamos el formulario');
+      });
+    }
+  </script>
+</html>
