@@ -520,3 +520,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress {
 		margin-bottom: 1em;
 	}
+
+.accordion {
+    --bs-accordion-active-bg: #F3F0EF;
+}
+
+.accordion-custom-width {
+    width: 1016px !important;
+}
