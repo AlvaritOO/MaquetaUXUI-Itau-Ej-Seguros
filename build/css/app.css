@@ -10940,18 +10940,26 @@ button.cerrar-modal-alerta {
   color: #EC7000;
 }
 
+.color-info {
+  color: #4CAC8B;
+}
+
+.color-warning {
+  color: #F1AE2F;
+}
+
 .alert-verde {
-  border-top: 4px solid #008859;
-  background-color: #4CAC8B;
+  border-left: 4px solid #008859;
+  background-color: #DEF0E9;
 }
 
 .alert-warning {
-  border-top: 4px solid #F1AE2F;
-  background-color: #F5C66D;
+  border-left: 4px solid #F1AE2F;
+  background-color: #FCEBCB;
 }
 
 .alert-danger {
-  border-top: 4px solid #B71C1C;
+  border-left: 4px solid #B71C1C;
   background-color: #CD6060;
 }
 
@@ -11046,7 +11054,6 @@ a:hover {
 section#contenedor-mayor {
   width: auto;
   height: auto;
-  padding: 0 30px;
 }
 
 .body-buttom {
@@ -11576,16 +11583,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .nav-itau {
   background-color: #FFFFFF;
-  padding-bottom: 0px;
-  margin-bottom: 40px;
 }
 
 .nav-itau div ul li.nav-item .nav-link {
-  padding: 8px 40px;
+  padding: 18px 50px;
 }
 
 .nav-itau li a {
-  color: #56504C;
+  color: #EC7000;
 }
 
 .nav-itau a.nav-link.active {
@@ -11609,6 +11614,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #FFFFFF;
   padding-bottom: 0px;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .nav-tab1 div ul li.nav-item .nav-link {
