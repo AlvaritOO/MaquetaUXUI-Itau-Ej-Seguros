@@ -11565,6 +11565,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 1em;
 }
 
+section#navBar {
+  background-color: #FFFFFF;
+}
+
+.header-bg {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
 .log-ejecutivo {
   border-radius: 22px;
   border: 1px solid #EFE9E5;
