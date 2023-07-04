@@ -78,19 +78,23 @@ button.cerrar-modal-alerta {
     color: $info;
 }
 
+.color-warning{
+    color: #F1AE2F;
+}
+
 
 .alert-verde {
-    border-top: 4px solid #008859;
-    background-color: #4CAC8B;
+    border-left: 4px solid #008859;
+    background-color: #DEF0E9;
 }
 
 .alert-warning {
-    border-top: 4px solid #F1AE2F;
-    background-color: #F5C66D;
+    border-left: 4px solid #F1AE2F;
+    background-color: #FCEBCB;
 }
 
 .alert-danger {
-    border-top: 4px solid #B71C1C;
+    border-left: 4px solid #B71C1C;
     background-color: #CD6060;;
 }
 
