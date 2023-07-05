@@ -74,14 +74,18 @@ button.cerrar-modal-alerta {
 .color-primary{
     color: $naranja;
 }
+
 .color-info{
     color: $info;
+}
+
+.color-verde{
+    color: $verde;
 }
 
 .color-warning{
     color: #F1AE2F;
 }
-
 
 .alert-verde {
     border-left: 4px solid #008859;
@@ -95,7 +99,12 @@ button.cerrar-modal-alerta {
 
 .alert-danger {
     border-left: 4px solid #B71C1C;
-    background-color: #CD6060;;
+    background-color: #CD6060;
+}
+
+.alert-info {
+    border-left: 4px solid #007AB7;
+    background-color: #DEEEF6;
 }
 
 .sombra-itau1{
