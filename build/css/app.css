@@ -10977,7 +10977,7 @@ a.card-box {
 }
 
 .card-plan.sombra-itau1.active {
-  border: 1px solid #EC7000;
+  border: 3px solid #EC7000;
 }
 
 .card-plan.active .numero-plan {
@@ -11571,6 +11571,27 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .accordion-custom-width {
   width: 1016px !important;
+}
+
+.bg-neutral {
+  background-color: #FAF7F5;
+}
+
+.card-noactive {
+  border: 2px solid #FAF7F5;
+}
+
+.cardplan-size {
+  max-width: 348px !important;
+  border-radius: 8px;
+}
+
+.cobertura-fs {
+  font-size: 14px !important;
+}
+
+.shadow-active {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.18), 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 section#navBar {

@@ -74,7 +74,7 @@
   <main id="contenedor-mayor" class="flex-shrink-0">
     <div class="container">
 
-      <h1 class="my-5">Detalle del Seguro</h1>
+      <h1 class="my-5">Detalle Seguro de vida</h1>
 
       <div class="col body-buttom mt-3 mb-4">
         <div class="accordion accordion-flush accordion-custom-width m-auto" id="accordionFlushExample">
@@ -99,68 +99,180 @@
 
 
         <div class="row">
-          <div class="container mb-40 mt-5">
-            <div class="row justify-content-md-center">
+          <div class="container mb-4 mt-5">
+            <div class="row justify-content-md-center mx-5">
 
-              <card class="col-lg-3 card-box" href="">
-                <div class="card-plan sombra-itau1 active">
-                  <img class="check-plan" src="../../src/img/ic_confirmacion.svg">
-                  <h3 class="text-center titulo-seguro mt-4">Plan 1</h3>
-                  <p class="text-center pre-text">Prima mensual, IVA incluido</p>
-
-                  <ul class="list-unstyled text-center item-destacado">
-                    <li>(UF 0,21)</li>
-                    <li>$7.197</li>
-                  </ul>
-
-                  <p class="text-center pre-text">Coberturas</p>
-                  <ul class="list-unstyled text-center item-destacado mb-40">
-                    <p class="fw-bold">Titular Asegurado</p>
-                    <li>Vida UF 500</li>
-                    <li>ITP 2/3 UF 500</li>
-                  </ul>
-                  <div class="ps-5 ms-5 mb-3">
-                    <button type="button" class="btn btn-primary">Contratar</button>
+              <card class="col-lg-4 card-box mb-5 cardplan-size" href="">
+                <div class="card-plan sombra-itau1 active rounded-top shadow-active">
+                  <div class="card-header p-4 bg-primary">
+                    <h3 class="text-center titulo-seguro mt-2 text-white">Plan 1</h3>
                   </div>
+                  <p class="text-center mt-4 fs-6">Prima mensual*<br>
+                    <span class="text-center text-primary fs-5">$ 5.849 (UF 0,16)</span>
+                  </p>
+                  <p class="text-center mt-4 fs-6">Cobertura de fallecimiento<br>
+                    <span class="text-center text-primary fs-5">UF 500</span>
+                  </p>
+                  <div class="cobertura-fs">
+                    <span class="ps-3"><b>Coberturas:</b><br><span class="ps-3">Titular Asegurado</span></span>
+                    <ul class="ms-2 mb-3 me-2">
+                      <li>Fallecimiento: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Accidente o enfermedad: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Cobertura de invalidez permanente 2/3 por accidente o enfermedad. <span class="text-secondary fw-bold">UF 500</span></li>
+                    </ul>
+                  </div>
+                  <div class="divisor mx-3"></div>
+                  <p class="text-center px-4 cobertura-fs">
+                    *Los precios se muestran con IVA incluido<br> y el valor de la UF  al día
+                  </p>
                 </div>
               </card>
 
-
-              <card class="col-lg-3 card-box">
-                <div class="card-plan sombra-itau1">
-
-                  <img class="check-plan invisible" src="../../src/img/ic_confirmacion.svg">
-
-                  <h3 class="text-center titulo-seguro mt-4">Plan 2</h3>
-                  <p class="text-center pre-text">Prima mensual, IVA incluido</p>
-
-                  <ul class="list-unstyled text-center item-destacado">
-                    <li>(UF 0,21)</li>
-                    <li>$7.197</li>
-                  </ul>
-                  <p class="text-center pre-text">Coberturas</p>
-                  <ul class="list-unstyled text-center item-destacado mb-40">
-                    <p class="fw-bold">Titular Asegurado</p>
-                    <li>Vida UF 1000</li>
-                    <li>ITP 2/3 UF 1000</li>
-                  </ul>
-                  <div class="ps-5 ms-5 mb-3">
-                    <button type="button" class="btn btn-primary">Contratar</button>
+              <card class="col-lg-4 card-box mb-5 cardplan-size" href="">
+                <div class="card-plan sombra-itau1 card-noactive">
+                  <div class="card-header p-4 bg-neutral rounded-top">
+                    <h3 class="text-center titulo-seguro mt-2 text-dark">Plan 2</h3>
                   </div>
+                  <p class="text-center mt-4 fs-6">Prima mensual*<br>
+                    <span class="text-center fw-bolder fs-5">$ 5.849 (UF 0,16)</span>
+                  </p>
+                  <p class="text-center mt-4 fs-6">Cobertura de fallecimiento<br>
+                    <span class="text-center fw-bolder fs-5">UF 500</span>
+                  </p>
+                  <div class="cobertura-fs">
+                    <span class="ps-3"><b>Coberturas:</b><br><span class="ps-3">Titular Asegurado</span></span>
+                    <ul class="ms-2 mb-3 me-2">
+                      <li>Fallecimiento: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Accidente o enfermedad: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Cobertura de invalidez permanente 2/3 por accidente o enfermedad. <span class="text-secondary fw-bold">UF 500</span></li>
+                    </ul>
+                  </div>
+                  <div class="divisor mx-3"></div>
+                  <p class="text-center px-2 cobertura-fs">
+                    *Los precios se muestran con IVA incluido<br> y el valor de la UF  al día
+                  </p>
                 </div>
               </card>
+
+              <card class="col-lg-4 card-box mb-5 cardplan-size" href="">
+                <div class="card-plan sombra-itau1 card-noactive">
+                  <div class="card-header p-4 bg-neutral">
+                    <h3 class="text-center titulo-seguro mt-2 text-dark">Plan 3</h3>
+                  </div>
+                  <p class="text-center mt-4 fs-6">Prima mensual*<br>
+                    <span class="text-center fw-bolder fs-5">$ 5.849 (UF 0,16)</span>
+                  </p>
+                  <p class="text-center mt-4 fs-6">Cobertura de fallecimiento<br>
+                    <span class="text-center fw-bolder fs-5">UF 500</span>
+                  </p>
+                  <div class="cobertura-fs">
+                    <span class="ps-3"><b>Coberturas:</b><br><span class="ps-3">Titular Asegurado</span></span>
+                    <ul class="ms-2 mb-3 me-2">
+                      <li>Fallecimiento: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Accidente o enfermedad: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Cobertura de invalidez permanente 2/3 por accidente o enfermedad. <span class="text-secondary fw-bold">UF 500</span></li>
+                    </ul>
+                  </div>
+                  <div class="divisor mx-3"></div>
+                  <p class="text-center px-2 cobertura-fs">
+                    *Los precios se muestran con IVA incluido<br> y el valor de la UF  al día
+                  </p>
+                </div>
+              </card>
+
+              <card class="col-lg-4 card-box mb-5 cardplan-size" href="">
+                <div class="card-plan sombra-itau1 card-noactive">
+                  <div class="card-header p-4 bg-neutral">
+                    <h3 class="text-center titulo-seguro mt-2 text-dark">Plan 4</h3>
+                  </div>
+                  <p class="text-center mt-4 fs-6">Prima mensual*<br>
+                    <span class="text-center fw-bolder fs-5">$ 5.849 (UF 0,16)</span>
+                  </p>
+                  <p class="text-center mt-4 fs-6">Cobertura de fallecimiento<br>
+                    <span class="text-center fw-bolder fs-5">UF 500</span>
+                  </p>
+                  <div class="cobertura-fs">
+                    <span class="ps-3"><b>Coberturas:</b><br><span class="ps-3">Titular Asegurado</span></span>
+                    <ul class="ms-2 mb-3 me-2">
+                      <li>Fallecimiento: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Accidente o enfermedad: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Cobertura de invalidez permanente 2/3 por accidente o enfermedad. <span class="text-secondary fw-bold">UF 500</span></li>
+                    </ul>
+                  </div>
+                  <div class="divisor mx-3"></div>
+                  <p class="text-center px-2 cobertura-fs">
+                    *Los precios se muestran con IVA incluido<br> y el valor de la UF  al día
+                  </p>
+                </div>
+              </card>
+
+              <card class="col-lg-4 card-box mb-5 cardplan-size" href="">
+                <div class="card-plan sombra-itau1 card-noactive">
+                  <div class="card-header p-4 bg-neutral">
+                    <h3 class="text-center titulo-seguro mt-2 text-dark">Plan 5</h3>
+                  </div>
+                  <p class="text-center mt-4 fs-6">Prima mensual*<br>
+                    <span class="text-center fw-bolder fs-5">$ 5.849 (UF 0,16)</span>
+                  </p>
+                  <p class="text-center mt-4 fs-6">Cobertura de fallecimiento<br>
+                    <span class="text-center fw-bolder fs-5">UF 500</span>
+                  </p>
+                  <div class="cobertura-fs">
+                    <span class="ps-3"><b>Coberturas:</b><br><span class="ps-3">Titular Asegurado</span></span>
+                    <ul class="ms-2 mb-3 me-2">
+                      <li>Fallecimiento: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Accidente o enfermedad: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Cobertura de invalidez permanente 2/3 por accidente o enfermedad. <span class="text-secondary fw-bold">UF 500</span></li>
+                    </ul>
+                  </div>
+                  <div class="divisor mx-3"></div>
+                  <p class="text-center px-2 cobertura-fs">
+                    *Los precios se muestran con IVA incluido<br> y el valor de la UF  al día
+                  </p>
+                </div>
+              </card>
+
+              <card class="col-lg-4 card-box mb-5 cardplan-size" href="">
+                <div class="card-plan sombra-itau1 card-noactive">
+                  <div class="card-header p-4 bg-neutral">
+                    <h3 class="text-center titulo-seguro mt-2 text-dark">Plan 6</h3>
+                  </div>
+                  <p class="text-center mt-4 fs-6">Prima mensual*<br>
+                    <span class="text-center fw-bolder fs-5">$ 5.849 (UF 0,16)</span>
+                  </p>
+                  <p class="text-center mt-4 fs-6">Cobertura de fallecimiento<br>
+                    <span class="text-center fw-bolder fs-5">UF 500</span>
+                  </p>
+                  <div class="cobertura-fs">
+                    <span class="ps-3"><b>Coberturas:</b><br><span class="ps-3">Titular Asegurado</span></span>
+                    <ul class="ms-2 mb-3 me-2">
+                      <li>Fallecimiento: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Accidente o enfermedad: <span class="text-secondary fw-bold">UF 500</span></li>
+                      <li>Cobertura de invalidez permanente 2/3 por accidente o enfermedad. <span class="text-secondary fw-bold">UF 500</span></li>
+                    </ul>
+                  </div>
+                  <div class="divisor mx-3"></div>
+                  <p class="text-center px-2 cobertura-fs">
+                    *Los precios se muestran con IVA incluido<br> y el valor de la UF  al día
+                  </p>
+                </div>
+              </card>
+
             </div>
           </div>
 
-          <div class="mt-4">
-            <p> Todas las indemnizaciones son de libre disposición, por lo que tú o tus beneficiarios recibirán el monto
-              directamente. </p>
-            <p> Pesos equivalentes según valor UF al 19/01/2023: $35.246,6 (*) Los valores en pesos están calculados al
-              valor UF del dia de 19/01/2023: $35.246,6 </p>
+          <div class="container mt-2 mx-5 px-5">
+            <ul class="ms-2 mb-3 me-2">
+              <li>(6) Pesos equivalentes según valor UF al 01/07/2020: $28.695,46.</li>
+              <li>(*) Los valores en pesos están calculados al valor UF del día de hoy 28/07/2021: $29.754,76</li>
+            </ul>
           </div>
 
-          <div class="d-grid gap-2 col-6 mx-auto mb-40">
-            <button type="button" class="btn btn-outline-secondary">Descargar el detalle de coberturas</button>
+          <div class="text-center gap-2 mt-4 mx-auto mb-5">
+            <button type="button" class="btn btn-outline-secondary">
+              Descargar el detalle de coberturas<i class="bi bi-chevron-right ps-1"></i>
+
+            </button>
           </div>
         </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -255,7 +367,8 @@
                 </ul>
                 <p>Los asegurados deberán realizar una Declaración Personal de Salud, la cual se efectuará al momento
                   de contratar el seguro en la solicitud de incorporación. En caso de declarar alguna enfermedad o
-                  situación de salud preexistente, la venta no se podrá llevar a término.</p>
+                  situación de salud preexistente, la venta no se podrá llevar a término.
+                </p>
               </div>
             </div>
           </div>
@@ -275,15 +388,22 @@
             <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-
-               <!--  <p class="fw-bold">Con la contratación de tu Seguro Vida Pro Con Ecosistema accederás a los siguientes
-                  beneficios:</p>
-                <p>Coursera: Plataforma de educación virtual, desarrollada por académicos de la Universidad de Stanford.
-                  Contiene cursos desarrollados en diferentes idiomas, tales como: inglés, español, francés, italiano y
-                  chino.
-                  En esta plataforma encontrarás una gran variedad de cursos 100% online y de USO ILIMITADO.
-                  Aprenderás en prestigiosas universidades y obtendrás certificaciones internacionales.
-                </p> -->
+                <span>Con la contratación de tu Seguro Vida Pro Con Ecosistema accederás a los siguientes beneficios:<br>
+                </span>
+                <span>
+                  <ul>
+                    <li>Coursera: Es una plataforma de educación virtual, desarrollada por académicos de la Universidad de Stanford.<br>
+                      Los cursos son desarrollados en diferentes idiomas, tales como: inglés, español, francés, italiano y chino.<br>
+                      En esta plataforma podrás encontrar una gran variedad de cursos 100% online y de USO ILIMITADO.<br>
+                      Podrás aprender a través de prestigiosas universidades y obtendrás certificaciones internacionales.<br>
+                      Potenciar tu carrera profesional adquiriendo nuevos conocimientos.</li>
+                    <li>Pérdidas por hurto, extravíos, descuidos, engaños y estafas.</li>
+                    <li>Daño, cuando existe una situación anormal a causa de guerra, sublevación, huelga, motín, alboroto popular, conmoción civil, insurrección, revolución o rebelión, terremotos o erupciones volcánicas, huracanes, o cualquier otro fenómeno similar.</li>
+                    <li>Daños intencionales Daños accidentales que no hayan ocurrido en territorio chileno.</li>
+                    <li>Productos cuyo uso sea destinado a fines comerciales.</li>
+                    <li>Daños estéticos que no interfieran con el uso normal del producto.</li>
+                  </ul>
+                </span>
               </div>
             </div>
           </div>
@@ -305,25 +425,36 @@
   <!--Contenido fin-->>
 
 
-  <!--Footer-->
-  <section id="footer" class="footer mt-auto py-3">
-    <div class="container">
-      <footer class="d-flex flex-wrap align-items-center py-4">
-        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
-          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif" src="../../src/img/cardif-byn.svg"></a>
-
-        </p>
-        <p class="text-footer-1 col-6 justify-content-end">
-          Infórmese sobre la garantía estatal de los depósitos en su banco o
-          en www.cmfchile.cl <br /><span class="text-footer-2 col-8
-            justify-content-end">© 2022 Banco Itaú. Todos los derechos
-            reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de
-            Chile. </span>
-        </p>
-      </footer>
-    </div>
-  </section>
-  <!--Footer fin-->
+    <!--Footer-->
+    <section id="footer" class="footer mt-auto py-3">
+      <div class="container">
+        <footer class="d-flex flex-wrap align-items-center py-4">
+          <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+            <a href="#"
+              ><img
+                class="col-2 logo-footer me-4"
+                alt="BNP Paribas Cardif"
+                src="../../src/img/logo_itau_rgb.svg"
+            /></a>
+            <a href="#"
+              ><img
+                class="col-5 logo-footer"
+                alt="BNP Paribas Cardif"
+                src="../../src/img/cardif-byn.svg"
+            /></a>
+          </p>
+          <p class="text-footer-1 col-6 justify-content-end">
+            Infórmese sobre la garantía estatal de los depósitos en su banco o
+            en www.cmfchile.cl <br /><span
+              class="text-footer-2 col-8 justify-content-end"
+              >© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente
+              Riesco 5537, Las Condes. Santiago de Chile.
+            </span>
+          </p>
+        </footer>
+      </div>
+    </section>
+    <!--Fin Footer-->
 
 
 </body>
