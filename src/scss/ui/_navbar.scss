@@ -73,7 +73,13 @@ section#navBar {
 .nav-tab1 a.nav-link.active {
     border-bottom: 4px solid $naranja;
     color: $naranja;
+    opacity: 1;
+}
 
+.nav-tab1 a.nav-link {
+    opacity: 0.5;
+    color: #939598;
+    border-bottom: 4px solid #939598;
 }
 
 .active1 {
