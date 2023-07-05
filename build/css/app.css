@@ -11594,6 +11594,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.18), 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
+.text-textos {
+  color: #56504C;
+}
+
 section#navBar {
   background-color: #FFFFFF;
 }
@@ -11666,6 +11670,13 @@ section#navBar {
 .nav-tab1 a.nav-link.active {
   border-bottom: 4px solid #EC7000;
   color: #EC7000;
+  opacity: 1;
+}
+
+.nav-tab1 a.nav-link {
+  opacity: 0.5;
+  color: #939598;
+  border-bottom: 4px solid #939598;
 }
 
 .active1 {
