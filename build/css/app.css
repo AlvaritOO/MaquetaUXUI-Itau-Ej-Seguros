@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.form-switch .form-check-input {
+  width: 45px !important;
+  height: 30px !important;
+}
+
 @font-face {
   font-family: "ItauRegular";
   src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
@@ -11605,6 +11610,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .text-textos {
   color: #56504C;
+}
+
+.coberturas {
+  max-width: 902px;
 }
 
 section#navBar {
