@@ -22,7 +22,7 @@ span, p, ul, li {
 }
 
 
-.form-floating > label {
+/* .form-floating > label {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,7 +37,7 @@ span, p, ul, li {
     border: 1px solid transparent;
     transform-origin: 0 0;
     transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-}
+} */
 
 .modal-title {
     margin-bottom: 0;
@@ -117,7 +117,7 @@ a.card-box {
 
 .card-plan {
     border: 1px solid $bordes-card;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 .card-plan.sombra-itau1.active {
