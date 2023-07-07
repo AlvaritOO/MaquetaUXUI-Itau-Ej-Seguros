@@ -71,29 +71,73 @@
 
   <!--Contenido-->
   <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
-
     <div class="container">
-      <h1 class="">¿Qué vas a hacer?</h1>
-      <h2 class="mb-40">Selecciona alguna de las opciones</h2>
-      <div class="body-buttom">
-        <div class="d-flex align-items-center justify-content-center">
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/biometria.svg">Contratar</a>
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/comprobante.svg">Ver seguros contratados</a>
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/notificación.svg">Denunciar</a>
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/icono-mipanel.svg">Mi
-            panel</a>
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/logo+tips.svg">Posiciónate como experto</a>
+      <div class="row justify-content-center">
+        <section class="d-none d-lg-block">
+          <div class="container">
+            <div class="row progreso mt-0">
+              <div class="progress" data-percentage="65">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">
+                  <div>2/3<br /></div>
+                </div>
+              </div>
+              <p class="title-seccion">Forma de pago</p>
+            </div>
+          </div>
+        </section>
+        <!--fin wizard-->
+      </div>
+
+      <div class=" body-buttom">
+        <h1 class="mt-3">Forma de Pago</h1>
+
+        <div class="row">
+          <div class="col-4 ms-2 mt-4 mb-4">
+            <div class=" form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Cuenta Corriente Itaú
+              </label>
+            </div>
+            <div class=" form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                Tarjeta de crédito Itaú
+              </label>
+            </div>
+          </div>
+
+          <div class="row col-8 mt-4">
+            <div class="col-5">
+              <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                <option selected>Selecciona una cuenta</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-5">
+              <select class="form-select form-select-lg mb-5" aria-label=".form-select-lg example">
+                <option selected>Día de cargo prima mensual</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container-fluid text-end mt-4 g-2 act-buttons">
-        <button type="button" class="btn btn-outline-secondary">Continuar</button>
+
+      <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+        <button type="button" class="btn btn-outline-secondary">Volver</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
       </div>
-    </div>
 
   </main>
   <!--Contenido fin-->
