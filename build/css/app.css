@@ -1,13 +1,10 @@
 @charset "UTF-8";
-<<<<<<< HEAD
-/* //form
-$form-floating-height: 3rem; */
-=======
 /* .form-switch .form-check-input {
     width: 45px !important;
     height: 30px !important;
 } */
->>>>>>> e2d7afd86a695c2bb3da4d2f881237decf6f16d7
+/* //form
+$form-floating-height: 3rem; */
 @font-face {
   font-family: "ItauRegular";
   src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
