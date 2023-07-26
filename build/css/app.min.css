@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* .form-switch .form-check-input {
+    width: 45px !important;
+    height: 30px !important;
+} */
 @font-face {
   font-family: "ItauRegular";
   src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
@@ -41,7 +45,7 @@
   --bs-primary: #EC7000;
   --bs-secondary: #003399;
   --bs-success: #C2C9EA;
-  --bs-info: #4CAC8B;
+  --bs-info: #007AB7;
   --bs-warning: #F5C66D;
   --bs-danger: #dc3545;
   --bs-light: #FFFFFF;
@@ -49,7 +53,7 @@
   --bs-primary-rgb: 236, 112, 0;
   --bs-secondary-rgb: 0, 51, 153;
   --bs-success-rgb: 194, 201, 234;
-  --bs-info-rgb: 76, 172, 139;
+  --bs-info-rgb: 0, 122, 183;
   --bs-warning-rgb: 245, 198, 109;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 255, 255, 255;
@@ -71,7 +75,7 @@
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.375rem;
+  --bs-border-radius: 8px;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
   --bs-border-radius-xl: 1rem;

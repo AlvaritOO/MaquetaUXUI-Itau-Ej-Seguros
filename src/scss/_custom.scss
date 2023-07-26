@@ -34,6 +34,12 @@ $input-font-size-lg: 1rem;
 $input-font-size: 0.9rem;
 $input-font-weight: normal;
 
+//Switches
+/* .form-switch .form-check-input {
+    width: 45px !important;
+    height: 30px !important;
+} */
+
 /* //form
 $form-floating-height: 3rem; */
 
@@ -45,7 +51,7 @@ $accordion-icon-color: $naranja;
 $accordion-button-icon: url(../img/ic_flecha.svg);
 
 //Tooltips
-$tooltip-bg:  $azul;
+$tooltip-bg:  #000000;
 
 //modal
 $modal-content-color: $textos;
@@ -73,8 +79,9 @@ $position-values: (
   100: 100%
 );
 
+//Border
 $toast-border-radius:   8px;
-
+$border-radius: 8px;
 
 @font-face {
     font-family: 'ItauRegular';

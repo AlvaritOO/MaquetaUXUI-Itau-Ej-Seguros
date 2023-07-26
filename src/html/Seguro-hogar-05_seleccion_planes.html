@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../build/css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <!--NavBar-->
+  <section id="navBar">
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 header-bg">
+
+        <div>
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
+            <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+            <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
+          </a>
+        </div>
+
+        <div class="text-end">
+
+          <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../src/img/ic_log-ejecutivo.svg">
+            Hola, Leslie
+          </a>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg nav-itau">
+          <div class="container-fluid justify-content-around">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ver Seguros Contratados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Denunciar un Siniestro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mi Panel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Posiciónate como experto</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </header>
+
+    </div>
+  </section>
+  <!--NavBar fin-->
+
+
+  <!--Contenido-->
+  <main id="contenedor-mayor" class="flex-shrink-0">
+    <div class="container">
+
+      <h1 class="my-5">Detalle Seguro Hogar</h1>
+
+      <div class="col body-buttom mt-3 mb-4">
+        <div class="accordion accordion-flush accordion-custom-width m-auto" id="accordionFlushExample">
+          <div class="accordion-item itau rounded">
+            <h2 class="accordion-header" id="porQueContratarBtn">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#porQueContratar" aria-expanded="false" aria-controls="porQueContratar">
+                <i class="bi bi-question-circle pe-3 text-primary fs-5"></i> 
+                <h6 class="pt-2">
+                  ¿Por qué contratar el seguro?
+                </h6>
+              </button>
+            </h2>
+            <div id="porQueContratar" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body mt-4">
+                <p>Hogar Seguro Digital protege tu casa y tus bienes ante incendio, sismo y robo. Podrás elegir las coberturas que se adapten a tus necesidades, ya seas dueño o arrendatario de la casa que quieres asegurar.</p>
+                <p>Rappi Prime Plus: La suscripción Premium de Rappi, gratis por 3 meses. Obtendrás delivrery gratis ilimitado, descuentos de hasta 50%, HBO Max y muchos otros beneficios. *</p>
+                <p>Reparaciones de emergencia. Si necesitas ayuda con instalaciones eléctricas, armado de muebles. plomería, cerrajería, instalación o reubicación de electrodomésticos, cortinas, lámparas, entre otros. **</p>
+                <p>*31/12/2024, con posterioridad a esa fecha la Compañía se reserva el derecho a modificar el proveedor. Oferta válida hasta agotar stock.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-3 contrato ps-0 ">
+
+          <ol class="list-group-numbered ps-0">
+            <p class="fw-bold">Para contratar este seguro, la vivienda debe cumplir con las siguientes condiciones:</p>
+            <li class="list-group-item">
+              Tener una antiguedad inferior a 60 años al momento de la contratación.
+            </li>
+            <li class="list-group-item">
+              Debe ser de uso primario o no estar inhabitada por más de 30 días corridos al año.
+            </li>
+            <li class="list-group-item">
+              Debe ser de uso exclusivamente habitacional y no de uso comercial.
+            </li>
+            <li class="list-group-item">
+              Debe estar ubicada dentro de un centro urbano: Conjunto concentrado de viviendas que tenga por lo menos 2.000 habitantes, o bien está a menos de 10 kms. de un cuerpo de Bomberos.
+            </li>
+            <li class="list-group-item">
+              No debe estar construida total o parcialmente de adobe.
+            </li>
+          </ol>
+
+          <p class="fw-bold">¿La vivienda cumple con éstas condiciones?</p>
+          <div class="row">
+            <div class="col-1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Si
+              </label>
+            </div>
+            <div class="col-1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                No
+              </label>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="text-center gap-2 mt-4 mx-auto mb-4">
+          <button type="button" class="btn btn-outline-secondary">
+            Descargar el detalle de coberturas<i class="bi bi-chevron-right ps-1"></i>
+
+          </button>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!--<div class="accordion-item itau rounded">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿Por qué contratar el seguro?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Porque estarás protegido en caso que sufras un siniestro y que tu familia quede protegida Además, accederás a Coursera donde podrás encontrar una gran variedad de cursos y de uso ilimitado.</p>
+            </div>
+          </div>
+        </div>-->
+
+          <div class="accordion-item itau rounded accordion-custom-width m-auto mb-2">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <i class="bi bi-check-circle pe-3 text-primary fs-5"></i> 
+                ¿Qué cubre?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p><b>Dependiendo de lo que elijas, tu seguro puede incluir las siguientes coberturas:</b> <br>
+
+                <p><b>Inhabitabilidad de la Vivienda:</b> <br>
+                  Recibirás una indemnización en caso de que la vivienda sufra daños materiales que la hagan técnicamente inhabitable como consecuencia de: </p>
+                  <ol>
+                      <li class>Sismo.</li>
+                      <li class>Incendio, incluyendo los daños causados para extinguirlo.</li>
+                      <li class>Salida de mar, maremoto, inundación, desbordamiento de cauces, avalanchas, aluviones y deslizamientos de nieve o hielo, viento o erupción volcánica, originados sin la intervención del
+                        hombre.</li>
+                      <li class>Derrumbe o caída de todo o parte de la estructura del edificio o inmueble.</li>
+                      <li class>Aguas provenientes de roturas de cañerías o del desbordamiento de estanques matrices.</li>
+                      <li class>Vehículos terrestres o aéreos.</ol>
+                        <p>Se entenderá por Inhabitabilidad de la Vivienda cuando el siniestro produzca daños que impiden al asegurado o su familia habitar u ocupar la vivienda, o daños técnicamente iguales o superiores a un 75% de su superficie edificada, siempre que la pérdida o daños provengan de un hecho indemnizable bajo esta póliza.</p>
+
+                  <p><b>Daños Materiales a la Vivienda y/o Contenido de la Vivienda a causa de Sismo:</b><br>
+                    En caso que tu vivienda y/o contenido sufra daños materiales a causa de un sismo.</p>
+
+                  <p><b>Daños Materiales a la Vivienda y/o Contenido de la Vivienda a causa de Incendio:</b><br>
+                    En caso que tu vivienda y/o contenido sufra daños materiales a causa de:</p>
+
+                    <ol>
+                    <li>La acción directa de un incendio. </li>
+                    <li>Una explosión, siempre que  haya tenido lugar en artefactos o elementos cuyo uso habitual, reconocido y único sea el doméstico.</li>
+                    </ol>
+
+                    <p><b>Daños Materiales a la Vivienda y/o Contenido de la Vivienda por causas de Adicionales de Incendio: </b> <br> En caso que tu vivienda y/o contenido sufra daños materiales a causa de:</p>
+
+                      <ol>
+                        <li>Rotura de cañerías o desbordamientos de estanques matrices. </li>
+                        <li>Riesgos de la naturaleza, como viento, inundación y desbordamiento de cauces, salida de mar, avalanchas, aluviones y deslizamientos, efecto de rayos, peso de nieve o hielo. </li>
+                        <li>Aeronaves o vehículos motorizados. </li>
+                        <li>Huelga o desorden popular.</li>
+                      </ol>
+                      
+                      <p><b>Robo en la Vivienda:</b><br> Cubre en caso de producirse un robo con violencia o intimidación en las personas, o fuerza en las cosas, cuando: </p>
+                      
+                      <ol>
+                      
+                        <li>El robo a la Materia Asegurada se realice al interior de la Vivienda asegurada.</li>
+                        <li>El daño que resulte por destrucción o deterioro de los objetos asegurados o de la Vivienda en
+                          que se encuentren, haya ocurrido durante cualquier etapa de ejecución del Robo en la
+                          Vivienda.</li>
+                      
+                      </ol>
+                      
+                      <p><b>Gastos de Extinción de Incendios de la Vivienda y/o al Contenido de la Vivienda: </b> Cubre los gastos por la demolición, remoción de escombros o traslado de muebles del lugar o sitio que se haya visto afectado por el incendio.</p>
+                      
+                      <p> <b> Responsabilidad Civil Familiar:</b><br> En caso de daños y perjuicios ocasionados a terceros, o de actos u omisiones propias que le sean imputables al asegurado o que sean causados por personas, mascotas o cosas de las cuales respondas civilmente. 
+                      
+                        <br>
+                        Esta cobertura sólo comprende las indemnizaciones que resulte obligado a pagar el asegurado
+                        como consecuencia de:
+                      </p>
+                      <ol>
+
+                      <li>La muerte de terceras personas o las lesiones corporales causadas a las mismas.</li>
+                      <li>Los daños materiales causados a cosas pertenecientes a terceras personas, que se produzcan durante la vigencia de la presente cobertura.</li>
+                      <li>Los gastos de defensa en que incurras, incluso en caso de reclamaciones infundadas, así como los honorarios y gastos de toda clase que sean de tu cargo en tu calidad de civilmente responsable. Queda entendido que la Compañía pagará únicamente los honorarios de abogados y procuradores nombrados por ella o con su aprobación previa y expresa. </li>
+                    </ol>
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <!--¿Qué no cubre este seguro?-->
+          <div class="accordion-item itau rounded accordion-custom-width m-auto mb-2">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <i class="bi bi-x-lg pe-3 text-primary fs-5"></i> 
+                ¿Qué no cubre?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ol>
+                    <li>Hechos causados de manera dolosa o mediando culpa grave del asegurado o de sus parientes por consanguinidad o afinidad hasta el segundo grado inclusive .</li>
+                    <li> Joyas, dinero, metales o piedras preciosas, valores, títulos y
+                      obras de arte.</li>
+                    <li >Guerra o conflicto armado, , internacional o no, se haya o no reconocido como estado de guerra o enfrentamiento; incluido: rebelión, revolución, sublevación, asonadas, motín, conmoción y guerra civil, subversión, terrorismo, operaciones o actividades bélicas, actos de enemigo extranjero y delitos contra la seguridad interior del Estado. </li>
+
+                      <li>Efectos de experimentos o uso de energía atómica, nuclear o cualquier riesgo atómico.</li>
+                </ol>
+
+                <p>Para la cobertura de Inhabitabilidad de la vivienda: </p>
+                <ol>
+                    <li>Viviendas construidas total o parcialmente de adobe. </li>
+                    <li>Viviendas que no cumplan  con las leyes o regulaciones de construcción. </li>
+                    <li>Viviendas de uso recreacional. </li>
+                    <li>Daños materiales producidos por la estratificación de la tierra en la que se construyó, o sus extensiones, en un plazo de 5 años contados desde que se hubiere dado fin a la construcción de esta.</li> 
+                  </ol>
+                <p>Para la Cobertura de Daños Materiales a la Vivienda y/o Contenido de la Vivienda a causa de Sismo: </p>
+                <ol>
+                    <li>Viviendas construidas total o parcialmente de adobe. </li>
+                    <li>Daños Materiales causados o contribuidos por la Vivienda que no cumple Viviendas que no cumplan con las leyes o regulaciones de construcción. </li>
+                    <li>Los bienes de terceros.  </li>
+                    <li>Daños materiales producidos por explosivos. </li> 
+                    <li>Daños materiales a rejas, portones, cierros, veredas, pavimentos, caminos, piscinas, muelles, muros de contención, árboles, plantas, arbustos, jardines, obras de drenaje, pozos, canales o daños a conexiones a la red de servicios públicos. </li>
+                    <li>Daños materiales por fermentación, cualquier procedimiento de calefacción, desecación, óxido, herrumbre o deterioro gradual a que hubieran sido sometidos los bienes asegurados. </li>
+                    <li>Apropiación por terceros de los objetos asegurados, durante el siniestro o después del mismo. </li>
+                    <li>Daños Materiales a la vivienda causados por aparatos electrónicos o energía eléctrica a menos que provengan de un sismo que afecte directamente a la materia asegurada. </li>
+                  </ol>
+                    
+                    
+                  <p>Para la Cobertura de Daños Materiales a la Vivienda y/o Contenido de la Vivienda a causa de Incendio o Adicionales y para la Cobertura de Gastos de Extinción de Incendios de la Vivienda:</p>
+                  <ol>
+                  <li>Viviendas construidas total o parcialmente de adobe. </li>
+                  <li>Viviendas que no cumplan con las leyes o regulaciones de construcción. </li>
+                  <li>Los bienes de propiedad de terceras personas que no residan en la Vivienda. </li>
+                  <li>Daños materiales producidos por explosivos. </li>
+                  <li>Daños materiales a rejas, portones, cierros, veredas, pavimentos, caminos, piscinas, muelles, muros de contención, árboles, plantas, arbustos, jardines, obras de drenaje, pozos, canales o daños a conexiones a la red de servicios públicos. </li>
+                  <li>Fermentación, cualquier procedimiento de calefacción, desecación, óxido, herrumbre o deterioro gradual a que hubieran sido sometidos los bienes asegurados. </li>
+                  <li>Apropiación por terceros de los objetos asegurados, durante el siniestro o después del mismo. </li>
+                  <li>Daños o deterioro que no sean consecuencia directa o inmediata del incendio. </li>
+                  <li>Corte repentino del suministro de energía eléctrica, descarga u otros fenómenos eléctricos que sufran los aparatos eléctricos, sus instalaciones y accesorios, aun cuando fueran momentáneas, por causas propias de su funcionamiento o inherentes a la electricidad misma a menos que ocasione o provenga de un Incendio indemnizable que afecte directamente a la Materia Asegurada. </li>
+                </ol>
+
+                  <p>Para la Cobertura de Robo en la Vivienda: </p>
+                  <ol>
+                  <li>Hurto, o cualquier pérdida o robo en donde no se hubiese hecho uso de la fuerza en las cosas o violencia en las personas en su ejecución. </li>
+                  <li>Pérdida o daño del contenido en un garaje o edificio anexo que no se encuentre dentro de los límites de la vivienda. </li>
+                  <li>Robos que se produzcan durante terremotos, erupciones volcánicas, huracanes u otros fenómenos meteorológicos.</li>
+                  <li>Si la vivienda está destinada a vacaciones o uso recreacional. </li>
+                  <li>Vehículos de todo tipo sean estos motorizados o no. </li>
+                  <li>Robo de los bienes y elementos de uso profesional del asegurado.</li>
+                </ol>
+
+
+                    <p>Para la Cobertura de Responsabilidad Civil Familiar: </p>
+                    <ol>
+                  <li>Daños ocasionados por causas o hechos derivados de servicios profesionales, laborales o actividad comercial del asegurado, incluyendo su actuar como socio, accionista, director o gerente de cualquier tipo de persona jurídica. </li>
+                  <li>Perjuicios causados con armas de fuego hechizas, no inscritas y/o que no cuenten con los permisos reglamentarios exigidos por la autoridad competente. </li>
+                  <li>Perjuicios causados por la conducción de vehículos motorizados sin contar con licencia de conducir adecuada para el tipo de vehículo, o vehículos que no cuenten con la documentación requerida por la ley. También se excluyen perjuicios causados cuando sean conducidos bajo la influencia de cualquier droga que produzca efectos desinhibidores, alucinógenos o somníferos, o en estado de ebriedad según lo tipificado por ley, o perjuicios causados por la conducción de vehículos motorizados cuando el conductor ha huido o abandonado el lugar del accidente. Asimismo, se excluye el uso de vehículos motorizados de cualquier especie con fines deportivos, participación en apuestas, carreras y similares como también perjuicios causados por el uso de vehículos acuáticos, embarcaciones, naves y aeronaves.</li>
+                  <li>Perjuicios al asegurado o aquellas personas por las que este responde civilmente, ni tampoco perjuicios causados a cualquier ascendiente, descendiente o pariente por consanguineidad o afinidad hasta el segundo grado inclusive. </li>
+                  <li>Daños inmateriales o incorporales que no tengan relación directa con lesiones corporales, muerte o daños materiales cubiertos por la presente póliza, y en general todo perjuicio directo derivado de los riesgos cubiertos por esta póliza. </li>
+                  <li>Accidentes laborales y enfermedades profesionales por las que este responde civilmente.</li>
+                  <li>Lucro cesante, daño moral o cualquier daño indirecto que no tenga relación con lesiones corporales, muerte o daños materiales cubiertos por la presente póliza.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Requisitos-->
+          <div class="accordion-item itau rounded accordion-custom-width m-auto mb-2">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed ps-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <svg width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.9922 11.5811H11.0078C11.0078 11.5811 11.0078 11.5186 11.0078 11.3936C11.0078 11.2686 11.0078 11.1592 11.0078 11.0654C11.0078 9.83105 11.4453 8.77637 12.3203 7.90137C13.1953 7.01074 14.2578 6.56543 15.5078 6.56543C16.7422 6.56543 17.7969 7.01074 18.6719 7.90137C19.5625 8.77637 20.0078 9.83105 20.0078 11.0654C20.0078 11.1592 20.0078 11.2686 20.0078 11.3936C20.0078 11.5186 20.0078 11.5811 20.0078 11.5811H19C19 11.5811 19 11.5186 19 11.3936C19 11.2686 19 11.1592 19 11.0654C19 10.0967 18.6562 9.27637 17.9688 8.60449C17.2969 7.91699 16.4766 7.57324 15.5078 7.57324C14.5391 7.57324 13.7109 7.91699 13.0234 8.60449C12.3359 9.27637 11.9922 10.0967 11.9922 11.0654C11.9922 11.1592 11.9922 11.2686 11.9922 11.3936C11.9922 11.5186 11.9922 11.5811 11.9922 11.5811ZM17.0078 19.0811C17.0078 18.6592 16.8594 18.3076 16.5625 18.0264C16.2656 17.7295 15.9141 17.5811 15.5078 17.5811C15.0859 17.5811 14.7266 17.7295 14.4297 18.0264C14.1484 18.3076 14.0078 18.6592 14.0078 19.0811C14.0078 19.3467 14.0703 19.5967 14.1953 19.8311C14.3359 20.0498 14.5156 20.2295 14.7344 20.3701L14.0078 22.5732H17.0078L16.2578 20.3701C16.4766 20.2295 16.6562 20.0498 16.7969 19.8311C16.9375 19.5967 17.0078 19.3467 17.0078 19.0811ZM23.0078 15.5654V23.5811C23.0078 24.4092 22.7109 25.1123 22.1172 25.6904C21.5391 26.2842 20.8359 26.5811 20.0078 26.5811H11.0078C10.1797 26.5811 9.46875 26.2842 8.875 25.6904C8.29688 25.1123 8.00781 24.4092 8.00781 23.5811V15.5654C8.00781 14.7373 8.29688 14.0342 8.875 13.4561C9.46875 12.8623 10.1797 12.5654 11.0078 12.5654H20.0078C20.8359 12.5654 21.5391 12.8623 22.1172 13.4561C22.7109 14.0342 23.0078 14.7373 23.0078 15.5654ZM22 15.5654C22 15.0186 21.8047 14.5498 21.4141 14.1592C21.0234 13.7686 20.5547 13.5732 20.0078 13.5732H11.0078C10.4453 13.5732 9.96875 13.7686 9.57812 14.1592C9.1875 14.5498 8.99219 15.0186 8.99219 15.5654V23.5811C8.99219 24.1279 9.1875 24.5967 9.57812 24.9873C9.96875 25.3779 10.4453 25.5732 11.0078 25.5732H20.0078C20.5547 25.5732 21.0234 25.3779 21.4141 24.9873C21.8047 24.5967 22 24.1279 22 23.5811V15.5654Z" fill="#EC7000"/>
+                </svg>                  
+                <span class="fw-bold ps-2">Requisitos</span>
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>Para contratar este seguro, tu vivienda debe cumplir las siguientes condiciones:		</p>
+                <ol>
+                  <li> Tener una antigüedad inferior a 60 años.</li>
+                  <li>Ser de uso primario o no estar deshabitada por más de 30 días corridos al año.</li>
+                  <li>Ser de uso exclusivamente habitacional y no de uso comercial.</li>
+                  <li>No estar construida total o parcialmente de adobe.</li>
+                  <li>Debe estar en una Zona Urbana.</li>
+                  <li>La vivienda debe tener menos de 60 años de construida.</li>
+                  <li>La vivienda debe estar construida de material sólido y/o mixto.</li>
+                </ol>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!--Beneficios Digitales-->
+          <div class="accordion-item itau rounded accordion-custom-width m-auto mb-2">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed ps-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                <svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.9297 7.06543C19.4297 6.8623 19.8984 6.90918 20.3359 7.20605C20.7734 7.50293 20.9922 7.91699 20.9922 8.44824V9.7373H22V8.44824C22 7.55762 21.6328 6.87012 20.8984 6.38574C20.1641 5.88574 19.3828 5.7998 18.5547 6.12793L9.69531 9.7373H12.3438L18.9297 7.06543ZM19 17.2373C19 17.6592 19.1406 18.0186 19.4219 18.3154C19.7188 18.5967 20.0781 18.7373 20.5 18.7373C20.9219 18.7373 21.2734 18.5967 21.5547 18.3154C21.8516 18.0186 22 17.6592 22 17.2373C22 16.8154 21.8516 16.4639 21.5547 16.1826C21.2734 15.8857 20.9219 15.7373 20.5 15.7373C20.0781 15.7373 19.7188 15.8857 19.4219 16.1826C19.1406 16.4639 19 16.8154 19 17.2373ZM20.0078 17.2373C20.0078 17.0967 20.0547 16.9795 20.1484 16.8857C20.2422 16.792 20.3594 16.7451 20.5 16.7451C20.6406 16.7451 20.7578 16.792 20.8516 16.8857C20.9453 16.9795 20.9922 17.0967 20.9922 17.2373C20.9922 17.3779 20.9453 17.4951 20.8516 17.5889C20.7578 17.6826 20.6406 17.7295 20.5 17.7295C20.3594 17.7295 20.2422 17.6826 20.1484 17.5889C20.0547 17.4951 20.0078 17.3779 20.0078 17.2373ZM22.4922 10.7451C23.1953 10.7451 23.7891 10.9873 24.2734 11.4717C24.7578 11.9561 25 12.542 25 13.2295V21.2451C25 21.9326 24.7578 22.5186 24.2734 23.0029C23.7891 23.4873 23.1953 23.7295 22.4922 23.7295H8.5C8.07812 23.7295 7.71875 23.5889 7.42188 23.3076C7.14062 23.0107 7 22.6514 7 22.2295V12.2451C7 11.8232 7.14062 11.4717 7.42188 11.1904C7.71875 10.8936 8.07812 10.7451 8.5 10.7451H22.4922ZM8.5 11.7295C8.35938 11.7295 8.24219 11.7842 8.14844 11.8936C8.05469 11.9873 8.00781 12.1045 8.00781 12.2451V22.2295C8.00781 22.3701 8.05469 22.4951 8.14844 22.6045C8.24219 22.6982 8.35938 22.7451 8.5 22.7451H22.4922C22.9141 22.7451 23.2656 22.5967 23.5469 22.2998C23.8438 22.0029 23.9922 21.6514 23.9922 21.2451V13.2295C23.9922 12.8232 23.8438 12.4717 23.5469 12.1748C23.2656 11.8779 22.9141 11.7295 22.4922 11.7295H8.5Z" fill="#EC7000"/>
+                  </svg>
+                  <span class="fw-bold ps-2">Beneficios Digitales</span>
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">              
+                <p>Además, podrás contar con los siguientes beneficios de tu ecosistema de Hogar:</p>
+  
+                <ol>
+                  <li> Rappi Prime Plus:</b> La suscripción Premium de Rappi, gratis por 3 meses. Obtendrás delivery
+                    gratis ilimitado, descuentos de hasta 50%, HBO Max y muchos otros beneficios. *</li>
+                  <li>Reparaciones de Emergencia:</b> Si necesitas ayuda con plomería, cerrajería, vidriería, maestro chasquilla, reparaciones
+                    de emergencia, entre otros. **</li>
+                  <li>Inventario Digital:</b> Podrás llevar registro de tus artefactos electrónicos para hacer un
+                    seguimiento de las garantías y productos. ***</li>
+                  <li>Extensión de garantía:</b> Dentro del inventario digital tendrás la opción de poder extender la
+                    garantía de tus productos optando por dos reparaciones al año. ***</li>
+                  <li>Veterinario Online:</b> Tendrás consultas para perros y gatos de forma online. ***</li>
+                  <li>Asesoría digital:</b> Tendrás asesorías y configuraciones para tu computador y elementos digitales
+                    (Windows, impresoras, computadores). ***</li>
+                  <li>Entretenimiento familiar (panoramas):</b> podrás contar con un listado de panoramas que se
+                    encuentren cerca de ti. ***</li>
+                    <li>Desechos de reciclaje y bultos:</b> Tendrás la opción de solicitar retiro de bultos y desechos dos
+                      veces al año (lavadoras, refrigeradores, etc.). ***</li>
+                </ol>
+  
+                <p class="small fw-bold">*Los beneficios de Rappi estarán disponibles hasta el 31/12/2024, con posterioridad a esa fecha la
+                  Compañía se reserva el derecho a modificar el proveedor. Oferta válida hasta agotar stock.<br>
+                  
+                  **Detalle de las coberturas, condiciones, exclusiones y los beneficios adicionales con los que cuenta
+                  este seguro se encuentran detallados en los términos y condiciones de la póliza que se descargarán en
+                  el último paso antes de la contratación. <br>
+                
+                  *** El detalle y características de tu ecosistema se encuentran detallados en la página Web www.segurotecuido.cl
+                </p>
+  
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid text-end mt-4 g-2 act-buttons ">
+        <button type="button" class="btn btn-outline-secondary">Volver</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+
+    </div>
+
+    </div>
+
+  </main>
+  <!--Contenido fin-->>
+
+
+  <!--Footer-->
+  <section id="footer" class="footer mt-auto py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap align-items-center py-4">
+        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+              src="../../build/img/logo_itau_rgb.svg" /></a>
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+              src="../../build/img/cardif-byn.svg" /></a>
+        </p>
+        <p class="text-footer-1 col-6 justify-content-end">
+          Infórmese sobre la garantía estatal de los depósitos en su banco o
+          en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
+            derechos reservados. Av. Presidente
+            Riesco 5537, Las Condes. Santiago de Chile.
+          </span>
+        </p>
+      </footer>
+    </div>
+  </section>
+  <!--Fin Footer-->
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</html>
