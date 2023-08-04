@@ -1,38 +1,82 @@
 // Reescribir colores
-$naranja: #EC7000;
-$naranja-hover: #BC5900;
-$light-01: #FEE082;
-$light-02: #FEF3E0;
+$naranja: #ec7000;
+$naranja-hover: #bc5900;
+$light-01: #fee082;
+$light-02: #fef3e0;
 $azul: #003399;
-$azul-hover: #00287A;
-$light-03: #C2C9EA;
-$light-04: #E7EAF7;
-$verde:  #4CAC8B;
-$neutral: #FAF7F5;
-$titulo-cabecera: #231D19;
-$textos: #56504C;
-$placeholder: #89837F;
-$bordes-card: #EFE9E5;
-$yellow:  #F5C66D;
+$azul-hover: #00287a;
+$light-03: #c2c9ea;
+$light-04: #e7eaf7;
+$verde: #4cac8b;
+$neutral: #faf7f5;
+$titulo-cabecera: #231d19;
+$textos: #56504c;
+$placeholder: #89837f;
+$bordes-card: #efe9e5;
+$yellow: #f5c66d;
 
 // Colores
 $primary: $naranja;
 $secondary: #003399;
 $success: $light-03;
-$info: #007AB7;
-$light: #FFFFFF;
+$info: #007ab7;
+$light: #ffffff;
 $dark: $azul-hover;
 
-
 //botones
-$btn-border-width:  2px;
+$btn-border-width: 2px;
 $btn-padding-y: 10px;
 
 //inputs
-$input-padding-y-lg: 11px;
 $input-font-size-lg: 1rem;
+$input-padding-y-lg: 11px;
+/* 
 $input-font-size: 0.9rem;
 $input-font-weight: normal;
+ */
+.inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 1px solid #89837f;
+  background-color: transparent;
+  border-radius: 4px !important;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0);
+}
+
+.inputGroup select {
+  border-radius: 4px !important;
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ffffff;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: $naranja;
+}
 
 //Switches
 /* .form-switch .form-check-input {
@@ -51,7 +95,7 @@ $accordion-icon-color: $naranja;
 $accordion-button-icon: url(../img/ic_flecha.svg);
 
 //Tooltips
-$tooltip-bg:  #000000;
+$tooltip-bg: #000000;
 
 //modal
 $modal-content-color: $textos;
@@ -59,11 +103,11 @@ $modal-content-border-radius: 12px;
 $modal-inner-padding: 32px;
 
 //tipografias
-$headings-font-family: 'ItauDisplay';
-$headings-color:    $titulo-cabecera;
+$headings-font-family: "ItauDisplay";
+$headings-color: $titulo-cabecera;
 
-$itautextpro: 'itauRegular';
-$itaudisplay: 'ItauDisplay';
+$itautextpro: "itauRegular";
+$itaudisplay: "ItauDisplay";
 
 //alertas
 $alert-border-radius: 8px;
@@ -76,34 +120,28 @@ $position-values: (
   50: 50%,
   70: 65%,
   75: 75%,
-  100: 100%
+  100: 100%,
 );
 
 //Border
-$toast-border-radius:   8px;
+$toast-border-radius: 8px;
 $border-radius: 8px;
 
 @font-face {
-    font-family: 'ItauRegular';
-    src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
+  font-family: "ItauRegular";
+  src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
 }
 
 body {
-    font-family: 'ItauRegular', sans-serif; /*Specify your font name here*/
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+  font-family: "ItauRegular", sans-serif; /*Specify your font name here*/
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 @font-face {
-    font-family: 'ItauDisplay';
-    src: url("../../src/fonts/ItauDisplayPro_W_Bd.woff2");
+  font-family: "ItauDisplay";
+  src: url("../../src/fonts/ItauDisplayPro_W_Bd.woff2");
 }
 
-
-
-
-
-
 // Importar Bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
