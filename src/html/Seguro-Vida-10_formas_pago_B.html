@@ -21,12 +21,12 @@
   <section id="navBar">
     <div class="container">
       <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 header-bg">
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 header-bg">
 
         <div>
           <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-            <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
-            <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
+            <img src="../../build/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+            <img src="../../build/img/logo-bnp.svg" alt="BNP" class="">
           </a>
         </div>
 
@@ -34,13 +34,27 @@
 
           <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../../src/img/ic_log-ejecutivo.svg">
+            <img src="../../build/img/ic_log-ejecutivo.svg">
             Hola, Leslie
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1873 17.7189L22.3035 13.9056C22.3993 13.8149 22.5224 13.7695 22.6729 13.7695C22.8098 13.7695 22.9329 13.8149 23.0424 13.9056C23.1381 13.9964 23.186 14.1067 23.186 14.2364C23.186 14.3791 23.1381 14.5023 23.0424 14.606L16.803 18.5165C16.6252 18.6722 16.4199 18.75 16.1873 18.75C15.941 18.75 15.7289 18.6722 15.5511 18.5165L9.33227 14.606C9.23649 14.5152 9.1886 14.3985 9.1886 14.2558C9.17492 14.1261 9.21597 14.0094 9.31175 13.9056C9.42121 13.8019 9.55119 13.75 9.7017 13.75C9.83853 13.75 9.96168 13.8019 10.0711 13.9056L16.1873 17.7189Z"
+                fill="#231D19" />
+            </svg>
+
           </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
 
         </div>
 
-        <nav class="navbar navbar-expand-lg nav-itau">
+        <nav class="navbar navbar-expand-lg nav-itau pb-0">
           <div class="container-fluid justify-content-around">
 
             <ul class="navbar-nav">
@@ -48,16 +62,16 @@
                 <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ver Seguros Contratados</a>
+                <a class="nav-link text-black" href="#">Ver Seguros Contratados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Denunciar un Siniestro</a>
+                <a class="nav-link text-black" href="#">Denunciar un Siniestro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mi Panel</a>
+                <a class="nav-link text-black" href="#">Mi Panel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Posiciónate como experto</a>
+                <a class="nav-link text-black" href="#">Posiciónate como experto</a>
               </li>
             </ul>
 
@@ -70,7 +84,7 @@
   <!--NavBar fin-->
 
   <!--Body Buttom-->
-  <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
+  <main id="contenedor-mayor" class="flex-shrink-0 mt-5">
     <div class="container">
       <div class="row justify-content-center">
         <section class="d-none d-lg-block">
@@ -94,24 +108,8 @@
         <!--fin wizard-->
       </div>
 
-
       <div class=" body-buttom">
         <h1 class="mt-3">Forma de Pago</h1>
-
-        <div class="alert alert-info alert-dismissible fade show mt-4 mb-4" role="alert">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle-fill color-info me-2" viewBox="0 0 16 16">
-            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-          </svg>
-          La prima mensual se descontará de la tarjeta del cliente el día 25 de cada mes.
-          <button type="button" class="cerrar-modal-alerta btn-close-white" data-bs-dismiss="alert" aria-label="Close">
-            <svg width="32" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.8281 21.9844C16.9375 22.0938 16.9922 22.2344 16.9922 22.4062C16.9922 22.5781 16.9375 22.7188 16.8281 22.8281C16.7031 22.9375 16.5547 22.9922 16.3828 22.9922C16.2266 22.9922 16.0938 22.9375 15.9844 22.8281L9 15.8438L2.01562 22.8281C1.90625 22.9375 1.76563 22.9922 1.59375 22.9922C1.42187 22.9922 1.28125 22.9375 1.17188 22.8281C1.0625 22.7031 1.00781 22.5625 1.00781 22.4062C1.00781 22.2344 1.0625 22.0938 1.17188 21.9844L8.15625 15L1.17188 8.01562C1.0625 7.90625 1.00781 7.76562 1.00781 7.59375C1.00781 7.42188 1.0625 7.28125 1.17188 7.17188C1.29688 7.0625 1.4375 7.00781 1.59375 7.00781C1.76563 7.00781 1.90625 7.0625 2.01562 7.17188L9 14.1562L15.9844 7.17188C16.0938 7.0625 16.2344 7.00781 16.4062 7.00781C16.5781 7.00781 16.7188 7.0625 16.8281 7.17188C16.9375 7.29688 16.9922 7.44531 16.9922 7.61719C16.9922 7.77344 16.9375 7.90625 16.8281 8.01562L9.84375 15L16.8281 21.9844Z"
-                fill="#fff" />
-            </svg>
-
-          </button>
-        </div>
 
         <div class="row">
           <div class="col-4 ms-2 mt-4 mb-4">
@@ -144,13 +142,10 @@
         </div>
       </div>
 
-
       <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
         <button type="button" class="btn btn-outline-secondary">Volver</button>
         <button type="button" class="btn btn-primary">Continuar</button>
       </div>
-
-
 
   </main>
   <!--Contenido fin-->
