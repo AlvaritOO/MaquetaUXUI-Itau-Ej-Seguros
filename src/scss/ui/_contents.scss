@@ -570,3 +570,59 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .contrato {
     max-width: 1000px;
 }
+
+
+.cancelado {
+    background-color: #fcb6b6;
+  }
+  
+  .en-proceso-r {
+    background-color: #fcebcb;
+    color: #ca932b;
+  }
+  
+  .border-estado {
+    border-radius: 2px;
+  }
+  
+  .btn-disabled {
+    background-color: #d9d3cf !important;
+    color: #56504c !important;
+    border-color: #d9d3cf !important;
+  }
+  
+  .btn-close-orange {
+    color: #ec7000;
+  }
+  
+  .bg-green {
+    background-color: #4cac8b;
+  }
+  
+  .bg-blue {
+    background-color: #003399;
+  }
+  
+  .btn-outline-secondary:hover > svg > path {
+    fill: #fff;
+  }
+  
+  .btn.btn-nivel-tres {
+    border-radius: 8px;
+    background-color: #e7eaf7;
+    color: #003399;
+  
+    &:hover {
+      background-color: #c2c9ea;
+      color: #003399;
+    }
+  }
+  
+  .table-head {
+    background-color: #d9d3cf;
+  }
+  
+  .table-body {
+    background-color: #efe9e5;
+  }
+  

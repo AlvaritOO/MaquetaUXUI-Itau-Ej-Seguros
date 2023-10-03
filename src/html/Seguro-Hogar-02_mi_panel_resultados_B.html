@@ -21,12 +21,12 @@
   <section id="navBar">
     <div class="container">
       <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 header-bg">
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 header-bg">
 
         <div>
           <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-            <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
-            <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
+            <img src="../../build/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+            <img src="../../build/img/logo-bnp.svg" alt="BNP" class="">
           </a>
         </div>
 
@@ -34,13 +34,27 @@
 
           <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../../src/img/ic_log-ejecutivo.svg">
+            <img src="../../build/img/ic_log-ejecutivo.svg">
             Hola, Leslie
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1873 17.7189L22.3035 13.9056C22.3993 13.8149 22.5224 13.7695 22.6729 13.7695C22.8098 13.7695 22.9329 13.8149 23.0424 13.9056C23.1381 13.9964 23.186 14.1067 23.186 14.2364C23.186 14.3791 23.1381 14.5023 23.0424 14.606L16.803 18.5165C16.6252 18.6722 16.4199 18.75 16.1873 18.75C15.941 18.75 15.7289 18.6722 15.5511 18.5165L9.33227 14.606C9.23649 14.5152 9.1886 14.3985 9.1886 14.2558C9.17492 14.1261 9.21597 14.0094 9.31175 13.9056C9.42121 13.8019 9.55119 13.75 9.7017 13.75C9.83853 13.75 9.96168 13.8019 10.0711 13.9056L16.1873 17.7189Z"
+                fill="#231D19" />
+            </svg>
+
           </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
 
         </div>
 
-        <nav class="navbar navbar-expand-lg nav-itau">
+        <nav class="navbar navbar-expand-lg nav-itau pb-0">
           <div class="container-fluid justify-content-around">
 
             <ul class="navbar-nav">
@@ -48,16 +62,16 @@
                 <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ver Seguros Contratados</a>
+                <a class="nav-link text-black" href="#">Ver Seguros Contratados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Denunciar un Siniestro</a>
+                <a class="nav-link text-black" href="#">Denunciar un Siniestro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mi Panel</a>
+                <a class="nav-link text-black" href="#">Mi Panel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Posiciónate como experto</a>
+                <a class="nav-link text-black" href="#">Posiciónate como experto</a>
               </li>
             </ul>
 
@@ -73,8 +87,8 @@
   <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
     <div class="container">
 
-      <h1>Mi Panel</h1>
-      <h2 class="mb-40 text-muted">
+      <h1 class="ps-4">Mi Panel</h1>
+      <h2 class="ps-4 mb-40 text-muted">
         Revisa aquí tus ventas realizadas, su estado y datos de contacto de tu cliente.
       </h2>
 
@@ -117,8 +131,8 @@
     <div class="row">
       <div class="col">
         <table class="table table-striped custom-table">
-          <thead>
-            <tr>
+
+            <tr class="table-head">
               <th scope="col">Cliente <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -168,9 +182,9 @@
                     fill="#231D19" />
                 </svg>
               </th>
+              <th scope="col" class="">Acción </th>
             </tr>
-          </thead>
-          <tbody>
+
             <tr>
               <th scope="row">Camila Monsalvez Iturra</th>
               <td class="text-end">15.234.567-8</td>
@@ -181,8 +195,11 @@
               <td>
                 <div class="pendiente p-1 text-center">Pendiente</div>
               </td>
+              <td>
+                <a href=""><img src="../../build/img/eliminar.svg" alt="" class="mx-3"></a>
+              </td>
             </tr>
-            <tr>
+            <tr class="table-body">
               <th scope="row">Camila Monsalvez Iturra</th>
               <td class="text-end">15.234.567-8</td>
               <td class="text-end">correo@correoelectronico.cl</td>
@@ -192,6 +209,7 @@
               <td>
                 <div class="contratado p-1 text-white text-center">Contratado</div>
               </td>
+              <td></td>
             </tr>
             <tr>
               <th scope="row">Camila Monsalvez Iturra</th>
@@ -203,8 +221,11 @@
               <td>
                 <div class="pendiente p-1 text-center">Pendiente</div>
               </td>
+              <td>
+                <a href=""><img src="../../build/img/eliminar.svg" alt="" class="mx-3"></a>
+              </td>
             </tr>
-            <tr>
+            <tr class="table-body">
               <th scope="row">Camila Monsalvez Iturra</th>
               <td class="text-end">15.234.567-8</td>
               <td class="text-end">correo@correoelectronico.cl</td>
@@ -214,6 +235,7 @@
               <td>
                 <div class="contratado p-1 text-white text-center">Contratado</div>
               </td>
+              <td></td>
             </tr>
             <tr>
               <th scope="row">Camila Monsalvez Iturra</th>
@@ -225,8 +247,11 @@
               <td>
                 <div class="pendiente p-1 text-center">Pendiente</div>
               </td>
+              <td>
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../../build/img/eliminar.svg" alt="" class="mx-3"></a>
+              </td>
             </tr>
-            <tr>
+            <tr class="table-body">
               <th scope="row">Camila Monsalvez Iturra</th>
               <td class="text-end">15.234.567-8</td>
               <td class="text-end">correo@correoelectronico.cl</td>
@@ -236,43 +261,43 @@
               <td>
                 <div class="caducado p-1 text-white text-center">Caducado</div>
               </td>
+              <td></td>
             </tr>
           </tbody>
         </table>
-        <!-- Paginador -->
-        <div class="d-flex justify-content-end">
-          <div>
+  <!-- Paginador -->
+  <div class="d-flex justify-content-end">
 
-            <select class="form-select py-2 me-2" style="width: auto; display: inline;"
-              aria-label="Seleccionar cantidad de filas">
-              <option selected>Mostrar 10</option>
-              <option>Mostrar 20</option>
-              <option>Mostrar 30</option>
-            </select>
-          </div>
+    <div aria-label="Page navigation">
 
-          <div aria-label="Page navigation">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link p-2" href="#" aria-label="Previous">
-                  <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
-                </a>
-              </li>
-              <li class="page-item col-2">
-                <input type="text" class="form-control p-2 text-center" value="1">
-              </li>
-              <li class="page-item py-2 text-center">
-                <span class="px-2">de 99</span>
-              </li>
-              <li class="page-item">
-                <a class="page-link p-2" href="#" aria-label="Next">
-                  <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
+      <ul class="pagination justify-content-end align-items-end">
+        <div>
+          <select class="form-select py-2 me-2" style="width: auto; display: inline;"
+            aria-label="Seleccionar cantidad de filas">
+            <option selected>Mostrar 6</option>
+            <option>Mostrar 10</option>
+            <option>Mostrar 20</option>
+          </select>
         </div>
+        <li class="page-item ms-1">
+          <a class="page-link p-2 border-0 text-black" href="#" aria-label="Previous">
+            <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+          </a>
+        </li>
+        <li class="page-item col-1" >
+          <input type="text" class="form-control text-center px-2" value="1" disabled>
+        </li>                    
+        <li class="page-item py-2 text-center">
+          <span class="px-2">de 3</span>
+        </li>
+        <li class="page-item">
+          <a class="page-link p-2 border-0 text-black" href="#" aria-label="Next">
+            <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
       </div>
     </div>
@@ -282,28 +307,61 @@
   </div>
   <!--Tabla de resultados fin-->
 
-  <!--Footer-->
-  <section id="footer" class="footer mt-auto py-3">
-    <div class="container">
-      <footer class="d-flex flex-wrap align-items-center py-4">
-        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
-          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-              src="../../build/img/logo_itau_rgb.svg" /></a>
-          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
-              src="../../build/img/cardif-byn.svg" /></a>
-        </p>
-        <p class="text-footer-1 col-6 justify-content-end">
-          Infórmese sobre la garantía estatal de los depósitos en su banco o
-          en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
-            derechos reservados. Av. Presidente
-            Riesco 5537, Las Condes. Santiago de Chile.
-          </span>
-        </p>
-      </footer>
+<!--Footer-->
+<section id="footer" class="footer mt-auto py-3">
+  <div class="container">
+    <footer class="d-flex flex-wrap align-items-center py-4">
+      <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+        <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+            src="../../build/img/logo_itau_rgb.svg" /></a>
+        <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+            src="../../build/img/cardif-byn.svg" /></a>
+      </p>
+      <p class="text-footer-1 col-6 justify-content-end">
+        Infórmese sobre la garantía estatal de los depósitos en su banco o
+        en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
+          derechos reservados. Av. Presidente
+          Riesco 5537, Las Condes. Santiago de Chile.
+        </span>
+      </p>
+    </footer>
+  </div>
+</section>
+<!--Fin Footer-->
+
+<!--Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-body text-start pb-0">
+        <div class="d-flex justify-content-between">
+          <h2 class="text-primary title mt-0">Anular la venta</h2>
+
+          <a type="button" class="btn-close-orange my-auto" data-bs-dismiss="modal" aria-label="Close">
+            <img src="../../build/img/Cerrar-Naranja.svg" alt="">
+          </a>
+        </div>
+        <div class="divisor"></div>
+        <div class="d-flex flex-column justify-content-start row">
+          <p class="description">Al anular la solicitud de aprobación, el cliente no podrá finalizar la contratación de este seguro.</p>
+        </div>
+      </div>
+      <div class="modal-footer bg-neutral border-0 py-2">
+        <div class="d-flex justify-content-end gap-4">
+          <a type="button" class="text-info p-2 fw-bold" data-bs-dismiss="modal">Cancelar</a>
+          <a href=""><button type="button" class="btn btn-primary px-4">Sí, anular</button></a>
+        </div>
+      </div>
     </div>
-  </section>
-  <!--Fin Footer-->
+  </div>
+</div>
+<!--Fin Modal-->
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </html>
