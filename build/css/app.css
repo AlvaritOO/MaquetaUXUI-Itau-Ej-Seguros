@@ -10,10 +10,6 @@ fieldset:disabled .btn {
 }
 
 /* $input-padding-y-lg: 11px; */
-/* .form-switch .form-check-input {
-    width: 45px !important;
-    height: 30px !important;
-} */
 .datepicker table tr td span.active,
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active.disabled,
@@ -4622,7 +4618,7 @@ textarea.form-control-lg {
   --bs-alert-color: inherit;
   --bs-alert-border-color: transparent;
   --bs-alert-border: 1px solid var(--bs-alert-border-color);
-  --bs-alert-border-radius: 4px;
+  --bs-alert-border-radius: 8px;
   position: relative;
   padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
   margin-bottom: var(--bs-alert-margin-bottom);
