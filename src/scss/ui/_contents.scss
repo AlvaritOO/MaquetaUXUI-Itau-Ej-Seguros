@@ -301,7 +301,7 @@ small.rango-uf {
     border-radius: 4px;
     left: 50%;
     -webkit-transform: translateX(-382%);
-    transform: translateX(-382%);
+    transform: translateX(-370%);
 }
 
 .bubble::after {
@@ -310,7 +310,7 @@ small.rango-uf {
     width: 2px;
     height: 2px;
     background: $naranja;
-    top: -1px;
+    top: -2px;
     left: 50%;
 }
 
@@ -473,7 +473,8 @@ padding: 10px 51px;
     //font-family: $work-sans;
     font-weight: 300;
     div {
-      margin-top: 10px;
+      margin-top: 7px;
+      margin-left: -2px;
     }
     span {
       font-size: 12px;
