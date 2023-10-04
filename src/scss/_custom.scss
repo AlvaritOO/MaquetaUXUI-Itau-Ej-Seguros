@@ -1,31 +1,33 @@
 // Reescribir colores
-$naranja: #ec7000;
-$naranja-hover: #bc5900;
-$light-01: #fee082;
-$light-02: #fef3e0;
+$naranja: #EC7000;
+$naranja-hover: #BC5900;
+$light-01: #FEE082;
+$light-02: #FEF3E0;
 $azul: #003399;
-$azul-hover: #00287a;
-$light-03: #c2c9ea;
-$light-04: #e7eaf7;
-$verde: #4cac8b;
-$neutral: #faf7f5;
-$titulo-cabecera: #231d19;
-$textos: #56504c;
-$placeholder: #89837f;
-$bordes-card: #efe9e5;
-$yellow: #f5c66d;
+$azul-hover: #00287A;
+$light-03: #C2C9EA;
+$light-04: #E7EAF7;
+$verde:  #4CAC8B;
+$neutral: #FAF7F5;
+$titulo-cabecera: #231D19;
+$textos: #56504C;
+$placeholder: #89837F;
+$bordes-card: #EFE9E5;
+$yellow:  #F5C66D;
 
 // Colores
 $primary: $naranja;
 $secondary: #003399;
 $success: $light-03;
-$info: #007ab7;
-$light: #ffffff;
+$info: #007AB7;
+$light: #FFFFFF;
 $dark: $azul-hover;
 
+
 //botones
-$btn-border-width: 2px;
+$btn-border-width:  2px;
 $btn-padding-y: 10px;
+
 //boton disabled
 .btn:disabled,
 .btn.disabled,
@@ -38,17 +40,28 @@ fieldset:disabled .btn {
 }
 
 //inputs
-/* $input-padding-y-lg: 11px; */
+$input-padding-y-lg: 11px;
 $input-font-size-lg: 1rem;
 $input-font-size: 0.9rem;
 $input-font-weight: normal;
+
+//Switches
+/* .form-switch .form-check-input {
+    width: 45px !important;
+    height: 30px !important;
+} */
 
 //floating inputs
 $form-floating-label-transform:   translateY(-25%) scale(0.9);
 $form-floating-transition:        opacity .1s ease-in-out, transform .1s ease-in-out;
 
+
 //form
 $form-floating-height: 3rem;
+$form-select-border-radius:  8px;
+$form-select-border-radius-lg:    8px;
+$form-select-line-height: 30px;
+
 
 //acordeon
 $accordion-border-color: $bordes-card;
@@ -58,8 +71,7 @@ $accordion-icon-color: $naranja;
 $accordion-button-icon: url(../img/ic_flecha.svg);
 
 //Tooltips
-$tooltip-bg: #000000;
-
+$tooltip-bg:  #000000;
 
 //modal
 $modal-content-color: $textos;
@@ -67,24 +79,16 @@ $modal-content-border-radius: 12px;
 $modal-inner-padding: 32px;
 
 //tipografias
-$headings-font-family: "ItauDisplay";
-$headings-color: $titulo-cabecera;
+$headings-font-family: 'ItauDisplay';
+$headings-color:    $titulo-cabecera;
 
-$itautextpro: "itauRegular";
-$itaudisplay: "ItauDisplay";
-
-//border radius
-$alert-border-radius: 4px;
-
-$input-border-radius: 4px;
-
-$form-select-border-radius:  4px;
-$form-select-border-radius-lg:    4px;
-$form-select-line-height: 30px;
-
+$itautextpro: 'itauRegular';
+$itaudisplay: 'ItauDisplay';
 
 //alertas
 $alert-border-radius: 8px;
+
+$input-border-radius: 8px;
 
 //barras de progreso
 $position-values: (
@@ -124,10 +128,6 @@ body {
     font-family: 'ItauDisplay';
     src: url("../../src/fonts/ItauDisplayPro_W_Bd.woff2");
 }
-
-
-
-
 
 
 // Importar Bootstrap
