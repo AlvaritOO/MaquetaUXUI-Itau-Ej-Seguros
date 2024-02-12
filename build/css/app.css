@@ -11112,6 +11112,9 @@ section#contenedor-mayor {
   color: #fff;
   border: 2px solid #bc5900;
 }
+.btn-primary:hover {
+  color: #fff;
+}
 
 .buscar-btn {
   height: 47px;
