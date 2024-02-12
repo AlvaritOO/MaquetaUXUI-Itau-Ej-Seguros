@@ -637,3 +637,21 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .form-control {
     height: 48px;
   }
+
+  .aviso-alerta {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mensaje-de-informacion {
+    position: relative;
+    line-height: 21px;
+  }
+  .mensaje-de-informacion-2 {
+    align-self: stretch;
+    position: relative;
+    line-height: 20px;
+  }

@@ -82,17 +82,41 @@
   <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
     <div class="container">
 
-      <h1 class="ps-4">Mi Panel</h1>
-      <h2 class="ps-4 mb-40 text-muted">
-        Revisa aquí tus ventas realizadas, su estado y datos de contacto de tu cliente.
-      </h2>
+      <h1 class="ps-4">Seguro de Viaje</h1>
+      
+        <!--wizard-->
+        <section class="mt-4">
+          <div class="container">
+            <div class="row progreso mt-0">
+              <div class="progress" data-percentage="50">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">
+                  <div>1/5<br /></div>
+                </div>
+              </div>
+              <p class="title-seccion">Informacion de viaje</p>
+            </div>
+          </div>
+        </section>
+        <!--fin wizard-->
+     
 
       <div class="col body-buttom">
 
         <div class="row">
-          <div class="form-floating mt-3 col">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Buscar RUT del cliente">
-            <label for="floatingInput">RUT Cliente</label>
+          <div class="mt-1 col">
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+              <option selected>Destinos</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label class="ms-3" for="floatingInput">Podrás seleccionar hasta 10 países</label>
           </div>
           <div class="form-floating mt-3 col">
             <input type="date" class="form-control" id="floatingInput">
@@ -104,21 +128,34 @@
           </div>
           <div class="col mt-3">
             <select class="form-select form-select-lg" aria-label=".form-select-lg example">
-              <option selected>Estado</option>
+              <option selected>Número de acompañantes</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
-          </div>
-          <div class="col mt-3 d-grid">
-            <button type="button" class="btn btn-primary buscar-btn">Buscar</button>
+            <label class="ms-3" for="floatingInput">Edad: 6 meses hasta 74 años</label>
           </div>
         </div>
 
       </div>
 
+    
+      <div class="alert alert-warning alert-dismissible fade show mt-4 mb-4" role="alert">
+        <img src="../../build/img/aviso - alerta.svg" alt="">
+        <b>Importante</b>
+            <div class="ms-4 ps-2">
+                <p>Los siniestros que se produzcan dentro de Ucrania, Rusia, Cuba (solo reembolso), Irán, Corea del Norte, Siria, Afganistán, Iraq, Sudán, Somalia, Crimea y todo país que se encuentre en guerra civil o extranjera, quedan totalmente excluidos de coberturas y asistencias
+                </p>
+            </div>
+        <button type="button" class="cerrar-modal-alerta" data-bs-dismiss="alert" aria-label="Close">
+          <img src="../../build/img/cerrar.svg" alt="">
+        </button>
+      </div>
+
+
       <div class="container-fluid text-end mt-4 g-2 act-buttons ">
-        <button type="button" class="btn btn-outline-secondary fw-bold">Volver</button>
+        <button type="button" class="btn btn-outline-secondary">Volver</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
       </div>
     </div>
   </main>
