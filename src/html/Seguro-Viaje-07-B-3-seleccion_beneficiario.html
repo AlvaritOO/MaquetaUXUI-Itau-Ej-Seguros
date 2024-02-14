@@ -122,7 +122,7 @@
   <!--Body Buttom-->
   <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
     <!--wizard-->
-    <section class="mb-5 d-none d-lg-block">
+    <section class="mb-5">
       <div class="container">
         <div class="row progreso mt-0">
           <div class="progress" data-percentage="60">
@@ -170,161 +170,191 @@
             </p>
           </div>
         </div>
-        <!--Beneficiarios-->
-        <div id="contenedor-beneficiarios" class="mx-3">
-          <div class="row justify-content-between mb-4">
-            <h2 class="col-11 col-sm-11 col-md-11 col-lg-11">
-              Beneficiario 1:
-            </h2>
-            <div class="col d-none d-lg-block mt-2 text-end">
-              <a href="" class="boton-eliminar-beneficiario" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../../build/img/eliminar.svg" alt="">
-              </a>
+
+        <div class="divisor"></div>
+
+        <div class="container">
+          <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                  <img src="../../build/img/user_filled.svg" class="me-2"> Carlos Ramirez
+                  <div class="position-absolute top-50 end-14 translate-middle">Porcentaje asignado: <b>25%</b>
+                  </div>
+
+                  <div class="col mt-2 text-end">
+                    <a href="" class="boton-eliminar-beneficiario position-absolute top-50 end-8 translate-middle"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="../../build/img/eliminar.svg" alt="">
+                    </a>
+                    <p class="position-absolute top-50 end-12 translate-middle text-secondary fw-bold">Editar</p>
+                  </div>
+
+                </button>
+              </h2>
+              <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                  <form class="fondo-viajeros mt-4">
+                    <div class="row">
+                      <div class="form-floating mb-3 col-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="RUT" />
+                        <label for="floatingInput">RUT <span class="text-danger">*</span></label>
+                      </div>
+                      <div class="form-floating mb-3 col-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Leslie" />
+                        <label for="floatingInput">Nombres <span class="text-danger">*</span></label>
+                      </div>
+                      <div class="form-floating mb-3 col-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Martinez" />
+                        <label for="floatingInput">Apellido paterno <span class="text-danger">*</span></label>
+                      </div>
+                      <div class="form-floating mb-3 col-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Diaz" />
+                        <label for="floatingInput">Apellido materno <span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+
+                      <div class="form-floating mb-3 col-4">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="987654321" />
+                        <label for="floatingInput">Número de contacto
+                          <span class="text-danger">*</span></label>
+                      </div>
+
+                      <div class="mb-3 col-4">
+                        <select class="form-select form-select-lg" aria-label="form-select-lg example">
+                          <option selected>
+                            Parentesco <span class="text-danger">*</span>
+                          </option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+
+                      <div class="form-floating mb-3 col-4">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <label for="floatingInput">Porcentaje asignado
+                          <span class="text-danger">*</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+                      <button type="button" class="btn btn-outline-secondary">
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary">Guardar nuevo beneficiario</button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
             </div>
           </div>
-          <form>
-            <div class="row">
-              <div class="form-floating mb-3 col-4">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Leslie" />
-                <label for="floatingInput">Nombres <span class="text-danger">*</span></label>
-              </div>
-              <div class="form-floating mb-3 col-4">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Martinez" />
-                <label for="floatingInput">Apellido paterno <span class="text-danger">*</span></label>
-              </div>
-              <div class="form-floating mb-3 col-4">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Diaz" />
-                <label for="floatingInput">Apellido materno <span class="text-danger">*</span></label>
-              </div>
-            </div>
+          <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
+                  <img src="../../build/img/user_filled.svg" class="me-2"> Miguel  Perez
+                  <div class="position-absolute top-50 end-14 translate-middle">Porcentaje asignado: <b>75%</b>
+                  </div>
 
-            <div class="row">
-              <div class="form-floating mb-3 col-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="RUT" />
-                <label for="floatingInput">RUT <span class="text-danger">*</span></label>
-              </div>
+                  <div class="col mt-2 text-end">
+                    <a href="" class="boton-eliminar-beneficiario position-absolute top-50 end-8 translate-middle"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="../../build/img/eliminar.svg" alt="">
+                    </a>
+                    <p class="position-absolute top-50 end-12 translate-middle text-secondary fw-bold">Editar</p>
+                  </div>
 
-              <div class="form-floating mb-3 col-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="987654321" />
-                <label for="floatingInput">Número de contacto
-                  <span class="text-danger">*</span></label>
-              </div>
+                </button>
+              </h2>
+              <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
 
-              <div class="mb-3 col-3">
-                <select class="form-select form-select-lg" aria-label="form-select-lg example">
-                  <option selected>
-                    Parentesco <span class="text-danger">*</span>
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
+                  <form class="fondo-viajeros mt-4">
+                    <div class="row">
+                      <div class="form-floating mb-3 col-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="RUT" />
+                        <label for="floatingInput">RUT <span class="text-danger">*</span></label>
+                      </div>
+                      <div class="form-floating mb-3 col-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Leslie" />
+                        <label for="floatingInput">Nombres <span class="text-danger">*</span></label>
+                      </div>
+                      <div class="form-floating mb-3 col-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Martinez" />
+                        <label for="floatingInput">Apellido paterno <span class="text-danger">*</span></label>
+                      </div>
+                      <div class="form-floating mb-3 col-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Diaz" />
+                        <label for="floatingInput">Apellido materno <span class="text-danger">*</span></label>
+                      </div>
+                    </div>
 
-              <div class="form-floating mb-3 col-3">
-                <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                <label for="floatingInput">Porcentaje asignado
-                  <span class="text-danger">*</span>
-                </label>
-              </div>
-              <div class="form-floating mb-3 col-6">
-                <input type="email" class="form-control" placeholder="name@example.com" />
-                <label for="floatingInput">Correo electrónico
-                  <span class="text-danger">*</span>
-                </label>
-              </div>
-              <div class="form-floating mb-3 col-6">
-                <input type="email" class="form-control" placeholder="name@example.com" />
-                <label for="floatingInput">Confirmar correo electrónico
-                  <span class="text-danger">*</span>
-                </label>
-              </div>
-            </div>
-        </div>
+                    <div class="row">
 
-        <div id="contenedor-beneficiarios" class="mx-3 my-4">
-          <div class="row justify-content-between mb-4">
-            <h2 class="col-11 col-sm-11 col-md-11 col-lg-11">
-              Beneficiario 2:
-            </h2>
-            <div class="col d-none d-lg-block mt-2 text-end">
-              <a href="" class="boton-eliminar-beneficiario" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../../build/img/eliminar.svg" alt="">
-              </a>
+                      <div class="form-floating mb-3 col-4">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="987654321" />
+                        <label for="floatingInput">Número de contacto
+                          <span class="text-danger">*</span></label>
+                      </div>
+
+                      <div class="mb-3 col-4">
+                        <select class="form-select form-select-lg" aria-label="form-select-lg example">
+                          <option selected>
+                            Parentesco <span class="text-danger">*</span>
+                          </option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+
+                      <div class="form-floating mb-3 col-4">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <label for="floatingInput">Porcentaje asignado
+                          <span class="text-danger">*</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+                      <button type="button" class="btn btn-outline-secondary">
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary">Guardar nuevo beneficiario</button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
             </div>
           </div>
-          <form>
-            <div class="row">
-              <div class="form-floating mb-3 col-4">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Leslie" />
-                <label for="floatingInput">Nombres <span class="text-danger">*</span></label>
-              </div>
-              <div class="form-floating mb-3 col-4">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Martinez" />
-                <label for="floatingInput">Apellido paterno <span class="text-danger">*</span></label>
-              </div>
-              <div class="form-floating mb-3 col-4">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Diaz" />
-                <label for="floatingInput">Apellido materno <span class="text-danger">*</span></label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-floating mb-3 col-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="RUT" />
-                <label for="floatingInput">RUT <span class="text-danger">*</span></label>
-              </div>
-
-              <div class="form-floating mb-3 col-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="987654321" />
-                <label for="floatingInput">Número de contacto
-                  <span class="text-danger">*</span></label>
-              </div>
-
-              <div class="mb-3 col-3">
-                <select class="form-select form-select-lg" aria-label="form-select-lg example">
-                  <option selected>
-                    Parentesco <span class="text-danger">*</span>
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-
-              <div class="form-floating mb-3 col-3">
-                <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                <label for="floatingInput">Porcentaje asignado
-                  <span class="text-danger">*</span>
-                </label>
-              </div>
-              <div class="form-floating mb-3 col-6">
-                <input type="email" class="form-control" placeholder="name@example.com" />
-                <label for="floatingInput">Correo electrónico
-                  <span class="text-danger">*</span>
-                </label>
-              </div>
-              <div class="form-floating mb-3 col-6">
-                <input type="email" class="form-control" placeholder="name@example.com" />
-                <label for="floatingInput">Confirmar correo electrónico
-                  <span class="text-danger">*</span>
-                </label>
-              </div>
-            </div>
         </div>
-        <!--Fin Beneficiarios-->
-        <div class="mx-4">
-          <p class="text-muted mt-4">*Todos los campos son obligatorios</p>
-          <b class="text-danger">Te faltan asignar 79%, agrega un nuevo beneficiario o asignalos a los ya existentes.
-          </b>
-        </div>
-        <div class="row justify-content-end mt-4">
-          <div class="col-12 text-center">
+
+        <div class="divisor"></div>
+        
+        <div class="row mt-4">
+          <div class="col-12 text-start">
             <button type="button" class="btn btn-success text-secondary fw-bold" id="liveToastBtn2">
               <img src="../../build/img/mas.svg" alt="">Agregar beneficiario
             </button>
           </div>
         </div>
+
+        <div class="mx-4 text-end">
+          <b class="text-danger">Ya tienes asignado un 100%, para agregar un nuevo ...
+          </b>
+        </div>
+
         </form>
       </div>
 
