@@ -678,4 +678,35 @@ Due to the split circle of progress-left and progress right, we must use the ani
   .closebtn:hover {
     color: $light-03;
   }
+
+  .form-floating > label {
+    position: absolute;
+    top: 3px;
+    left: 21px;
+    width: auto;
+    height: 24px;
+    padding: 0rem 0.75rem !important;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    background-color: #fff;
+}
+
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label {
+    opacity: 1;
+    transform: translateY(-25%) scale(0.9);
+}
+
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > .form-control-plaintext:focus, .form-floating > .form-control-plaintext:not(:placeholder-shown) {
+    padding-top: 1rem;
+    padding-bottom: 0.625rem;
+}
+.form-floating > .form-control, .form-floating > .form-control-plaintext {
+    padding: 1rem 1.3rem;
+}
  
