@@ -655,3 +655,27 @@ Due to the split circle of progress-left and progress right, we must use the ani
     position: relative;
     line-height: 20px;
   }
+
+  .chip {
+    display: inline-block;
+    padding: 0 12px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 62px;
+    border: 1px solid $azul;
+    color: $azul;
+  }
+  
+  .closebtn {
+    padding-left: 8px;
+    color:$azul;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .closebtn:hover {
+    color: $light-03;
+  }
+ 

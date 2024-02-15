@@ -180,15 +180,15 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
                   <img src="../../build/img/user_filled.svg" class="me-2"> Carlos Ramirez
-                  <div class="position-absolute top-50 end-14 translate-middle">Porcentaje asignado: <b>25%</b>
+                  <div class="position-absolute top-50 end-6 translate-middle">Porcentaje asignado: <b>25%</b>
                   </div>
 
                   <div class="col mt-2 text-end">
-                    <a href="" class="boton-eliminar-beneficiario position-absolute top-50 end-8 translate-middle"
+                    <a href="" class="boton-eliminar-beneficiario position-absolute top-50 end-4 translate-middle"
                       data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <img src="../../build/img/eliminar.svg" alt="">
                     </a>
-                    <p class="position-absolute top-50 end-12 translate-middle text-secondary fw-bold">Editar</p>
+                    <a type="button" class="position-absolute top-50 end-5 translate-middle text-info p-2 fw-bold">Editar</a>
                   </div>
 
                 </button>
@@ -262,17 +262,16 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
                   <img src="../../build/img/user_filled.svg" class="me-2"> Miguel  Perez
-                  <div class="position-absolute top-50 end-14 translate-middle">Porcentaje asignado: <b>75%</b>
+                  <div class="position-absolute top-50 end-6 translate-middle">Porcentaje asignado: <b>75%</b>
                   </div>
 
                   <div class="col mt-2 text-end">
-                    <a href="" class="boton-eliminar-beneficiario position-absolute top-50 end-8 translate-middle"
+                    <a href="" class="boton-eliminar-beneficiario position-absolute top-50 end-4 translate-middle"
                       data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <img src="../../build/img/eliminar.svg" alt="">
                     </a>
-                    <p class="position-absolute top-50 end-12 translate-middle text-secondary fw-bold">Editar</p>
+                    <a type="button" class="position-absolute top-50 end-5 translate-middle text-info p-2 fw-bold">Editar</a>
                   </div>
-
                 </button>
               </h2>
               <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2"
@@ -448,41 +447,6 @@
   });
 </script>
 
-<script>
-  $(function () {
-    // Enables popover
-    $("[data-toggle=popover]").popover();
-  });
 
-  //toast nuevo beneficiario
-  var toastTrigger = document.getElementById("liveToastBtn");
-  var toastLiveExample = document.getElementById("liveToast");
-  if (toastTrigger) {
-    toastTrigger.addEventListener("click", function () {
-      var toast = new bootstrap.Toast(toastLiveExample);
-      toast.show();
-      //alert('limpiamos y colapsamos el formulario');
-    });
-  }
-
-  var toastTrigger2 = document.getElementById("liveToastBtn2");
-  var toastLiveExample2 = document.getElementById("liveToast2");
-  if (toastTrigger2) {
-    toastTrigger2.addEventListener("click", function () {
-      var toast = new bootstrap.Toast(toastLiveExample2);
-      toast.show();
-    });
-  }
-
-  var toastTrigger3 = document.getElementById("liveToastBtn3");
-  var toastLiveExample3 = document.getElementById("liveToast3");
-  if (toastTrigger3) {
-    toastTrigger3.addEventListener("click", function () {
-      var toast = new bootstrap.Toast(toastLiveExample3);
-      toast.show();
-      //alert('limpiamos y colapsamos el formulario');
-    });
-  }
-</script>
 
 </html>
