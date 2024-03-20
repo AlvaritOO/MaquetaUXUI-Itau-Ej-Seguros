@@ -11349,7 +11349,10 @@ h2 {
   color: #56504c;
 }
 
-span, p, ul, li {
+span,
+p,
+ul,
+li {
   font-family: "ItauRegular";
 }
 
@@ -11397,7 +11400,8 @@ button.cerrar-modal-alerta {
   border-radius: 8px;
 }
 
-.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
   border-radius: 8px !important;
 }
 
@@ -11414,27 +11418,31 @@ button.cerrar-modal-alerta {
 }
 
 .color-warning {
-  color: #F1AE2F;
+  color: #f1ae2f;
 }
 
 .alert-verde {
   border-left: 4px solid #008859;
-  background-color: #DEF0E9;
+  background-color: #def0e9;
 }
 
 .alert-warning {
-  border-left: 4px solid #F1AE2F;
-  background-color: #FCEBCB;
+  border-left: 4px solid #f1ae2f;
+  background-color: #fcebcb;
 }
 
 .alert-danger {
-  border-left: 4px solid #B71C1C;
-  background-color: #F6E1E1;
+  border-left: 4px solid #b71c1c;
+  background-color: #f6e1e1;
 }
 
 .alert-info {
-  border-left: 4px solid #007AB7;
-  background-color: #DEEEF6;
+  border-left: 4px solid #007ab7;
+  background-color: #deeef6;
+}
+
+.alert-light {
+  border-left: 4px solid #56504c;
 }
 
 .sombra-itau1 {
@@ -11461,7 +11469,7 @@ a.card-box {
 
 .numero-plan {
   color: #56504c;
-  background-color: #EFE9E5;
+  background-color: #efe9e5;
   font-size: 16px;
   padding: 8px;
   border-radius: 12px 0px 12px 0px;
@@ -11482,8 +11490,8 @@ card.card-box {
 }
 
 .card-plan.active .item-destacado {
-  background-color: #89837F;
-  color: #FFFFFF;
+  background-color: #89837f;
+  color: #ffffff;
 }
 
 .titulo-seguro {
@@ -11494,9 +11502,9 @@ card.card-box {
 .item-destacado {
   padding: 12px 6px;
   margin: 8px 25px 23px 25px;
-  background-color: #EFE9E5;
+  background-color: #efe9e5;
   border-radius: 15px;
-  color: #56504C;
+  color: #56504c;
   font-size: 16px;
 }
 
@@ -11521,7 +11529,8 @@ a:hover {
   margin-bottom: 40px;
 }
 
-.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
   border-radius: 8px !important;
 }
 
@@ -11593,14 +11602,14 @@ section#contenedor-mayor {
   text-decoration: none;
   width: 300px;
   height: 368px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16), 0px 2px 6px rgba(0, 0, 0, 0.18);
   border-radius: 16px;
   flex: none;
   order: 1;
   flex-grow: 0;
-  background: #FFFFFF;
-  border: 1px solid #EC7000;
+  background: #ffffff;
+  border: 1px solid #ec7000;
 }
 
 .divisor {
@@ -11672,7 +11681,7 @@ p.uf-rango {
 
 .simulacion-gris {
   margin-top: 46px;
-  background-color: #EFE9E5;
+  background-color: #efe9e5;
   border-radius: 8px;
   padding: 16px;
 }
@@ -11682,7 +11691,7 @@ p.uf-rango {
 }
 
 .custom-table thead th {
-  --bs-table-bg: #EFE9E5 !important;
+  --bs-table-bg: #efe9e5 !important;
 }
 
 .contratado {
@@ -11690,15 +11699,15 @@ p.uf-rango {
 }
 
 .pendiente {
-  background-color: #F1AE2F;
+  background-color: #f1ae2f;
 }
 
 .caducado {
-  background-color: #56504C;
+  background-color: #56504c;
 }
 
 body {
-  background-color: #FAF7F5;
+  background-color: #faf7f5;
 }
 
 .row.progreso {
@@ -11730,7 +11739,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 3px solid #D9D3CF;
+  border: 3px solid #d9d3cf;
   position: absolute;
   top: 0;
   left: 0;
@@ -11754,7 +11763,7 @@ body {
   border-style: solid;
   position: absolute;
   top: 0;
-  border-color: #EC7000;
+  border-color: #ec7000;
 }
 .progress .progress-left .progress-bar {
   left: 100%;
@@ -11784,7 +11793,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 80%;
-  color: #EC7000;
+  color: #ec7000;
   font-weight: 300;
 }
 .progress .progress-value div {
@@ -12044,7 +12053,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .accordion {
-  --bs-accordion-active-bg: #F3F0EF;
+  --bs-accordion-active-bg: #f3f0ef;
 }
 
 .accordion-custom-width {
@@ -12206,19 +12215,49 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #fff;
 }
 
-.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label {
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-select ~ label {
   opacity: 1;
   transform: translateY(-90%) scale(0.9);
   font-weight: bolder;
 }
 
-.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > .form-control-plaintext:focus, .form-floating > .form-control-plaintext:not(:placeholder-shown) {
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown),
+.form-floating > .form-control-plaintext:focus,
+.form-floating > .form-control-plaintext:not(:placeholder-shown) {
   padding-top: 1rem;
   padding-bottom: 0.625rem;
 }
 
-.form-floating > .form-control, .form-floating > .form-control-plaintext {
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
   padding: 1rem 1.3rem;
+}
+
+.iconos {
+  width: 25px;
+  height: 25px;
+  padding: 0px;
+}
+
+.nav-tab1 a.nav-link.complete {
+  opacity: 1;
+}
+
+.nav-tab1 a.nav-link.complete .activo,
+.nav-tab1 a.nav-link.active .activo {
+  content: url("../img/chat_enviado_active.svg");
+}
+
+.activo {
+  content: url("../img/chat_enviado.svg");
+}
+
+.ml-2 {
+  margin-left: 2rem !important;
 }
 
 section#navBar {

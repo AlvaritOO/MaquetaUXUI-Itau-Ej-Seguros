@@ -116,106 +116,211 @@
             <img src="../../../build/img/cerrar.svg" alt="">
           </button>
         </div>
-        <!--Beneficiarios-->
-        <div id="contenedor-beneficiarios">
-          <div class="row justify-content-between my-4 mx-1">
-            <img class="iconos" src="../../../build/img/usuario.svg" alt="">
-            <h5 class="col-11 col-sm-11 col-md-11 col-lg-11">
-              Adicional 1:
-            </h5>
-            <div class="col d-none d-lg-block mt-2 text-end">
-              <a href="" class="boton-eliminar-beneficiario" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../../../build/img/eliminar.svg" alt="">
-              </a>
+        <!--Adicionales-->
+        <div id="contenedor-adicional">
+
+          <div class="container">
+            <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
+              <div class="accordion-item itau rounded">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <img src="../../../build/img/user_filled.svg" class="me-2"> {Nombre asegura adicional 1}
+                    <div class="col mt-2 text-end">
+                      <a href="" class="boton-eliminar-beneficiario position-absolute top-50 end-4 translate-middle"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../../../build/img/eliminar.svg" alt="">
+                      </a>
+                      <a type="button" class="position-absolute top-50 end-5 translate-middle text-info p-2 fw-bold">Editar</a>
+                    </div>
+  
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+  
+                    <form class="fondo-viajeros mt-4">
+                      <div class="row">
+                        <div class="form-floating mb-3 col-3">
+                          <input type="text" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">RUT <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3 col-2">
+                          <input type="text" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Nombres <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3 col-2">
+                          <input type="text" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Apellido paterno <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3 col-2">
+                          <input type="text" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Apellido materno <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3 col-3">
+                          <input type="date" class="form-control" id="floatingInput">
+                          <label for="floatingInput">Fecha de nacimiento <span class="text-danger">*</span></label>
+                        </div>
+                      </div>
+  
+                      <div class="row">
+  
+                        <div class="form-floating mb-3 col-3">
+                          <input type="text" class="form-control" id="floatingInput" />
+                          <label for="floatingInput">Correo electrónico
+                            <span class="text-danger">*</span></label>
+                        </div>
+  
+                        <div class="mb-3 col-3">
+                          <select class="form-select form-select-lg" aria-label="form-select-lg example">
+                            <option selected>
+                              Parentesco <span class="text-danger">*</span>
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+  
+                        <div class="form-floating mb-3 col-3">
+                          <input type="number" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Peso en KG
+                            <span class="text-danger">*</span>
+                          </label>
+                        </div>
+                        
+                        <div class="form-floating mb-3 col-3">
+                          <input type="number" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Estatura en cms
+                            <span class="text-danger">*</span>
+                          </label>
+                        </div>
+
+                      </div>
+  
+                      <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+                        <button type="button" class="btn btn-outline-secondary">
+                          Cancelar
+                        </button>
+                        <button type="button" class="btn btn-primary ms-2">Guardar adicional</button>
+                      </div>
+                    </form>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
+              <div class="accordion-item itau rounded">
+                <h2 class="accordion-header" id="flush-headingOne1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                    <img src="../../../build/img/user_filled.svg" class="me-2"> {Nombre asegura adicional 2}
+                    <div class="col mt-2 text-end">
+                      <a href="" class="boton-eliminar-beneficiario position-absolute top-50 end-4 translate-middle"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../../../build/img/eliminar.svg" alt="">
+                      </a>
+                      <a type="button" class="position-absolute top-50 end-5 translate-middle text-info p-2 fw-bold">Editar</a>
+                    </div>
+  
+                  </button>
+                </h2>
+                <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+  
+                    <form class="fondo-viajeros mt-4">
+                      <div class="row">
+                        <div class="form-floating mb-3 col-3">
+                          <input type="text" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">RUT <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3 col-2">
+                          <input type="text" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Nombres <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3 col-2">
+                          <input type="text" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Apellido paterno <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3 col-2">
+                          <input type="text" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Apellido materno <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3 col-3">
+                          <input type="date" class="form-control" id="floatingInput">
+                          <label for="floatingInput">Fecha de nacimiento <span class="text-danger">*</span></label>
+                        </div>
+                      </div>
+  
+                      <div class="row">
+  
+                        <div class="form-floating mb-3 col-3">
+                          <input type="text" class="form-control" id="floatingInput" />
+                          <label for="floatingInput">Correo electrónico
+                            <span class="text-danger">*</span></label>
+                        </div>
+  
+                        <div class="mb-3 col-3">
+                          <select class="form-select form-select-lg" aria-label="form-select-lg example">
+                            <option selected>
+                              Parentesco <span class="text-danger">*</span>
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+  
+                        <div class="form-floating mb-3 col-3">
+                          <input type="number" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Peso en KG
+                            <span class="text-danger">*</span>
+                          </label>
+                        </div>
+                        
+                        <div class="form-floating mb-3 col-3">
+                          <input type="number" class="form-control" id="floatingInput"/>
+                          <label for="floatingInput">Estatura en cms
+                            <span class="text-danger">*</span>
+                          </label>
+                        </div>
+
+                      </div>
+  
+                      <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+                        <button type="button" class="btn btn-outline-secondary">
+                          Cancelar
+                        </button>
+                        <button type="button" class="btn btn-primary ms-2">Guardar adicional</button>
+                      </div>
+                    </form>
+  
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <form>
-            <div class="row">
-              <div class="form-floating mb-3 col-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Leslie" />
-                <label for="floatingInput">Nombres <span class="text-danger">*</span></label>
-              </div>
-              <div class="form-floating mb-3 col-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Martinez" />
-                <label for="floatingInput">Apellido paterno <span class="text-danger">*</span></label>
-              </div>
-              <div class="form-floating mb-3 col-2">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Diaz" />
-                <label for="floatingInput">Apellido materno <span class="text-danger">*</span></label>
-              </div>
-              <div class="mb-3 col-2">
-                <select class="form-select form-select-lg" aria-label="form-select-lg example">
-                  <option selected>
-                    Parentesco <span class="text-danger">*</span>
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="form-floating mb-3 col-2">
-                <input type="date" class="form-control" id="floatingInput">
-                <label for="floatingInput">Fecha de nacimiento</label>
-              </div>
-            </div>
-          </form>
-          <div class="row justify-content-between my-4 mx-1">
-            <img class="mt-n3 iconos" src="../../../build/img/usuario.svg" alt="">
-            <h5 class="col-11 col-sm-11 col-md-11 col-lg-11">
-              Adicional 2:
-            </h5>
-            <div class="col d-none d-lg-block mt-2 text-end">
-              <a href="" class="boton-eliminar-beneficiario" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../../../build/img/eliminar.svg" alt="">
-              </a>
-            </div>
-          </div>
-          <form>
-            <div class="row">
-              <div class="form-floating mb-3 col-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Leslie" />
-                <label for="floatingInput">Nombres <span class="text-danger">*</span></label>
-              </div>
-              <div class="form-floating mb-3 col-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Martinez" />
-                <label for="floatingInput">Apellido paterno <span class="text-danger">*</span></label>
-              </div>
-              <div class="form-floating mb-3 col-2">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Diaz" />
-                <label for="floatingInput">Apellido materno <span class="text-danger">*</span></label>
-              </div>
-              <div class="mb-3 col-2">
-                <select class="form-select form-select-lg" aria-label="form-select-lg example">
-                  <option selected>
-                    Parentesco <span class="text-danger">*</span>
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="form-floating mb-3 col-2">
-                <input type="date" class="form-control" id="floatingInput">
-                <label for="floatingInput">Fecha de nacimiento</label>
-              </div>
-            </div>
-          </form>
-          <!--Fin Beneficiarios-->
-          <div class="row justify-content-end mt-4">
-            <div class="col-12 text-center">
+  
+          <div class="divisor"></div>
+          
+          <div class="row mt-4">
+            <div class="col-12 text-start">
               <button type="button" class="btn btn-success text-secondary fw-bold">
-                <img src="../../../build/img/mas.svg" alt="">Agregar Otro adicional
+                <img src="../../../build/img/mas.svg" alt="">Agregar beneficiario
               </button>
             </div>
           </div>
-          </form>
         </div>
 
         <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
           <button type="button" class="btn btn-outline-secondary">
             Volver
           </button>
-          <button type="button" class="btn btn-primary">Continuar</button>
+          <button type="button" class="btn btn-primary ms-2">Continuar</button>
         </div>
       </div>
     </div>
@@ -230,7 +335,7 @@
 
         <div class="modal-body text-start pb-0">
           <div class="d-flex justify-content-between">
-            <h2 class="text-primary title mt-0">Quitar Asegurado</h2>
+            <h2 class="text-primary title mt-0">Quitar Asegurado Adicional</h2>
 
             <a type="button" class="btn-close-orange my-auto" data-bs-dismiss="modal" aria-label="Close">
               <img src="../../../build/img/Cerrar-Naranja.svg" alt="">
@@ -238,7 +343,7 @@
           </div>
           <div class="divisor"></div>
           <div class="d-flex flex-column justify-content-start row">
-            <p class="description">¿Esta seguro que desea quitar este Asegurado? <br> Esta acción no se puede
+            <p class="description">¿Esta seguro que desea quitar este asegurado adicional? <br> Esta acción no se puede
               deshacer</p>
           </div>
         </div>
