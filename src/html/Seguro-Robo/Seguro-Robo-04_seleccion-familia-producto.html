@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../../build/css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <!--NavBar-->
+  <section id="navBar">
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 header-bg">
+
+        <div>
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
+            <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+            <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="">
+          </a>
+        </div>
+
+        <div class="text-end">
+
+          <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../../build/img/ic_log-ejecutivo.svg">
+            Hola, Leslie
+            <img src="../../../build/img/Chevron.svg" alt="">
+
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg nav-itau pb-0">
+          <div class="container-fluid justify-content-around">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Ver Seguros Contratados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Denunciar un Siniestro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Mi Panel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Posiciónate como experto</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </header>
+
+    </div>
+  </section>
+  <!--NavBar fin-->
+
+  <!--Contenido-->
+  <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
+
+    <div class="container">
+      <h1 class="ps-4">¿Qué te gustaría proteger?</h1>
+      <h2 class="ps-4 mb-40 text-muted">
+        Selecciona el producto a contratar
+      </h2>
+
+      <div class="body-buttom px-0 border rounded-0 rounded-bottom">
+        <ul class="nav nav-tab1 justify-content-around row text-center px-0 mx-0">
+          <li class="nav-item col-4 px-0">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+              role="tab" aria-controls="home" aria-selected="true">Seguros de Vida</a>
+          </li>
+          <li class="nav-item col-4 px-0">
+            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+              aria-controls="profile" aria-selected="false">Seguro de Robo</a>
+          </li>
+          <li class="nav-item col-4 px-0">
+            <a class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
+              role="tab" aria-controls="messages" aria-selected="false">Seguro de Hogar</a>
+          </li>
+        </ul>
+        <div class="container">
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="container d-flex align-items-center justify-content-center">
+                <a class="col-lg-3 card-box" href="">
+                  <card class="card-box mb-5 cardplan-size" href="">
+                    <div class="card-plan sombra-itau1 card-noactive">
+                      <div class="card-header p-4 bg-neutral rounded-top">
+                        <h3 class="text-center titulo-seguro mt-2">Seguro de vida</h3>
+                      </div>
+                      <div class="card-body text-center">
+                        <p class="card-text text-textos pt-4 fw-bold">La tranquilidad de tu cliente de
+                          estar<br>protegido</p>
+                        <img src="../../../build/img/vida.svg" alt="" class="my-4 iconos-card">
+                      </div>
+                    </div>
+                  </card>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <div class="container d-flex align-items-center justify-content-center">
+                <a class="col-lg-3 card-box" href="">
+                  <card class="card-box mb-5 cardplan-size" href="">
+                    <div class="card-plan sombra-itau1 card-noactive">
+                      <div class="card-header p-4 bg-neutral rounded-top">
+                        <h3 class="text-center titulo-seguro mt-2">Seguro Personal Financiero</h3>
+                      </div>
+                      <div class="card-body text-center mb-3">
+                        <p class="card-text text-textos pt-4 fw-bold">Protege a tu cliente contra robo y daño
+                          patrimonial</p>
+                        <img src="../../../build/img/salario.svg" alt="" class="my-4 iconos-card">
+                      </div>
+                    </div>
+                  </card>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+              <div class="container d-flex align-items-center justify-content-center">
+                <a class="col-lg-3 card-box" href="">
+                  <card class="card-box mb-5 cardplan-size" href="">
+                    <div class="card-plan sombra-itau1 card-noactive">
+                      <div class="card-header p-4 bg-neutral rounded-top">
+                        <h3 class="text-center titulo-seguro mt-2">Seguro Hogar</h3>
+                      </div>
+                      <div class="card-body text-center mb-3">
+                        <p class="card-text text-textos pt-4 fw-bold">Coberturas que se adaptan<br>a tu estilo de vida
+                        </p>
+                        <img src="../../../build/img/credito inmobiliario.svg" alt="" class="my-4 iconos-card">
+                      </div>
+                    </div>
+                  </card>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+        <button type="button" class="btn btn-outline-secondary">Volver</button>
+      </div>
+
+    </div>
+
+  </main>
+  <!--Contenido fin-->
+
+  <!--Footer-->
+  <section id="footer" class="footer mt-auto py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap align-items-center py-4">
+        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+              src="../../../build/img/logo_itau_rgb.svg" /></a>
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+              src="../../../build/img/cardif-byn.svg" /></a>
+        </p>
+        <p class="text-footer-1 col-6 justify-content-end">
+          Infórmese sobre la garantía estatal de los depósitos en su banco o
+          en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
+            derechos reservados. Av. Presidente
+            Riesco 5537, Las Condes. Santiago de Chile.
+          </span>
+        </p>
+      </footer>
+    </div>
+  </section>
+  <!--Fin Footer-->
+
+  <!--Scripts-->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+  <script>
+
+    const triggerTabList = document.querySelectorAll('#myTab button')
+    triggerTabList.forEach(triggerEl => {
+      const tabTrigger = new bootstrap.Tab(triggerEl)
+
+      triggerEl.addEventListener('click', event => {
+        event.preventDefault()
+        tabTrigger.show()
+      })
+    })
+
+    const triggerEl = document.querySelector('#myTab button[data-bs-target="#profile"]')
+    bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+
+    const triggerFirstTabEl = document.querySelector('#myTab li:first-child button')
+    bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
+
+  </script>
+
+</body>
+
+</html>
