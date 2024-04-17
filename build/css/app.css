@@ -11562,8 +11562,9 @@ th, td {
 }
 
 .select-name {
-  width: 200px !important;
-  height: 10px !important;
+  width: 280px !important;
+  height: 40px !important;
+  padding: 10px !important;
 }
 
 .body-buttom-card {
@@ -11745,7 +11746,8 @@ body {
 }
 
 .enfermedades {
-  margin-right: 80px;
+  margin-right: 50px;
+  width: 800px !important;
 }
 
 .check-form {
