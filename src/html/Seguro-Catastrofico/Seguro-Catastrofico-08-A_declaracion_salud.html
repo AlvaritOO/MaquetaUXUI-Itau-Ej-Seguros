@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../build/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <!--NavBar-->
+    <section id="navBar">
+      <div class="container">
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 header-bg"
+        >
+          <div>
+            <a
+              href="/"
+              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none"
+            >
+              <img
+                src="../../../build/img/logo-itau.svg"
+                alt="Itaú"
+                class="logo-itau pe-4"
+              />
+              <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="" />
+            </a>
+          </div>
+
+          <div class="text-end">
+            <a
+              class="nav-link dropdown-toggle log-ejecutivo"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../../../build/img/ic_log-ejecutivo.svg" />
+              Hola, Leslie
+              <svg
+                width="33"
+                height="33"
+                viewBox="0 0 33 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.1873 17.7189L22.3035 13.9056C22.3993 13.8149 22.5224 13.7695 22.6729 13.7695C22.8098 13.7695 22.9329 13.8149 23.0424 13.9056C23.1381 13.9964 23.186 14.1067 23.186 14.2364C23.186 14.3791 23.1381 14.5023 23.0424 14.606L16.803 18.5165C16.6252 18.6722 16.4199 18.75 16.1873 18.75C15.941 18.75 15.7289 18.6722 15.5511 18.5165L9.33227 14.606C9.23649 14.5152 9.1886 14.3985 9.1886 14.2558C9.17492 14.1261 9.21597 14.0094 9.31175 13.9056C9.42121 13.8019 9.55119 13.75 9.7017 13.75C9.83853 13.75 9.96168 13.8019 10.0711 13.9056L16.1873 17.7189Z"
+                  fill="#231D19"
+                />
+              </svg>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <nav class="navbar navbar-expand-lg nav-itau pb-0">
+            <div class="container-fluid justify-content-around">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Contratar Seguros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    >Ver Seguros Contratados</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">Siniestros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">Mi Panel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    >Posiciónate como experto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </section>
+    <!--NavBar fin-->
+
+    <!--Body Buttom-->
+    <main id="contenedor-mayor" class="flex-shrink-0 mt-5">
+      <!--wizard-->
+      <section class="mb-5 d-none d-lg-block">
+        <div class="container">
+          <div class="row progreso mt-0">
+            <div class="progress" data-percentage="30">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value">
+                <div>2/6<br /></div>
+              </div>
+            </div>
+            <p class="title-seccion">Salud</p>
+          </div>
+        </div>
+      </section>
+      <!--fin wizard-->
+
+      <div class="container">
+        <h1>Declaración de salud</h1>
+        <h3>
+          Para continuar, cuéntanos sobre el estado de salud del contratante (o
+          el de algún miembro de su grupo familiar, en caso que aplique). <br />
+          <span class="fw-bold"
+            >La DPS (declaración personas de salud) es un requisito para
+            contratar el seguro.</span
+          >
+        </h3>
+        <h3 class="mb-40">
+          Es importante registrar TODAS las enfermedades, patologías o
+          condiciones de salud, diagnosticadas médicamente a Ud., hayan o no
+          requerido atención médica, tratamientos alternativos o para atender
+          los síntomas, hospitalización o intervención quirúrgica cualquiera que
+          sea la fecha de su diagnóstico, tratamiento y su estado actual,
+          incluso aunque haya sido dado de alta y lo consideren como sano.
+        </h3>
+        <div
+          class="body-buttom border rounded-0 rounded-bottom b-radius16 bg-white"
+        >
+          <div class="container">
+            <h1>Salud</h1>
+
+            <div class="tab-content">
+              <div
+                class="tab-pane active"
+                id="uno"
+                role="tabpanel"
+                aria-labelledby="uno-tab"
+                tabindex="0"
+              >
+                <div class="container">
+                  <div>
+                    <p class="fw-bold py-3">
+                      ¿Cuáles enfermedades o patologías han sufrido en el grupo
+                      asegurado?
+                    </p>
+                    <p class="fw-bold uf-rango">
+                      1. ¿Al cerebro o del sistema nervioso? 
+                      
+                    </p>
+                    
+                  </div>
+                  <div class="d-flex">
+                    <div>
+                    <p class="py-0 enfermedades">
+                      Por ejemplo: Aneurisma, Epilepsia, Malformaciones
+                      Arteriovenosas, Parkinson, Alzheimer, Migraña, Accidente
+                      cerebrovascular, Plejias, Paresias, Neuropatías, ELA,
+                      Depresión, Trastorno de pánico, Trastorno de personalidad,
+                      Trastorno de ánimo (Bipolaridad), Trastorno de ansiedad,
+                      Estrés, Psicopatías, Esquizofrenia y Demencia.
+                    </p> 
+                  </div>
+                  <div class="check-form">
+                    <input class="form-check-input show" type="radio" name="uno"
+                    id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <label for="scales">Sí</label>
+                  </div>
+                  <div>
+                    <input class="form-check-input" type="radio" name="uno"
+                                              id="radioNoLabel1" type="button" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                          <label for="scales">No</label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="collapse" id="collapseExample">
+                <div class="py-4">
+
+                  <table class="table table-striped">
+                    <tr>
+                      <td width="70%">
+                        Aneurisma
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample2">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Epilepsia
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample3">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Malformaciones Arteriovenosas
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Parkinson
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Alzheimer
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Migraña
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Accidente cerebrovascular
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Plejias
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Paresias
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Neuropatías
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        ELA
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Depresión
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Trastorno de pánico
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Trastorno de personalidad
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Trastorno de ánimo (Bipolaridad)
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Trastorno de ansiedad
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Estrés
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Psicopatías
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Esquizofrenia
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td width="70%">
+                        Demencia
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">Sí</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="radio" name="uno"
+                          id="radioNoLabel1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label for="scales">No</label>
+                      </td>
+                      <td>
+                        <table>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="form-floating">
+                            <select class="form-select select-name" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Nombre de los asegurados</label>
+                          </div>
+                        </div>
+                      </table>
+                      </td>
+                      
+                    </tr>
+
+                  </table>
+
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+          <button type="button" class="btn btn-outline-secondary">
+            Volver
+          </button>
+          <button type="button" class="btn btn-primary ms-2">Continuar</button>
+        </div>
+      </div>
+    </main>
+    <!--Contenido fin-->
+
+    <!--Modal-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body text-start pb-0">
+            <div class="d-flex justify-content-between">
+              <h2 class="text-primary title mt-0">
+                Aceptación de declaración de salud
+              </h2>
+
+              <a
+                type="button"
+                class="btn-close-orange my-auto"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="../../../build/img/Cerrar-Naranja.svg" alt="" />
+              </a>
+            </div>
+            <div class="divisor"></div>
+            <div class="d-flex flex-column justify-content-start row">
+              <p class="description">
+                Esta declaración es una expresión fiel del estado de salud y
+                hábitos del grupo asegurable. <br />El declarante lo realiza de
+                forma libre e informada a la fecha de firma de este documento.
+              </p>
+              <p class="description">
+                Entiendo que la Compañía de Seguros ha cumplido su obligación de
+                consultar respecto del estado de salud y los hábitos de los
+                asegurados.
+              </p>
+              <p class="description">
+                Declaro que los datos entregados son exactos, fidedignos y
+                entiendo y acepto que un error, omisión o, reticencia podría
+                implicar la terminación del seguro y/o el no pago de la
+                indemnización.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer bg-neutral border-0 py-2">
+            <div class="d-flex justify-content-end gap-4">
+              <a href=""
+                ><button type="button" class="btn btn-primary px-4">
+                  Acepto los términos y condiciones
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin Modal-->
+
+    <!--Footer-->
+    <section id="footer" class="footer mt-auto py-3">
+      <div class="container">
+        <footer class="d-flex flex-wrap align-items-center py-4">
+          <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+            <a href="#"
+              ><img
+                class="col-2 logo-footer me-4"
+                alt="BNP Paribas Cardif"
+                src="../../../build/img/logo_itau_rgb.svg"
+            /></a>
+            <a href="#"
+              ><img
+                class="col-5 logo-footer"
+                alt="BNP Paribas Cardif"
+                src="../../../build/img/cardif-byn.svg"
+            /></a>
+          </p>
+          <p class="text-footer-1 col-6 justify-content-end">
+            Infórmese sobre la garantía estatal de los depósitos en su banco o
+            en www.cmfchile.cl <br /><span
+              class="text-footer-2 col-8 justify-content-end"
+              >© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente
+              Riesco 5537, Las Condes. Santiago de Chile.
+            </span>
+          </p>
+        </footer>
+      </div>
+    </section>
+    <!--Fin Footer-->
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</html>
