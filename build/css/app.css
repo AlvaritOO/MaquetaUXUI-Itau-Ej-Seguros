@@ -11752,17 +11752,27 @@ body {
 
 .enfermedades {
   margin-right: 50px;
-  width: 800px !important;
 }
 
 .enfermedades2 {
   margin-right: 20px;
-  width: 840px !important;
 }
 
 .check-form {
   padding: 0px 40px;
   margin-left: auto;
+}
+
+.width-55 {
+  width: 55%;
+}
+
+.width-85 {
+  width: 85%;
+}
+
+.width-7 {
+  width: 7%;
 }
 
 .progress {
