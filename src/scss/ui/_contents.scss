@@ -439,6 +439,10 @@ body {
   
 }
 
+.campo-asegurados, .divoculto {
+  display: none;
+}
+
 .enfermedades2{
   margin-right: 20px;
 
@@ -448,6 +452,12 @@ body {
   padding: 0px 40px;
   margin-left: auto;
 }
+
+.table-striped{
+  padding: 10px;
+  margin: 10px;
+}
+
 
 .width-55{
   width: 55%;
@@ -460,6 +470,8 @@ body {
 .width-7{
   width: 7%;
 }
+
+
 
 .progress {
   width: $size;

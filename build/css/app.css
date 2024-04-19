@@ -11754,6 +11754,10 @@ body {
   margin-right: 50px;
 }
 
+.campo-asegurados, .divoculto {
+  display: none;
+}
+
 .enfermedades2 {
   margin-right: 20px;
 }
@@ -11761,6 +11765,11 @@ body {
 .check-form {
   padding: 0px 40px;
   margin-left: auto;
+}
+
+.table-striped {
+  padding: 10px;
+  margin: 10px;
 }
 
 .width-55 {
