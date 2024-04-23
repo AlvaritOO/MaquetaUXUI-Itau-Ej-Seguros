@@ -236,6 +236,35 @@ th, td{
   height: 40px !important;
   padding: 10px !important;
   margin-top: 1rem;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: left;
+}
+
+.nombre-size{
+  font-size: 14px !important;
+  padding-left: 6px;
+}
+
+.check-name{
+  width: 280px !important;
+  padding: 0px 10px !important;
+  margin-top: 1rem;
+  background-color: #fff;
+}
+
+.nombre-padding{
+  padding-right: 20px !important;
+}
+
+.dropdown-item-checkbox:checked {
+  background-color: #ec7000;
+  border-color: #ec7000;
+}
+
+
+.padding-select{
+  padding: 0px 0px 20px 0px !important;
 }
 
 .body-buttom-card {
@@ -758,6 +787,63 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .closebtn:hover {
   color: $light-03;
 }
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+.form-label-nombres {
+  position:absolute;
+  top: 10px;
+  left: 14px;
+  height: 24px;
+  opacity: 1;
+  transform: translateY(-90%) scale(0.9);
+  font-weight: bolder;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+
+  width:max-content;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  background-color: #fff;
+}
+
+.flecha{
+  width: 70%;
+}
+
+
 
 .form-floating > label {
   position: absolute;
