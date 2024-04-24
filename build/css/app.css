@@ -12412,9 +12412,9 @@ section#navBar {
 
 .log-ejecutivo {
   border-radius: 22px;
-  border: 1px solid #EFE9E5;
+  border: 1px solid #efe9e5;
   padding: 4px;
-  color: #231D19;
+  color: #231d19;
 }
 
 .logo-itau {
@@ -12431,7 +12431,7 @@ section#navBar {
 }
 
 .nav-itau div ul li.nav-item .nav-link {
-  padding: 18px 45px;
+  padding: 18px 37px;
 }
 
 .nav-itau li a {
@@ -12483,5 +12483,5 @@ section#navBar {
 }
 
 .active1 {
-  color: #231D19;
+  color: #231d19;
 }
