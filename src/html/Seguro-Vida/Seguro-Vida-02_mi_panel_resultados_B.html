@@ -92,15 +92,15 @@
         <div class="row">
           <div class="form-floating mt-3 col">
             <input type="text" class="form-control" id="floatingInput" placeholder="Buscar RUT del cliente">
-            <label for="floatingInput">RUT Cliente</label>
+            <label for="floatingInput">RUT</label>
           </div>
           <div class="form-floating mt-3 col">
             <input type="date" class="form-control" id="floatingInput">
-            <label for="floatingInput">Fecha de inicio</label>
+            <label for="floatingInput">Fecha venta inicio</label>
           </div>
           <div class="form-floating mt-3 col">
             <input type="date" class="form-control" id="floatingInput">
-            <label for="floatingInput">Fecha de termino</label>
+            <label for="floatingInput">Fecha venta fin</label>
           </div>
           <div class="col mt-3">
             <select class="form-select form-select-lg" aria-label=".form-select-lg example">
@@ -130,13 +130,15 @@
           <tr class="table-head">
             <th scope="col">Cliente <img src="../../../build/img/Ordenar.svg" alt="">
             </th>
-            <th scope="col" class="text-end">RUT <img src="../../../build/img/Ordenar.svg" alt="">
+            <th scope="col" class="text-center">RUT <img src="../../../build/img/Ordenar.svg" alt="">
             </th>
-            <th scope="col" class="text-end">Correo electrónico <img src="../../../build/img/Ordenar.svg" alt="">
+            <th scope="col" class="text-center">Correo electrónico <img src="../../../build/img/Ordenar.svg" alt="">
             </th>
             <th scope="col" class="text-end">Teléfono <img src="../../../build/img/Ordenar.svg" alt="">
             </th>
-            <th scope="col" class="text-end">Producto <img src="../../../build/img/Ordenar.svg" alt="">
+            <th scope="col" class="text-center">Producto <img src="../../../build/img/Ordenar.svg" alt="">
+            </th>
+            <th scope="col" class="">Plan Contratado <img src="../../../build/img/Ordenar.svg" alt="">
             </th>
             <th scope="col" class="">Fecha <img src="../../../build/img/Ordenar.svg" alt="">
             </th>
@@ -151,6 +153,7 @@
             <td class="text-end">correo@correoelectronico.cl</td>
             <td class="text-end">+569 123 456 78</td>
             <td class="text-end">[nombre producto]</td>
+            <td>Plan 6</td>
             <td>08/08/2023</td>
             <td>
               <div class="pendiente p-1 text-center">Pendiente</div>
@@ -166,6 +169,7 @@
             <td class="text-end">correo@correoelectronico.cl</td>
             <td class="text-end">+569 123 456 78</td>
             <td class="text-end">[nombre producto]</td>
+            <td>Plan Premium</td>
             <td>08/08/2023</td>
             <td>
               <div class="contratado p-1 text-white text-center">Contratado</div>
@@ -178,6 +182,7 @@
             <td class="text-end">correo@correoelectronico.cl</td>
             <td class="text-end">+569 123 456 78</td>
             <td class="text-end">[nombre producto]</td>
+            <td>Plan Premium</td>
             <td>08/08/2023</td>
             <td>
               <div class="pendiente p-1 text-center">Pendiente</div>
@@ -193,6 +198,7 @@
             <td class="text-end">correo@correoelectronico.cl</td>
             <td class="text-end">+569 123 456 78</td>
             <td class="text-end">[nombre producto]</td>
+            <td>Plan Premium</td>
             <td>08/08/2023</td>
             <td>
               <div class="contratado p-1 text-white text-center">Contratado</div>
@@ -205,6 +211,7 @@
             <td class="text-end">correo@correoelectronico.cl</td>
             <td class="text-end">+569 123 456 78</td>
             <td class="text-end">[nombre producto]</td>
+            <td>Plan Premium</td>
             <td>08/08/2023</td>
             <td>
               <div class="pendiente p-1 text-center">Pendiente</div>
@@ -220,6 +227,7 @@
             <td class="text-end">correo@correoelectronico.cl</td>
             <td class="text-end">+569 123 456 78</td>
             <td class="text-end">[nombre producto]</td>
+            <td>Plan 6</td>
             <td>08/08/2023</td>
             <td>
               <div class="caducado p-1 text-white text-center">Caducado</div>
@@ -237,9 +245,9 @@
               <div>
                 <select class="form-select py-2 me-2" style="width: auto; display: inline;"
                   aria-label="Seleccionar cantidad de filas">
-                  <option selected>Mostrar 6</option>
-                  <option>Mostrar 10</option>
-                  <option>Mostrar 20</option>
+                  <option selected>Mostrar 10</option>
+                  <option>Mostrar 15</option>
+                  <option>Mostrar 30</option>
                 </select>
               </div>
               <li class="page-item ms-1">
@@ -251,7 +259,7 @@
                 <input type="text" class="form-control text-center px-2" value="1" disabled>
               </li>
               <li class="page-item py-2 text-center">
-                <span class="px-2">de 3</span>
+                <span class="px-2">de 99</span>
               </li>
               <li class="page-item">
                 <a class="page-link p-2 border-0 text-black" href="#" aria-label="Next">
