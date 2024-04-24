@@ -100,7 +100,9 @@
     <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
       <div class="container">
         <h1 class="ps-4">Búsqueda de cliente</h1>
-        <h2 class="ps-4 mb-40 text-muted">Ingresa RUT del cliente</h2>
+        <h2 class="ps-4 mb-40 text-muted">
+          Ingresa RUT de tu cliente o el del titular del seguro
+        </h2>
 
         <div class="col body-buttom">
           <div class="form-floating mt-3 col-3">
@@ -110,10 +112,10 @@
               id="floatingInput"
               placeholder="Buscar RUT del cliente"
             />
-            <label for="floatingInput">RUT cliente</label>
+            <label for="floatingInput">RUT</label>
           </div>
           <div
-            class="alert alert-warning alert-dismissible fade show mt-4 mb-4"
+            class="alert alert-warning alert-dismissible fade show mt-4 mb-4 fw-bold"
             role="alert"
           >
             <img src="../../../build/img/aviso - alerta.svg" alt="" />
@@ -129,9 +131,12 @@
           </div>
         </div>
 
-        <div class="container-fluid text-end mt-4 g-2 act-buttons">
-          <button type="button" class="btn btn-outline-secondary buscar-btn">
+        <div class="container text-end mt-4 act-buttons">
+          <button type="button" class="btn btn-outline-secondary">
             Volver
+          </button>
+          <button type="button" class="btn btn-primary disabled">
+            Continuar
           </button>
         </div>
       </div>
