@@ -20,7 +20,7 @@ h3 {
   font-size: 18px;
   color: $textos;
   font-family: $itautextpro;
-line-height: 28px;
+  line-height: 28px;
 }
 
 span,
@@ -29,7 +29,6 @@ ul,
 li {
   font-family: "ItauRegular";
 }
-
 
 .form-floating > label {
   position: absolute;
@@ -47,7 +46,6 @@ li {
   transform-origin: 0 0;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
-
 
 .modal-title {
   margin-bottom: 0;
@@ -173,6 +171,7 @@ card.card-box {
 .titulo-seguro {
   color: $naranja;
   font-size: 20px;
+  font-weight: 274px;
 }
 
 .item-destacado {
@@ -220,18 +219,18 @@ section#contenedor-mayor {
   height: auto;
   background: $light;
   box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
-
 }
 
-.b-radius16{
+.b-radius16 {
   border-radius: 16px !important;
 }
 
-th, td{
+th,
+td {
   border-style: none !important;
 }
 
-.select-name{
+.select-name {
   width: 280px !important;
   height: 40px !important;
   padding: 10px !important;
@@ -241,19 +240,19 @@ th, td{
   text-align: left;
 }
 
-.nombre-size{
+.nombre-size {
   font-size: 14px !important;
   padding-left: 6px;
 }
 
-.check-name{
+.check-name {
   width: 280px !important;
   padding: 0px 10px !important;
   margin-top: 1rem;
   background-color: #fff;
 }
 
-.nombre-padding{
+.nombre-padding {
   padding-right: 20px !important;
 }
 
@@ -262,8 +261,7 @@ th, td{
   border-color: #ec7000;
 }
 
-
-.padding-select{
+.padding-select {
   padding: 0px 0px 20px 0px !important;
 }
 
@@ -459,48 +457,44 @@ body {
   font-weight: bolder;
 }
 
-.padding-b-20{
+.padding-b-20 {
   padding-bottom: 20px;
 }
 
-.enfermedades{
+.enfermedades {
   margin-right: 50px;
-  
 }
 
-.campo-asegurados, .divoculto {
+.campo-asegurados,
+.divoculto {
   display: none;
 }
 
-.enfermedades2{
+.enfermedades2 {
   margin-right: 20px;
-
 }
 
-.check-form{
+.check-form {
   padding: 0px 40px;
   margin-left: auto;
 }
 
-.table-striped{
+.table-striped {
   padding: 10px;
   margin: 10px;
 }
 
-
-.width-55{
+.width-55 {
   width: 55%;
 }
 
-.width-85{
+.width-85 {
   width: 85%;
 }
 
-.width-7{
+.width-7 {
   width: 7%;
 }
-
-
 
 .progress {
   width: $size;
@@ -823,7 +817,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form-label-nombres {
-  position:absolute;
+  position: absolute;
   top: 10px;
   left: 14px;
   height: 24px;
@@ -834,16 +828,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   align-items: center;
 
-  width:max-content;
+  width: max-content;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   background-color: #fff;
 }
 
-.flecha{
+.flecha {
   width: 70%;
 }
-
-
 
 .form-floating > label {
   position: absolute;
@@ -884,7 +876,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 1rem 1.3rem;
 }
 
-
 .iconos {
   width: 25px;
   height: 25px;
@@ -907,5 +898,3 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .ml-2 {
   margin-left: 2rem !important;
 }
-
-

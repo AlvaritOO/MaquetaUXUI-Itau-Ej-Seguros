@@ -11504,6 +11504,7 @@ card.card-box {
 .titulo-seguro {
   color: #ec7000;
   font-size: 20px;
+  font-weight: 274px;
 }
 
 .item-destacado {
@@ -11557,7 +11558,8 @@ section#contenedor-mayor {
   border-radius: 16px !important;
 }
 
-th, td {
+th,
+td {
   border-style: none !important;
 }
 
@@ -11782,7 +11784,8 @@ body {
   margin-right: 50px;
 }
 
-.campo-asegurados, .divoculto {
+.campo-asegurados,
+.divoculto {
   display: none;
 }
 
