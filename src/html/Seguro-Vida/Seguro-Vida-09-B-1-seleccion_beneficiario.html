@@ -86,7 +86,7 @@
   <!--Body Buttom-->
   <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
     <!--wizard-->
-    <section class="mb-5">
+    <section class="mb-5 d-none d-lg-block">
       <div class="container">
         <div class="row progreso mt-0">
           <div class="progress" data-percentage="60">
@@ -97,10 +97,10 @@
               <span class="progress-bar"></span>
             </span>
             <div class="progress-value">
-              <div>5/7<br /></div>
+              <div>3/5<br /></div>
             </div>
           </div>
-          <p class="title-seccion">Beneficiarios</p>
+          <p class="title-seccion">BENEFICIARIOS</p>
         </div>
       </div>
     </section>
@@ -108,9 +108,7 @@
     <div class="container px-0">
       <div class="col body-buttom">
         <h1 class="mt-2 mb-3 ps-3">Beneficiarios</h1>
-        <p class="ps-3">El cliente puede designar hasta 7 beneficiarios para la cobertura de Vida. A falta de
-          designación de beneficiarios, la indemnización se pagará a los herederos legales según la cuota hereditaria.
-          Puedes definir beneficiarios específicos o que tus beneficiarios sean tus herederos legales.</p>
+        <p class="ps-3">El cliente puede designar hasta 7 beneficiarios. A falta de designación de beneficiarios, la indemnización se pagará a los herederos legales según la cuota hereditaria. Puedes definir beneficiarios específicos o que tus beneficiarios sean tus herederos legales.</p>
         <div class="row ms-1">
           <p>Selecciona la opción deseada:</p>
           <div class="col-3 pb-3">
@@ -201,20 +199,13 @@
                       <button type="button" class="btn btn-outline-secondary">
                         Cancelar
                       </button>
-                      <button type="button" class="btn btn-primary ms-2">Guardar nuevo beneficiario</button>
+                      <button type="button" class="btn btn-primary ms-2">Guardar beneficiario</button>
                     </div>
                   </form>
 
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-12 text-start">
-            <button type="button" class="btn btn-success text-secondary fw-bold">
-              <img src="../../../build/img/mas.svg" alt="">Agregar beneficiario
-            </button>
           </div>
         </div>
 
@@ -228,7 +219,7 @@
 
       <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
         <button type="button" class="btn btn-outline-secondary">Volver</button>
-        <button type="button" class="btn btn-primary ms-2">Continuar</button>
+        <button type="button" class="btn btn-primary ms-2 disabled">Continuar</button>
       </div>
     </div>
     </div>
@@ -243,7 +234,7 @@
 
         <div class="modal-body text-start pb-0">
           <div class="d-flex justify-content-between">
-            <h2 class="text-primary title mt-0">Quitar Beneficiario</h2>
+            <h2 class="text-primary title mt-0">¿Estas seguro?</h2>
 
             <a type="button" class="btn-close-orange my-auto" data-bs-dismiss="modal" aria-label="Close">
               <img src="../../../build/img/Cerrar-Naranja.svg" alt="">
@@ -251,14 +242,13 @@
           </div>
           <div class="divisor"></div>
           <div class="d-flex flex-column justify-content-start row">
-            <p class="description">¿Esta seguro que desea quitar este beneficiario? <br> Esta acción no se puede
-              deshacer</p>
+            <p class="description">Eliminarás a un beneficiario</p>
           </div>
         </div>
         <div class="modal-footer bg-neutral border-0 py-2">
           <div class="d-flex justify-content-end gap-4">
             <a type="button" class="text-info p-2 fw-bold" data-bs-dismiss="modal">Cancelar</a>
-            <a href=""><button type="button" class="btn btn-primary px-4">Confirmar Eliminación</button></a>
+            <a href=""><button type="button" class="btn btn-primary px-4">Confimar</button></a>
           </div>
         </div>
       </div>
