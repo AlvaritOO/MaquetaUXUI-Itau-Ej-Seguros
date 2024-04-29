@@ -95,7 +95,7 @@
         <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
           src="../../../build/img/comprobante.svg">Ver
           seguros contratados</a>
-        <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
             src="../../../build/img/notificación.svg">Siniestros</a>
         <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
           src="../../../build/img/maleta.svg">Mi
@@ -133,6 +133,36 @@
     </div>
   </section>
   <!--Fin Footer-->
+
+    <!--Modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-body text-start pb-0">
+          <div class="d-flex justify-content-between">
+            <h2 class="text-primary title mt-0">¿Que quieres hacer?</h2>
+
+            <a type="button" class="btn-close-orange my-auto" data-bs-dismiss="modal" aria-label="Close">
+              <img src="../../../build/img/Cerrar-Naranja.svg" alt="">
+            </a>
+          </div>
+          <div class="divisor"></div>
+          <div class="d-flex justify-content-evenly mb-3">
+            <button type="button" class="btn btn-outline-secondary fw-bold">Declarar un siniestro</button>
+            <button type="button" class="btn btn-outline-secondary fw-bold">Consultar un siniestro</button>
+          </div>
+        </div>
+        <div class="modal-footer bg-neutral border-0 py-2">
+          <div class="d-flex justify-content-end gap-4">
+            <a type="button" class="text-info p-2 fw-bold" data-bs-dismiss="modal">Cancelar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin Modal-->
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
