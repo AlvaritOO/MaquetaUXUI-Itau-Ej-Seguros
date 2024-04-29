@@ -898,3 +898,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .ml-2 {
   margin-left: 2rem !important;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 5px;
+}
