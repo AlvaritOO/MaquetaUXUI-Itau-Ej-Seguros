@@ -12404,10 +12404,22 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-left: 2rem !important;
 }
 
+input[type=date] {
+  position: relative;
+}
 input[type=date]::-webkit-calendar-picker-indicator {
-  width: 18px;
-  height: 18px;
-  margin-bottom: 5px;
+  display: none;
+}
+input[type=date]::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/date.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 section#navBar {
