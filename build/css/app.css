@@ -11504,6 +11504,7 @@ card.card-box {
 .titulo-seguro {
   color: #ec7000;
   font-size: 20px;
+  font-weight: 274px;
 }
 
 .item-destacado {
@@ -11557,7 +11558,8 @@ section#contenedor-mayor {
   border-radius: 16px !important;
 }
 
-th, td {
+th,
+td {
   border-style: none !important;
 }
 
@@ -11782,7 +11784,8 @@ body {
   margin-right: 50px;
 }
 
-.campo-asegurados, .divoculto {
+.campo-asegurados,
+.divoculto {
   display: none;
 }
 
@@ -12401,6 +12404,24 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-left: 2rem !important;
 }
 
+input[type=date] {
+  position: relative;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type=date]::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/date.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 section#navBar {
   background-color: #ffffff;
 }
@@ -12412,9 +12433,9 @@ section#navBar {
 
 .log-ejecutivo {
   border-radius: 22px;
-  border: 1px solid #EFE9E5;
+  border: 1px solid #efe9e5;
   padding: 4px;
-  color: #231D19;
+  color: #231d19;
 }
 
 .logo-itau {
@@ -12431,7 +12452,7 @@ section#navBar {
 }
 
 .nav-itau div ul li.nav-item .nav-link {
-  padding: 18px 45px;
+  padding: 18px 37px;
 }
 
 .nav-itau li a {
@@ -12483,5 +12504,5 @@ section#navBar {
 }
 
 .active1 {
-  color: #231D19;
+  color: #231d19;
 }
