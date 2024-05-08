@@ -578,7 +578,7 @@
                       max="1000"
                       id="customRange3"
                     />
-                    <output class="bubble">UF 650</output>
+                    <output class="bubble-center">UF 650</output>
                   </div>
                   <div
                     class="col-md-2 d-none d-sm-block m-auto ms-4 my-auto pt-5"
@@ -605,7 +605,7 @@
     <!--Body Buttom-->
 
     <!--Footer-->
-    <section id="footer" class="footer mt-auto py-3">
+    <section id="footer" class="footer mt-auto">
       <div class="container">
         <footer class="d-flex flex-wrap align-items-center py-4">
           <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
@@ -638,6 +638,17 @@
 
   <!--barra de rangos-->
   <script>
+    function setBubble(range, bubble) {
+      const val = range.value;
+      const min = range.min ? range.min : 300;
+      const max = range.max ? range.max : 1001;
+      const newVal = Number(((val - min) * 100) / (max - min));
+      bubble.innerHTML = val;
+
+      // Sorta magic numbers based on size of the native UI thumb
+      bubble.style.left = `calc(${newVal}% + (${8.5 - newVal * 0.18}px))`;
+    }
+
     const allRanges = document.querySelectorAll(".range-wrap");
     allRanges.forEach((wrap) => {
       const range = wrap.querySelector(".form-range");
@@ -649,16 +660,16 @@
       setBubble(range, bubble);
     });
 
-    function setBubble(range, bubble) {
-      const val = range.value;
-      const min = range.min ? range.min : 300;
-      const max = range.max ? range.max : 1001;
-      const newVal = Number(((val - min) * 100) / (max - min));
-      bubble.innerHTML = val;
+    const allRanges2 = document.querySelectorAll(".range-wrap");
+    allRanges2.forEach((wrap) => {
+      const range2 = wrap.querySelector(".form-range");
+      const bubble2 = wrap.querySelector(".bubble-center");
 
-      // Sorta magic numbers based on size of the native UI thumb
-      bubble.style.left = `calc(${newVal}% + (${8.5 - newVal * 0.18}px))`;
-    }
+      range2.addEventListener("input", () => {
+        setBubble(range2, bubble2);
+      });
+      setBubble(range2, bubble2);
+    });
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

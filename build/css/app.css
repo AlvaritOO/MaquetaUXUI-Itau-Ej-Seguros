@@ -11703,6 +11703,25 @@ small.rango-uf {
   left: 50%;
 }
 
+.bubble-center {
+  background: #ec7000;
+  color: #ffffff;
+  padding: 4px 12px;
+  position: relative;
+  border-radius: 4px;
+  left: 39%;
+}
+
+.bubble-center::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #ec7000;
+  top: -2px;
+  left: 50%;
+}
+
 a.btn-menos-monto {
   position: relative;
   left: -59px;
