@@ -108,22 +108,35 @@
           <ul
             class="nav nav-tab1 justify-content-around row text-center px-0 mx-0"
           >
-            <li class="nav-item col-4 px-0">
+            <li class="nav-item col px-0">
               <a
-                class="nav-link active"
-                id="home-tab"
+                class="nav-link active text-uppercase"
+                id="life-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#home"
+                data-bs-target="#life"
                 type="button"
                 role="tab"
-                aria-controls="home"
+                aria-controls="life"
                 aria-selected="true"
                 >Seguros de Vida</a
               >
             </li>
-            <li class="nav-item col-4 px-0">
+            <li class="nav-item col px-0">
               <a
-                class="nav-link"
+                class="nav-link text-uppercase"
+                id="health-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#health"
+                type="button"
+                role="tab"
+                aria-controls="health"
+                aria-selected="false"
+                >Seguro de Salud</a
+              >
+            </li>
+            <li class="nav-item col px-0">
+              <a
+                class="nav-link text-uppercase"
                 id="profile-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#profile"
@@ -134,9 +147,9 @@
                 >Seguro de Robo</a
               >
             </li>
-            <li class="nav-item col-4 px-0">
+            <li class="nav-item col px-0">
               <a
-                class="nav-link"
+                class="nav-link text-uppercase"
                 id="messages-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#messages"
@@ -147,14 +160,27 @@
                 >Seguro de Hogar</a
               >
             </li>
+            <li class="nav-item col px-0">
+              <a
+                class="nav-link text-uppercase"
+                id="travel-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#travel"
+                type="button"
+                role="tab"
+                aria-controls="travel"
+                aria-selected="false"
+                >Seguros de Viaje</a
+              >
+            </li>
           </ul>
           <div class="container">
             <div class="tab-content">
               <div
                 class="tab-pane active"
-                id="home"
+                id="life"
                 role="tabpanel"
-                aria-labelledby="home-tab"
+                aria-labelledby="life-tab"
                 tabindex="0"
               >
                 <div
@@ -165,12 +191,47 @@
                       <div class="card-plan sombra-itau1 card-noactive">
                         <div class="card-header p-4 bg-neutral rounded-top">
                           <h3 class="text-center titulo-seguro mt-2 fw-bold">
-                            Seguro de vida
+                            Seguro Vida Pro
                           </h3>
                         </div>
                         <div class="card-body text-center">
                           <p class="card-text text-textos pt-4 fw-bold">
-                            La tranquilidad de estar<br />protegido
+                            La tranquilidad de tu<br />
+                            cliente de estar protegido
+                          </p>
+                          <img
+                            src="../../../build/img/vida.svg"
+                            alt=""
+                            class="my-4 iconos-card"
+                          />
+                        </div>
+                      </div>
+                    </card>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="tab-pane"
+                id="health"
+                role="tabpanel"
+                aria-labelledby="health-tab"
+                tabindex="0"
+              >
+                <div
+                  class="container d-flex align-items-center justify-content-center"
+                >
+                  <a class="col-lg-3 card-box" href="">
+                    <card class="card-box mb-5 cardplan-size" href="">
+                      <div class="card-plan sombra-itau1 card-noactive">
+                        <div class="card-header p-4 bg-neutral rounded-top">
+                          <h3 class="text-center titulo-seguro mt-2 fw-bold">
+                            Seguro Salud
+                          </h3>
+                        </div>
+                        <div class="card-body text-center">
+                          <p class="card-text text-textos pt-4 fw-bold">
+                            La tranquilidad de tu<br />
+                            cliente de estar protegido
                           </p>
                           <img
                             src="../../../build/img/vida.svg"
@@ -203,7 +264,8 @@
                         </div>
                         <div class="card-body text-center mb-3">
                           <p class="card-text text-textos pt-4 fw-bold">
-                            Protege a tu cliente contra robo y daño patrimonial
+                            Protege a tu cliente contra<br />
+                            robo y daño patrimonial
                           </p>
                           <img
                             src="../../../build/img/salario.svg"
@@ -240,6 +302,39 @@
                           </p>
                           <img
                             src="../../../build/img/credito inmobiliario.svg"
+                            alt=""
+                            class="my-4 iconos-card"
+                          />
+                        </div>
+                      </div>
+                    </card>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="tab-pane"
+                id="travel"
+                role="tabpanel"
+                aria-labelledby="travel-tab"
+                tabindex="0"
+              >
+                <div
+                  class="container d-flex align-items-center justify-content-center"
+                >
+                  <a class="col-lg-3 card-box" href="">
+                    <card class="card-box mb-5 cardplan-size" href="">
+                      <div class="card-plan sombra-itau1 card-noactive">
+                        <div class="card-header p-4 bg-neutral rounded-top">
+                          <h3 class="text-center titulo-seguro mt-2 fw-bold">
+                            De Viaje
+                          </h3>
+                        </div>
+                        <div class="card-body text-center mb-3">
+                          <p class="card-text text-textos pt-4 fw-bold">
+                            Seguro de Viaje
+                          </p>
+                          <img
+                            src="../../../build/img/avion-grande.svg"
                             alt=""
                             class="my-4 iconos-card"
                           />
