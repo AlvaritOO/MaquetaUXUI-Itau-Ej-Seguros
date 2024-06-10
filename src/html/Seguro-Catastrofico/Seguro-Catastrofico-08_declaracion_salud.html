@@ -1,673 +1,1131 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../build/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Itau</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../../../build/css/app.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-</head>
-
-<body class="d-flex flex-column h-100">
-
-  <!--NavBar-->
-  <section id="navBar">
-    <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 header-bg">
-
-        <div>
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-            <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
-            <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="">
-          </a>
-        </div>
-
-        <div class="text-end">
-
-          <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../../../build/img/ic_log-ejecutivo.svg">
-            Hola, Leslie
-            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.1873 17.7189L22.3035 13.9056C22.3993 13.8149 22.5224 13.7695 22.6729 13.7695C22.8098 13.7695 22.9329 13.8149 23.0424 13.9056C23.1381 13.9964 23.186 14.1067 23.186 14.2364C23.186 14.3791 23.1381 14.5023 23.0424 14.606L16.803 18.5165C16.6252 18.6722 16.4199 18.75 16.1873 18.75C15.941 18.75 15.7289 18.6722 15.5511 18.5165L9.33227 14.606C9.23649 14.5152 9.1886 14.3985 9.1886 14.2558C9.17492 14.1261 9.21597 14.0094 9.31175 13.9056C9.42121 13.8019 9.55119 13.75 9.7017 13.75C9.83853 13.75 9.96168 13.8019 10.0711 13.9056L16.1873 17.7189Z"
-                fill="#231D19" />
-            </svg>
-
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-
-        </div>
-
-        <nav class="navbar navbar-expand-lg nav-itau pb-0">
-          <div class="container-fluid justify-content-around">
-
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Ver Seguros Contratados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Denunciar un Siniestro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Mi Panel</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Posiciónate como experto</a>
-              </li>
-            </ul>
-
-          </div>
-        </nav>
-      </header>
-
-    </div>
-  </section>
-  <!--NavBar fin-->
-
-  <!--Body Buttom-->
-  <main id="contenedor-mayor" class="flex-shrink-0 mt-5">
-    <!--wizard-->
-    <section class="mb-5 d-none d-lg-block">
+  <body class="d-flex flex-column h-100">
+    <!--NavBar-->
+    <section id="navBar">
       <div class="container">
-        <div class="row progreso mt-0">
-          <div class="progress" data-percentage="60">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">
-              <div>4/6<br /></div>
-            </div>
-          </div>
-          <p class="title-seccion">Declaración de Salud</p>
-        </div>
-      </div>
-    </section>
-    <!--fin wizard-->
-
-    <div class="container">
-      <h1>Detalle Seguro Catastrófico</h1>
-      <h2 class="mb-40">
-        Para continuar, cuéntanos sobre el estado de salud del contratante (o el de algún miembro de su grupo familiar,
-        en caso que aplique).
-        <br /> La DPS (declaración personal de salud) es un requisito para contratar el seguro.
-        Este seguro no cubre los siniestros producidos por Enfermedades Preexistentes. Las Enfermedades Preexistentes
-        son aquellas enfermedades, dolencias o situaciones de salud diagnosticadas o conocidas por el asegurado antes de
-        la contratación de este seguro.
-      </h2>
-      <div class="alert alert-light alert-dismissible fade show mt-4 mb-4" role="alert">
-        <img src="../../../build/img/idea.svg" alt="" class="me-2">
-        <label class="fw-bold">Importante</label><br/>
-        <label class="ms-4">Usted no está obligado a declarar haber padecido una patología oncológica antes de la fecha de contratación del
-        presente seguro, siempre y cuando hayan transcurrido cinco años desde la finalización del tratamiento radical
-        sin recaída posterior.</label>
-        <button type="button" class="cerrar-modal-alerta" data-bs-dismiss="alert" aria-label="Close">
-          <img src="../../../build/img/cerrar.svg" alt="">
-        </button>
-      </div>
-      <div class="body-buttom border rounded-0 rounded-bottom">
-        <ul class="nav nav-tab1 justify-content-around row text-center px-0 mx-0">
-          <li class="nav-item col-3 px-0">
-            <a class="nav-link active complete" id="uno-tab" data-bs-toggle="tab" data-bs-target="#uno" type="button"
-              role="tab" aria-controls="uno" aria-selected="true"><img class="activo" alt=""></a>
-          </li>
-          <li class="nav-item col-3 px-0">
-            <a class="nav-link" id="dos-tab" data-bs-toggle="tab" data-bs-target="#dos" type="button" role="tab"
-              aria-controls="dos" aria-selected="false"><img class="activo" alt=""></a>
-          </li>
-          <li class="nav-item col-3 px-0">
-            <a class="nav-link" id="tres-tab" data-bs-toggle="tab" data-bs-target="#tres" type="button" role="tab"
-              aria-controls="tres" aria-selected="false"><img class="activo" alt=""></a>
-          </li>
-          <li class="nav-item col-3 px-0">
-            <a class="nav-link" id="cuatro-tab" data-bs-toggle="tab" data-bs-target="#cuatro" type="button" role="tab"
-              aria-controls="cuatro" aria-selected="false"><img class="activo" alt=""></a>
-          </li>
-        </ul>
-        <div class="container">
-
-          <div class="tab-content">
-            <div class="tab-pane active" id="uno" role="tabpanel" aria-labelledby="uno-tab" tabindex="0">
-              <div class="container d-flex align-items-center justify-content-center">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Responde a continuación si tu o alguno de tus asegurados adicionales padece o ha
-                        padecido alguna de las Enfermedades Preexistentes que se detallan.</th>
-                      <th scope="col">Si</th>
-                      <th scope="col">No</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Al cerebro o del sistema nervioso, mentales psiquiátricas o trastornos
-                          psicológico?</p>
-                        Tales como: Aneurisma, Epilepsia, Malformaciones arteriovenosas, Parkinson, Alzheimer, Accidente
-                        cerebrovascular, Plejia, Paresias, Neuropatias, ELA, Depresión, Trastornos de pánico, Trastorno
-                        de personalidad, Trastorno de animo (Bipolaridad), Trastorno de ansiedad, Estrés, Psicopatias,
-                        Esquizofrenia, Demencia.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="uno" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="uno" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿En el aparato respiratorio, aparato cardiovascular y  aparato
-                          digestivo?</p>
-                        Tales como: Asma, Bronquitis crónica, Enfisema, Tuberculosis, Sinusitis crónica, Desviación
-                        tabique, Hipertrofia de adenoides, Fibrosis Pulmonar, Infarto, Angina, Arritmia, Enfermedades de
-                        la válvula cardiaca, Presión arterial elevada, Várises, Trombosis, Aneurisma, Insuficiencia
-                        cardiaca, Miocardiopatía, Gastritis Cronica (más de 2 episodios), úlcera gastroduodenal, reflujo
-                        gastroesofágico, Hernia hiatal, Hemorroides, Enfermedad Diverticular, Poliposis colónica, hígado
-                        o vesícula, enfermedades del páncreas, hernias abdominales.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="dos" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="dos" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Endocrinológicas y del metabolismo?</p>
-                        Tales como: Diabetes, dislipidemia (colesterol elevado), hipo e hipertiroidismo, Síndrome de
-                        Cushing, Adenoma de la hipófisis, Enfermedades suprarenales, obesidad (IMC elevado 30+), CirugÍa
-                        bariátrica previa.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="tres" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="tres" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿En el aparato genitourinario y renal o de los órganos genitales,
-                          Ginecológicas o de la mama?</p>
-                        Tales como: Insuficiencia renal, Quistes renales, Cálculos renales, Cistitis crónica,
-                        Enfermedades en los uretra, ureteres, vejiga o próstata, Miomas, Quistes, Adenomas,
-                        Endometriosis, Infertilidad, Displasia cervical (NIE), Papilomatosis.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="cuatro" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="cuatro" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="tab-pane" id="dos" role="tabpanel" aria-labelledby="dos-tab" tabindex="0">
-              <div class="container d-flex align-items-center justify-content-center">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Responde a continuación si tu o alguno de tus asegurados adicionales padece o ha
-                        padecido alguna de las Enfermedades Preexistentes que se detallan.</th>
-                      <th scope="col">Si</th>
-                      <th scope="col">No</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Autoinmunes o del tejido conectivo o enfermedades al aparato locomotor?
-                        </p>
-                        Tales como: Lupus, Artritis reumatoide, Esclerosis múltiple, Enfermedad de Crohn, Colitis
-                        ulcerosa, Psoriasis, Espondilitis anquilosante, Enfermedades degenerativas de la columna
-                        (hernias, discopatía, espondiloartrosis), Escoliosis, Lumbago, Ciática, Cervicobraquialgia,
-                        Ostiopenia, Gota, Enfermedades musculares (fibromialgia), Meniscopatía, Tendinopatía,
-                        Amputaciones.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="cinco" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="cinco" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿En los ojos, oidos y piel?</p>
-                        Tales como: Cataratas, Pterigión, Glaucoma, Ceguera, Enfermedades de la retina, Maculopatía,
-                        Alta miopía, Estrabismo, Trastorno de audición, Enfermedades del tímpano, Tinnitus, Vértigo,
-                        Psoriasis, Vitíligo, Acné, Rosácea, Telangestasia.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="seis" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="seis" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Ha sido diagnosticado, padece o ha padecido de cáncer, leucemia,
-                          linfoma,
-                          tumores malignos u otra patología oncológica en los últimos 5 años?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="siete" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="siete" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Enfermedades a la sangre?</p>
-                        Tales como: Síndrome mielodisplásico, Anemias, Trastornos de la coagulación, entre otros.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="ocho" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="ocho" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Trasplante de cualquier órgano, Cirugía plástica y/o reconstructiva,
-                          presencia de prótesis de cualquier tipo?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="nueve" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="nueve" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="tab-pane" id="tres" role="tabpanel" aria-labelledby="tres-tab" tabindex="0">
-              <div class="container d-flex align-items-center justify-content-center">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Responde a continuación si tu o alguno de tus asegurados adicionales padece o ha
-                        padecido alguna de las Enfermedades Preexistentes que se detallan.</th>
-                      <th scope="col">Si</th>
-                      <th scope="col">No</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Defecto de origen congénito o genético?</p>
-                        Tales como: Cardiopatía congénita, Enfermedades del sistema nervioso central y perisférico.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="diez" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="diez" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Enfermedades infectocontagiosas y de transmición sexual?</p>
-                        Tales como: Sífilis, Gonorrea, Brucelosis, Hepatitis B o C, VIH/SIDA, HTLV, Cisticercosis, Covid
-                        que hayan tenido hospitalización con ventilación mecánica?
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="once" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="once" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">Padece o ha padecido, de alguna Enfermedad Preexistente no aludida
-                          anteriormente?<br />Se encuentra en seguimiento, estudio control de alguna dolencia, o
-                          sospecha de enfermedad actualmente o recientemente?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="doce" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="doce" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="tab-pane" id="cuatro" role="tabpanel" aria-labelledby="cuatro-tab" tabindex="0">
-              <div class="container d-flex align-items-center justify-content-center">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Responde a continuación las siguientes preguntas:</th>
-                      <th scope="col">Si</th>
-                      <th scope="col">No</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿En el grupo de asegurables existe alguna embarazada que este cursando
-                          alguna
-                          complicación relacionada al embarazo?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="trece" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="trece" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Tu o alguno de los asegurables adicionales asiste regularmente a
-                          consultas
-                          médicas, se realiza exámenes o consume medicamentos de forma periódica?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="catorce" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="catorce" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Existe en la familia, alguna persona (hasta 2da generación) que haya
-                          padecido o padezca de diabetes melitus, hipertensión arterial, cardiopatía coronaria o
-                          cualquier enfermedad de carácter hereditario?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="quince" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="quince" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Existe en la familia, alguna persona (hasta 2da generación) que haya
-                          sido
-                          diagnosticado, padezca o haya padecido de cáncer, leucemia, linfoma, tumores malignos u otra
-                          patología oncológica en los últimos 5 años?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="dieciseis" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="dieciseis" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Alguien del grupo de asegurables es Sedentario?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="diecisiete" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="diecisiete" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Consumo Excesivo de alcohol/tabaco y/o uso de drogas?</p>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="dieciocho" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="dieciocho" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="fw-bold mb-0">¿Alguien del grupo de asegurables practica algún deporte peligroso?</p>
-                        Tales como Buceo o inmersión libre, carreras acuáticas, motociclismo, automovilismo o uso de
-                        motocicleta, deportes o actividades en nieve (esquí extremo, heliski, esquí fuera de pista,
-                        patrulla de esquí), Montañismo, escalada, rapel, canyonig o barranquismo, alas delta, parapente,
-                        benji, puenting o paracaidismo.
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="diecinueve" id="radioNoLabel1" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <div>
-                          <input class="form-check-input" type="radio" name="diecinueve" id="radioNoLabel2" value=""
-                            aria-label="...">
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h1 class="mt-4">Para finalizar es necesario leer el siguiente documento:</h1>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <label class="form-check-label" for="flexCheckDefault">
-          Asimismo, por medio de la presente declaración, acepto expresamente que todas y cada una de las situaciones o
-          enfermedades, antes declaradas, fueron diagnosticadas a mi persona; o fueron conocidas por mi antes de la
-          contratación de este seguro y por ende no se encontrarán cubiertas en caso de siniestro.
-        </label>
-      </div>
-
-      <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
-        <button type="button" class="btn btn-outline-secondary">Volver</button>
-        <button type="button" class="btn btn-primary ms-2">Continuar</button>
-      </div>
-
-    </div>
-
-  </main>
-  <!--Contenido fin-->
-
-  <!--Modal-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-    data-bs-backdrop="static" data-bs-keyboard="false">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-body text-start pb-0">
-          <div class="d-flex justify-content-between">
-            <h2 class="text-primary title mt-0">Aceptación de declaración de salud</h2>
-
-            <a type="button" class="btn-close-orange my-auto" data-bs-dismiss="modal" aria-label="Close">
-              <img src="../../../build/img/Cerrar-Naranja.svg" alt="">
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 header-bg"
+        >
+          <div>
+            <a
+              href="/"
+              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none"
+            >
+              <img
+                src="../../../build/img/logo-itau.svg"
+                alt="Itaú"
+                class="logo-itau pe-4"
+              />
+              <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="" />
             </a>
           </div>
-          <div class="divisor"></div>
-          <div class="d-flex flex-column justify-content-start row">
-            <p class="description">Esta declaración es una expresión fiel del estado de salud y hábitos del grupo
-              asegurable.
-              <br/>El declarante lo realiza de forma libre e informada a la fecha de firma de este documento.</p>
-            <p class="description">Entiendo que la Compañía de Seguros ha cumplido su obligación de consultar respecto
-              del estado de salud y los hábitos de los asegurados.</p>
-            <p class="description">Declaro que los datos entregados son exactos, fidedignos y entiendo y acepto que un
-              error, omisión o, reticencia podría implicar la terminación del seguro y/o el no pago de la indemnización.
-            </p>
+
+          <div class="text-end">
+            <a
+              class="nav-link dropdown-toggle log-ejecutivo"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="../../../build/img/ic_log-ejecutivo.svg" />
+              Hola, Leslie
+              <svg
+                width="33"
+                height="33"
+                viewBox="0 0 33 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.1873 17.7189L22.3035 13.9056C22.3993 13.8149 22.5224 13.7695 22.6729 13.7695C22.8098 13.7695 22.9329 13.8149 23.0424 13.9056C23.1381 13.9964 23.186 14.1067 23.186 14.2364C23.186 14.3791 23.1381 14.5023 23.0424 14.606L16.803 18.5165C16.6252 18.6722 16.4199 18.75 16.1873 18.75C15.941 18.75 15.7289 18.6722 15.5511 18.5165L9.33227 14.606C9.23649 14.5152 9.1886 14.3985 9.1886 14.2558C9.17492 14.1261 9.21597 14.0094 9.31175 13.9056C9.42121 13.8019 9.55119 13.75 9.7017 13.75C9.83853 13.75 9.96168 13.8019 10.0711 13.9056L16.1873 17.7189Z"
+                  fill="#231D19"
+                />
+              </svg>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <nav class="navbar navbar-expand-lg nav-itau pb-0">
+            <div class="container-fluid justify-content-around">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Contratar Seguros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    >Ver Seguros Contratados</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    >Denunciar un Siniestro</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">Mi Panel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    >Posiciónate como experto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </section>
+    <!--NavBar fin-->
+
+    <!--Body Buttom-->
+    <main id="contenedor-mayor" class="flex-shrink-0 mt-5">
+      <!--wizard-->
+      <section class="mb-5 d-none d-lg-block">
+        <div class="container">
+          <div class="row progreso mt-0">
+            <div class="progress" data-percentage="60">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value">
+                <div>4/6<br /></div>
+              </div>
+            </div>
+            <p class="title-seccion">Declaración de Salud</p>
           </div>
         </div>
-        <div class="modal-footer bg-neutral border-0 py-2">
-          <div class="d-flex justify-content-end gap-4">
-            <a href=""><button type="button" class="btn btn-primary px-4">Acepto los términos y condiciones</button></a>
+      </section>
+      <!--fin wizard-->
+
+      <div class="container">
+        <h1>Detalle Seguro Catastrófico</h1>
+        <h2 class="mb-40">
+          Para continuar, cuéntanos sobre el estado de salud del contratante (o
+          el de algún miembro de su grupo familiar, en caso que aplique).
+          <br />
+          La DPS (declaración personal de salud) es un requisito para contratar
+          el seguro. Este seguro no cubre los siniestros producidos por
+          Enfermedades Preexistentes. Las Enfermedades Preexistentes son
+          aquellas enfermedades, dolencias o situaciones de salud diagnosticadas
+          o conocidas por el asegurado antes de la contratación de este seguro.
+        </h2>
+        <div
+          class="alert alert-light alert-dismissible fade show mt-4 mb-4"
+          role="alert"
+        >
+          <img src="../../../build/img/idea.svg" alt="" class="me-2" />
+          <label class="fw-bold">Importante</label><br />
+          <label class="ms-4"
+            >Usted no está obligado a declarar haber padecido una patología
+            oncológica antes de la fecha de contratación del presente seguro,
+            siempre y cuando hayan transcurrido cinco años desde la finalización
+            del tratamiento radical sin recaída posterior.</label
+          >
+          <button
+            type="button"
+            class="cerrar-modal-alerta"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          >
+            <img src="../../../build/img/cerrar.svg" alt="" />
+          </button>
+        </div>
+        <div class="body-buttom border rounded-0 rounded-bottom">
+          <ul
+            class="nav nav-tab1 justify-content-around row text-center px-0 mx-0"
+          >
+            <li class="nav-item col-3 px-0">
+              <a
+                class="nav-link active complete"
+                id="uno-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#uno"
+                type="button"
+                role="tab"
+                aria-controls="uno"
+                aria-selected="true"
+                ><img class="activo" alt=""
+              /></a>
+            </li>
+            <li class="nav-item col-3 px-0">
+              <a
+                class="nav-link"
+                id="dos-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#dos"
+                type="button"
+                role="tab"
+                aria-controls="dos"
+                aria-selected="false"
+                ><img class="activo" alt=""
+              /></a>
+            </li>
+            <li class="nav-item col-3 px-0">
+              <a
+                class="nav-link"
+                id="tres-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#tres"
+                type="button"
+                role="tab"
+                aria-controls="tres"
+                aria-selected="false"
+                ><img class="activo" alt=""
+              /></a>
+            </li>
+            <li class="nav-item col-3 px-0">
+              <a
+                class="nav-link"
+                id="cuatro-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#cuatro"
+                type="button"
+                role="tab"
+                aria-controls="cuatro"
+                aria-selected="false"
+                ><img class="activo" alt=""
+              /></a>
+            </li>
+          </ul>
+          <div class="container">
+            <div class="tab-content">
+              <div
+                class="tab-pane active"
+                id="uno"
+                role="tabpanel"
+                aria-labelledby="uno-tab"
+                tabindex="0"
+              >
+                <div
+                  class="container d-flex align-items-center justify-content-center"
+                >
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          Responde a continuación si tu o alguno de tus
+                          asegurados adicionales padece o ha padecido alguna de
+                          las Enfermedades Preexistentes que se detallan.
+                        </th>
+                        <th scope="col">Si</th>
+                        <th scope="col">No</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Al cerebro o del sistema nervioso, mentales
+                            psiquiátricas o trastornos psicológico?
+                          </p>
+                          Tales como: Aneurisma, Epilepsia, Malformaciones
+                          arteriovenosas, Parkinson, Alzheimer, Accidente
+                          cerebrovascular, Plejia, Paresias, Neuropatias, ELA,
+                          Depresión, Trastornos de pánico, Trastorno de
+                          personalidad, Trastorno de animo (Bipolaridad),
+                          Trastorno de ansiedad, Estrés, Psicopatias,
+                          Esquizofrenia, Demencia.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="uno"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="uno"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿En el aparato respiratorio, aparato cardiovascular
+                            y  aparato digestivo?
+                          </p>
+                          Tales como: Asma, Bronquitis crónica, Enfisema,
+                          Tuberculosis, Sinusitis crónica, Desviación tabique,
+                          Hipertrofia de adenoides, Fibrosis Pulmonar, Infarto,
+                          Angina, Arritmia, Enfermedades de la válvula cardiaca,
+                          Presión arterial elevada, Várises, Trombosis,
+                          Aneurisma, Insuficiencia cardiaca, Miocardiopatía,
+                          Gastritis Cronica (más de 2 episodios), úlcera
+                          gastroduodenal, reflujo gastroesofágico, Hernia
+                          hiatal, Hemorroides, Enfermedad Diverticular,
+                          Poliposis colónica, hígado o vesícula, enfermedades
+                          del páncreas, hernias abdominales.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="dos"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="dos"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Endocrinológicas y del metabolismo?
+                          </p>
+                          Tales como: Diabetes, dislipidemia (colesterol
+                          elevado), hipo e hipertiroidismo, Síndrome de Cushing,
+                          Adenoma de la hipófisis, Enfermedades suprarenales,
+                          obesidad (IMC elevado 30+), CirugÍa bariátrica previa.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="tres"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="tres"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿En el aparato genitourinario y renal o de los
+                            órganos genitales, Ginecológicas o de la mama?
+                          </p>
+                          Tales como: Insuficiencia renal, Quistes renales,
+                          Cálculos renales, Cistitis crónica, Enfermedades en
+                          los uretra, ureteres, vejiga o próstata, Miomas,
+                          Quistes, Adenomas, Endometriosis, Infertilidad,
+                          Displasia cervical (NIE), Papilomatosis.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="cuatro"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="cuatro"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane"
+                id="dos"
+                role="tabpanel"
+                aria-labelledby="dos-tab"
+                tabindex="0"
+              >
+                <div
+                  class="container d-flex align-items-center justify-content-center"
+                >
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          Responde a continuación si tu o alguno de tus
+                          asegurados adicionales padece o ha padecido alguna de
+                          las Enfermedades Preexistentes que se detallan.
+                        </th>
+                        <th scope="col">Si</th>
+                        <th scope="col">No</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Autoinmunes o del tejido conectivo o enfermedades
+                            al aparato locomotor?
+                          </p>
+                          Tales como: Lupus, Artritis reumatoide, Esclerosis
+                          múltiple, Enfermedad de Crohn, Colitis ulcerosa,
+                          Psoriasis, Espondilitis anquilosante, Enfermedades
+                          degenerativas de la columna (hernias, discopatía,
+                          espondiloartrosis), Escoliosis, Lumbago, Ciática,
+                          Cervicobraquialgia, Ostiopenia, Gota, Enfermedades
+                          musculares (fibromialgia), Meniscopatía, Tendinopatía,
+                          Amputaciones.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="cinco"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="cinco"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿En los ojos, oidos y piel?
+                          </p>
+                          Tales como: Cataratas, Pterigión, Glaucoma, Ceguera,
+                          Enfermedades de la retina, Maculopatía, Alta miopía,
+                          Estrabismo, Trastorno de audición, Enfermedades del
+                          tímpano, Tinnitus, Vértigo, Psoriasis, Vitíligo, Acné,
+                          Rosácea, Telangestasia.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="seis"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="seis"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Ha sido diagnosticado, padece o ha padecido de
+                            cáncer, leucemia, linfoma, tumores malignos u otra
+                            patología oncológica en los últimos 5 años?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="siete"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="siete"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">¿Enfermedades a la sangre?</p>
+                          Tales como: Síndrome mielodisplásico, Anemias,
+                          Trastornos de la coagulación, entre otros.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="ocho"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="ocho"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Trasplante de cualquier órgano, Cirugía plástica
+                            y/o reconstructiva, presencia de prótesis de
+                            cualquier tipo?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="nueve"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="nueve"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane"
+                id="tres"
+                role="tabpanel"
+                aria-labelledby="tres-tab"
+                tabindex="0"
+              >
+                <div
+                  class="container d-flex align-items-center justify-content-center"
+                >
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          Responde a continuación si tu o alguno de tus
+                          asegurados adicionales padece o ha padecido alguna de
+                          las Enfermedades Preexistentes que se detallan.
+                        </th>
+                        <th scope="col">Si</th>
+                        <th scope="col">No</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Defecto de origen congénito o genético?
+                          </p>
+                          Tales como: Cardiopatía congénita, Enfermedades del
+                          sistema nervioso central y perisférico.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="diez"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="diez"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Enfermedades infectocontagiosas y de transmición
+                            sexual?
+                          </p>
+                          Tales como: Sífilis, Gonorrea, Brucelosis, Hepatitis B
+                          o C, VIH/SIDA, HTLV, Cisticercosis, Covid que hayan
+                          tenido hospitalización con ventilación mecánica?
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="once"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="once"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            Padece o ha padecido, de alguna Enfermedad
+                            Preexistente no aludida anteriormente?<br />Se
+                            encuentra en seguimiento, estudio control de alguna
+                            dolencia, o sospecha de enfermedad actualmente o
+                            recientemente?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="doce"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="doce"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane"
+                id="cuatro"
+                role="tabpanel"
+                aria-labelledby="cuatro-tab"
+                tabindex="0"
+              >
+                <div
+                  class="container d-flex align-items-center justify-content-center"
+                >
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          Responde a continuación las siguientes preguntas:
+                        </th>
+                        <th scope="col">Si</th>
+                        <th scope="col">No</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿En el grupo de asegurables existe alguna embarazada
+                            que este cursando alguna complicación relacionada al
+                            embarazo?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="trece"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="trece"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Tu o alguno de los asegurables adicionales asiste
+                            regularmente a consultas médicas, se realiza
+                            exámenes o consume medicamentos de forma periódica?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="catorce"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="catorce"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Existe en la familia, alguna persona (hasta 2da
+                            generación) que haya padecido o padezca de diabetes
+                            melitus, hipertensión arterial, cardiopatía
+                            coronaria o cualquier enfermedad de carácter
+                            hereditario?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="quince"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="quince"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Existe en la familia, alguna persona (hasta 2da
+                            generación) que haya sido diagnosticado, padezca o
+                            haya padecido de cáncer, leucemia, linfoma, tumores
+                            malignos u otra patología oncológica en los últimos
+                            5 años?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="dieciseis"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="dieciseis"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Alguien del grupo de asegurables es Sedentario?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="diecisiete"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="diecisiete"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Consumo Excesivo de alcohol/tabaco y/o uso de
+                            drogas?
+                          </p>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="dieciocho"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="dieciocho"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="fw-bold mb-0">
+                            ¿Alguien del grupo de asegurables practica algún
+                            deporte peligroso?
+                          </p>
+                          Tales como Buceo o inmersión libre, carreras
+                          acuáticas, motociclismo, automovilismo o uso de
+                          motocicleta, deportes o actividades en nieve (esquí
+                          extremo, heliski, esquí fuera de pista, patrulla de
+                          esquí), Montañismo, escalada, rapel, canyonig o
+                          barranquismo, alas delta, parapente, benji, puenting o
+                          paracaidismo.
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="diecinueve"
+                              id="radioNoLabel1"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="diecinueve"
+                              id="radioNoLabel2"
+                              value=""
+                              aria-label="..."
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="mt-4">
+          Para finalizar es necesario leer el siguiente documento:
+        </h1>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Asimismo, por medio de la presente declaración, acepto expresamente
+            que todas y cada una de las situaciones o enfermedades, antes
+            declaradas, fueron diagnosticadas a mi persona; o fueron conocidas
+            por mi antes de la contratación de este seguro y por ende no se
+            encontrarán cubiertas en caso de siniestro.
+          </label>
+        </div>
+
+        <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
+          <button type="button" class="btn btn-outline-secondary">
+            Volver
+          </button>
+          <button type="button" class="btn btn-primary ms-2">Continuar</button>
+        </div>
+      </div>
+    </main>
+    <!--Contenido fin-->
+
+    <!--Modal-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body text-start pb-0">
+            <div class="d-flex justify-content-between">
+              <h2 class="text-primary title mt-0">
+                Aceptación de declaración de salud
+              </h2>
+
+              <a
+                type="button"
+                class="btn-close-orange my-auto"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="../../../build/img/Cerrar-Naranja.svg" alt="" />
+              </a>
+            </div>
+            <div class="divisor"></div>
+            <div class="d-flex flex-column justify-content-start row">
+              <p class="description">
+                Esta declaración es una expresión fiel del estado de salud y
+                hábitos del grupo asegurable. <br />El declarante lo realiza de
+                forma libre e informada a la fecha de firma de este documento.
+              </p>
+              <p class="description">
+                Entiendo que la Compañía de Seguros ha cumplido su obligación de
+                consultar respecto del estado de salud y los hábitos de los
+                asegurados.
+              </p>
+              <p class="description">
+                Declaro que los datos entregados son exactos, fidedignos y
+                entiendo y acepto que un error, omisión o, reticencia podría
+                implicar la terminación del seguro y/o el no pago de la
+                indemnización.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer bg-neutral border-0 py-2">
+            <div class="d-flex justify-content-end gap-4">
+              <a href=""
+                ><button type="button" class="btn btn-primary px-4">
+                  Acepto los términos y condiciones
+                </button></a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--Fin Modal-->
+    <!--Fin Modal-->
 
-  <!--Footer-->
-  <section id="footer" class="footer mt-auto py-3">
-    <div class="container">
-      <footer class="d-flex flex-wrap align-items-center py-4">
-        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
-          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-              src="../../../build/img/logo_itau_rgb.svg" /></a>
-          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
-              src="../../../build/img/cardif-byn.svg" /></a>
-        </p>
-        <p class="text-footer-1 col-6 justify-content-end">
-          Infórmese sobre la garantía estatal de los depósitos en su banco o
-          en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
-            derechos reservados. Av. Presidente
-            Riesco 5537, Las Condes. Santiago de Chile.
-          </span>
-        </p>
-      </footer>
-    </div>
-  </section>
-  <!--Fin Footer-->
+    <!--Footer-->
+    <section id="footer" class="footer mt-auto">
+      <div class="container">
+        <footer class="d-flex flex-wrap align-items-center py-4">
+          <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+            <a href="#"
+              ><img
+                class="col-2 logo-footer me-4"
+                alt="BNP Paribas Cardif"
+                src="../../../build/img/logo_itau_rgb.svg"
+            /></a>
+            <a href="#"
+              ><img
+                class="col-5 logo-footer"
+                alt="BNP Paribas Cardif"
+                src="../../../build/img/cardif-byn.svg"
+            /></a>
+          </p>
+          <p class="text-footer-1 col-6 justify-content-end">
+            Infórmese sobre la garantía estatal de los depósitos en su banco o
+            en www.cmfchile.cl <br /><span
+              class="text-footer-2 col-8 justify-content-end"
+              >© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente
+              Riesco 5537, Las Condes. Santiago de Chile.
+            </span>
+          </p>
+        </footer>
+      </div>
+    </section>
+    <!--Fin Footer-->
+  </body>
 
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>
