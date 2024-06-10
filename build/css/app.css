@@ -12177,6 +12177,20 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .card-noactive {
   border: 2px solid #faf7f5;
 }
+.card-noactive:hover {
+  border: 2px solid #ec7000;
+}
+.card-noactive:hover .card-header {
+  background-color: #ec7000;
+}
+.card-noactive:hover .card-header .titulo-seguro {
+  color: white;
+}
+
+.rounded-top {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
 
 .cardplan-size {
   max-width: 348px !important;
