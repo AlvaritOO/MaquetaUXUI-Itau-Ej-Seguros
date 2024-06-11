@@ -11617,6 +11617,10 @@ td {
   flex-grow: 0;
 }
 
+.btn {
+  font-weight: 700;
+}
+
 .btn-primary {
   color: #fff;
   border: 2px solid #bc5900;
