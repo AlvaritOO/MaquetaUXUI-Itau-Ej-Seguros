@@ -285,6 +285,10 @@ td {
   flex-grow: 0;
 }
 
+.btn {
+  font-weight: 700;
+}
+
 .btn-primary {
   color: $white;
   border: 2px solid $naranja-hover;
@@ -673,6 +677,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border: 2px solid $neutral;
 }
 
+.rounded-top {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
 .cardplan-size {
   max-width: 348px !important;
   border-radius: 8px;
@@ -952,4 +961,42 @@ input[type="date"] {
 
 .body-buttom-hogar {
   border-radius: 8px;
+}
+
+.ic-dot {
+  content: url(../img/dot.svg);
+  margin-right: 2px;
+}
+
+.list-assist {
+  font-size: 13px;
+  font-weight: 400;
+  p {
+    margin-bottom: 2px;
+  }
+}
+
+.letter-list {
+  list-style: none;
+  padding-left: 24px;
+}
+.letter-list li {
+  counter-increment: list-counter;
+  position: relative;
+  margin-bottom: 5px;
+}
+.letter-list li::before {
+  content: counter(list-counter, lower-alpha) ") ";
+  position: absolute;
+  left: -1.5em;
+}
+
+.text-total {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sub-text-total {
+  font-weight: 400;
+  font-size: 14px;
 }

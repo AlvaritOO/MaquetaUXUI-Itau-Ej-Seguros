@@ -89,7 +89,7 @@
     <section class="mb-5 d-none d-lg-block">
       <div class="container">
         <div class="row progreso mt-0">
-          <div class="progress" data-percentage="60">
+          <div class="progress" data-percentage="75">
             <span class="progress-left">
               <span class="progress-bar"></span>
             </span>
@@ -100,7 +100,7 @@
               <div>5/7<br /></div>
             </div>
           </div>
-          <p class="title-seccion">Beneficiarios</p>
+          <p class="title-seccion text-uppercase">Beneficiarios</p>
         </div>
       </div>
     </section>
@@ -108,15 +108,13 @@
     <div class="container px-0">
       <div class="col body-buttom">
         <h1 class="mt-2 mb-3 ps-3">Beneficiarios</h1>
-        <p class="ps-3">El cliente puede designar hasta 7 beneficiarios para la cobertura de Vida. A falta de
-          designación de beneficiarios, la indemnización se pagará a los herederos legales según la cuota hereditaria.
-          Puedes definir beneficiarios específicos o que tus beneficiarios sean tus herederos legales.</p>
+        <p class="ps-3">El cliente puede designar hasta 7 beneficiarios. A falta de designación de beneficiarios, la indemnización se pagará a los herederos legales según la cuota hereditaria. Puedes definir beneficiarios específicos o que tus beneficiarios sean tus herederos legales.</p>
         <div class="row ms-1">
           <p>Selecciona la opción deseada:</p>
           <div class="col-3 pb-3">
 
             <p>
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
               Beneficiario designado
               <img src="../../../src/img/informacion.svg" alt="" class="ms-2" type="button" data-bs-toggle="tooltip"
                 data-bs-placement="top"
@@ -126,15 +124,32 @@
 
           <div class="col-3 pb-3">
             <p>
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
               Herederos legales
               <img src="../../../src/img/informacion.svg" alt="" class="ms-2" type="button" data-bs-toggle="tooltip"
                 data-bs-placement="top"
                 title="Son herederos legales aquellas personas (familiares) que en caso en que fallezcas recibirán todo o parte de tu herencia en proporción a las cuotas que señale la ley."></img>
             </p>
           </div>
+          <div class="divisor"></div>
+        <div class="row">
+          <div class="col-12 text-start">
+            <button type="button" class="btn btn-success text-secondary fw-bold">
+              <img src="../../../build/img/mas.svg" alt="">Agregar beneficiario
+            </button>
+          </div>
+        </div>
+        <div class="divisor"></div>
         </div>
 
+        <div class="mx-4 text-end">
+          <p class="text-total">
+            Total actual  0%*
+          </p>
+          <p class="sub-text-total">
+            *La distribución que realizas entre los distintos beneficiarios debe sumar 100%
+          </p>
+        </div>
       </div>
       <div class="container-fluid text-end mt-4 mb-5 g-2 act-buttons">
         <button type="button" class="btn btn-outline-secondary">Volver</button>
@@ -145,7 +160,7 @@
   <!--Body Buttom-->
 
   <!--Footer-->
-  <section id="footer" class="footer mt-auto py-3">
+  <section id="footer" class="footer mt-auto">
     <div class="container">
       <footer class="d-flex flex-wrap align-items-center py-4">
         <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">

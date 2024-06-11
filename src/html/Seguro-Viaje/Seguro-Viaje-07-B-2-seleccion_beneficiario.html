@@ -89,7 +89,7 @@
     <section class="mb-5">
       <div class="container">
         <div class="row progreso mt-0">
-          <div class="progress" data-percentage="60">
+          <div class="progress" data-percentage="75">
             <span class="progress-left">
               <span class="progress-bar"></span>
             </span>
@@ -100,7 +100,7 @@
               <div>5/7<br /></div>
             </div>
           </div>
-          <p class="title-seccion">Beneficiarios</p>
+          <p class="title-seccion text-uppercase">Beneficiarios</p>
         </div>
       </div>
     </section>
@@ -108,9 +108,7 @@
     <div class="container px-0">
       <div class="col body-buttom">
         <h1 class="mt-2 mb-3 ps-3">Beneficiarios</h1>
-        <p class="ps-3">El cliente puede designar hasta 7 beneficiarios para la cobertura de Vida. A falta de
-          designación de beneficiarios, la indemnización se pagará a los herederos legales según la cuota hereditaria.
-          Puedes definir beneficiarios específicos o que tus beneficiarios sean tus herederos legales.</p>
+        <p class="ps-3">El cliente puede designar hasta 7 beneficiarios. A falta de designación de beneficiarios, la indemnización se pagará a los herederos legales según la cuota hereditaria. Puedes definir beneficiarios específicos o que tus beneficiarios sean tus herederos legales.</p>
         <div class="row ms-1">
           <p>Selecciona la opción deseada:</p>
           <div class="col-3 pb-3">
@@ -233,8 +231,12 @@
         </div>
 
         <div class="mx-4 text-end">
-          <b class="text-danger">Te faltan asignar 75%, agrega un nuevo beneficiario o asignalos a los ya existentes.
-          </b>
+          <p class="text-total">
+            Total actual  25%*
+          </p>
+          <p class="sub-text-total">
+            *La distribución que realizas entre los distintos beneficiarios debe sumar 25%
+          </p>
         </div>
 
         </form>
@@ -257,7 +259,7 @@
 
         <div class="modal-body text-start pb-0">
           <div class="d-flex justify-content-between">
-            <h2 class="text-primary title mt-0">Quitar Beneficiario</h2>
+            <h2 class="text-primary title mt-0">¿Estas seguro?</h2>
 
             <a type="button" class="btn-close-orange my-auto" data-bs-dismiss="modal" aria-label="Close">
               <img src="../../../build/img/Cerrar-Naranja.svg" alt="">
@@ -272,7 +274,7 @@
         <div class="modal-footer bg-neutral border-0 py-2">
           <div class="d-flex justify-content-end gap-4">
             <a type="button" class="text-info p-2 fw-bold" data-bs-dismiss="modal">Cancelar</a>
-            <a href=""><button type="button" class="btn btn-primary px-4">Confirmar Eliminación</button></a>
+            <a href=""><button type="button" class="btn btn-primary px-4">Confimar</button></a>
           </div>
         </div>
       </div>
@@ -281,7 +283,7 @@
   <!--Fin Modal-->
 
   <!--Footer-->
-  <section id="footer" class="footer mt-auto py-3">
+  <section id="footer" class="footer mt-auto">
     <div class="container">
       <footer class="d-flex flex-wrap align-items-center py-4">
         <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">

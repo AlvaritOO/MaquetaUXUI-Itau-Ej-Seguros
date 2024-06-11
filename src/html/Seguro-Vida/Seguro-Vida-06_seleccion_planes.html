@@ -123,10 +123,10 @@
                     <h3 class="text-center titulo-seguro mt-2 text-white">Plan 1</h3>
                   </div>
                   <p class="text-center mt-4 fs-6">Prima mensual*<br>
-                    <span class="text-center text-primary fs-5">$ 5.849 (UF 0,16)</span>
+                    <span class="text-center text-primary fs-5 fw-bold">$ 5.849 (UF 0,16)</span>
                   </p>
                   <p class="text-center mt-4 fs-6">Cobertura de fallecimiento<br>
-                    <span class="text-center text-primary fs-5">UF 500</span>
+                    <span class="text-center text-primary fs-5 fw-bold">UF 500</span>
                   </p>
                   <div class="cobertura-fs">
                     <span class="ps-3"><b>Coberturas:</b><br><span class="ps-3">Titular Asegurado</span></span>
@@ -284,6 +284,7 @@
 
           <div class="container mt-2 mx-5 px-5">
             <ul class="ms-2 mb-3 me-2">
+              <li>Todas las indemnizaciones son de libre disposición, por lo que tú o tus beneficiarios recibirán el monto directamente.</li>
               <li>(6) Pesos equivalentes según valor UF al 01/07/2020: $28.695,46.</li>
               <li>(*) Los valores en pesos están calculados al valor UF del día de hoy 28/07/2021: $29.754,76</li>
             </ul>
@@ -436,7 +437,7 @@
 
       <div class="container-fluid text-end mt-4 g-2 act-buttons ">
         <button type="button" class="btn btn-outline-secondary">Volver</button>
-        <button type="button" class="btn btn-primary ms-2">Continuar</button>
+        <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Continuar</button>
       </div>
 
     </div>
@@ -444,7 +445,7 @@
     </div>
 
   </main>
-  <!--Contenido fin-->>
+  <!--Contenido fin-->
 
 
   <!--Footer-->
@@ -468,6 +469,35 @@
     </div>
   </section>
   <!--Fin Footer-->
+
+  <!--Modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-body text-start pb-0">
+          <div class="d-flex justify-content-between">
+            <h2 class="text-primary title mt-0">Ha ocurrido un error</h2>
+
+            <a type="button" class="btn-close-orange my-auto" data-bs-dismiss="modal" aria-label="Close">
+              <img src="../../../build/img/Cerrar-Naranja.svg" alt="">
+            </a>
+          </div>
+          <div class="divisor"></div>
+          <div class="d-flex flex-column justify-content-start row">
+            <p class="description">¡Lo sentimos! en estos momentos nuestros servidores están presentando problemas. Para continuar con la contratación, puedes reintentar más tarde.</p>
+          </div>
+        </div>
+        <div class="modal-footer bg-neutral border-0 py-2">
+          <div class="d-flex justify-content-end gap-4">
+            <a href=""><button type="button" class="btn btn-primary px-4">Aceptar</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin Modal-->
 
 </body>
 

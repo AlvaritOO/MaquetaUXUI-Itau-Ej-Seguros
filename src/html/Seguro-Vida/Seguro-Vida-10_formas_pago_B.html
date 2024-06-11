@@ -96,7 +96,7 @@
     </section>
     <!--NavBar fin-->
 
-    <!--Body Buttom-->
+    <!--Contenido-->
     <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
       <div class="container">
         <!--Wizard-->
@@ -135,7 +135,7 @@
                   id="flexRadioDefault2"
                 />
                 <label class="form-check-label" for="flexRadioDefault2">
-                  Cuenta Corriente Itaú
+                  Tarjeta de Crédito
                 </label>
               </div>
               <div class="form-check">
@@ -147,42 +147,34 @@
                   checked
                 />
                 <label class="form-check-label" for="flexRadioDefault2">
-                  Tarjeta de crédito Itaú
+                  Cuenta corriente
                 </label>
               </div>
             </div>
 
             <div class="row col-8 mt-4">
-              <div class="col-5 align-self-start">
+              <div class="col-5">
                 <select
                   class="form-select form-select-lg"
                   aria-label=".form-select-lg example"
                 >
-                  <option selected>Número de tarjeta</option>
+                  <option selected>Número de cuenta</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
-            </div>
-
-            <div
-              class="alert alert-info alert-dismissible fade show mt-4 mb-4"
-              role="alert"
-            >
-              <img
-                src="../../../build/img/informacion-alert.svg"
-                alt=""
-                class="me-2"
-              />
-              La prima mensual del seguro se descontará de la tarjeta de tu
-              cliente el día 25 de cada mes.
-              <button
-                type="button"
-                class="cerrar-modal-alerta"
-                data-bs-dismiss="alert"
-                aria-label="Close"
-              ></button>
+              <div class="col-5">
+                <select
+                  class="form-select form-select-lg mb-5"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected>Día de cargo prima mensual</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
