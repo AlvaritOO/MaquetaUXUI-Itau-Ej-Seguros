@@ -675,17 +675,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .card-noactive {
   border: 2px solid $neutral;
-
-  &:hover {
-    border: 2px solid $primary;
-
-    .card-header {
-      background-color: $primary;
-      .titulo-seguro {
-        color: white;
-      }
-    }
-  }
 }
 
 .rounded-top {
@@ -972,4 +961,17 @@ input[type="date"] {
 
 .body-buttom-hogar {
   border-radius: 8px;
+}
+
+.ic-dot {
+  content: url(../img/dot.svg);
+  margin-right: 2px;
+}
+
+.list-assist {
+  font-size: 13px;
+  font-weight: 400;
+  p {
+    margin-bottom: 2px;
+  }
 }

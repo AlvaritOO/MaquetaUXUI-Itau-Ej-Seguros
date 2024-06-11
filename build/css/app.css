@@ -12181,15 +12181,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .card-noactive {
   border: 2px solid #faf7f5;
 }
-.card-noactive:hover {
-  border: 2px solid #ec7000;
-}
-.card-noactive:hover .card-header {
-  background-color: #ec7000;
-}
-.card-noactive:hover .card-header .titulo-seguro {
-  color: white;
-}
 
 .rounded-top {
   border-top-left-radius: 4px !important;
@@ -12473,6 +12464,19 @@ input[type=date]::before {
 
 .body-buttom-hogar {
   border-radius: 8px;
+}
+
+.ic-dot {
+  content: url(../img/dot.svg);
+  margin-right: 2px;
+}
+
+.list-assist {
+  font-size: 13px;
+  font-weight: 400;
+}
+.list-assist p {
+  margin-bottom: 2px;
 }
 
 section#navBar {
