@@ -12479,6 +12479,23 @@ input[type=date]::before {
   margin-bottom: 2px;
 }
 
+.letter-list {
+  list-style: none;
+  padding-left: 24px;
+}
+
+.letter-list li {
+  counter-increment: list-counter;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.letter-list li::before {
+  content: counter(list-counter, lower-alpha) ") ";
+  position: absolute;
+  left: -1.5em;
+}
+
 section#navBar {
   background-color: #ffffff;
 }
